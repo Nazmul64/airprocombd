@@ -1,0 +1,99 @@
+/*
+Theme Name: Crete - Personal Portfolio HTML Template
+Author: Mate_Themes
+Author URI: https://themeforest.net/user/mate_themes/
+Tags: portfolio, agency, personal, blog, html5 template, portfolio template
+Description: Crete - Personal Portfolio HTML5 Template.
+Version: 1.1.0
+*/
+/************************************** base css **************************************/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&amp;family=Saira:wght@500&amp;display=swap");
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-weight: 400; }
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero-slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.hero-slider .slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.hero-slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-slider .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,86,179,0.7), rgba(0,68,148,0.5));
+    z-index: 1;
+}
+
+.hero-slider .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    z-index: 2;
+}
+
+.hero-slider .content h1 {
+    font-size: 52px;
+    font-weight: 800;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+}
+
+.hero-slider .content p {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.slider-dot.active {
+    width: 30px;
+    border-radius: 6px;
+    background: #fff;
+}
