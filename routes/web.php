@@ -10,6 +10,7 @@ use App\Http\Controllers\Backend\AdminuseraccountviewController;
 use App\Http\Controllers\Backend\AdminuserController;
 use App\Http\Controllers\Backend\AdminwinlistController;
 use App\Http\Controllers\Backend\AllTicketController;
+use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\CommissionSettingController;
 use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\CounterController;
@@ -79,7 +80,7 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/admin/profile/change', [AdminpasswordchangeController::class, 'adminProfile'])->name('profile.change');
     Route::put('/admin/profile/{id}', [AdminpasswordchangeController::class, 'adminProfileSubmit'])->name('admin.profile.update');
     Route::resource('notices', NoticesController::class);
-
+    Route::resource('categories',CategoryController::class);
 
 
 

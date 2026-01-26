@@ -22,12 +22,22 @@
         </li>
 
         <!-- Slider -->
-        <li>
+       <li>
             <a href="{{ route('slider.index') }}">
                 <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
                 <div class="menu-title">Slider</div>
             </a>
         </li>
+
+
+         <li>
+            <a href="{{ route('categories.index') }}">
+                <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
+                <div class="menu-title">Categories</div>
+            </a>
+        </li>
+
+
 
       <li>
             <a href="{{ route('partner.index') }}">
@@ -38,8 +48,7 @@
 
 
 
-
-            {{-- <li>
+ <li>
              <a href="{{ route('supportlink.index') }}"><i class="bi bi-circle"></i>Support Link</a>
            </li>
         <!-- Why Choose Us Investment -->
@@ -106,7 +115,7 @@
             </a>
         </li>
     </ul>
-    <!-- End Navigation --> --}}
+
 </aside>
 
 <!-- jQuery CDN -->

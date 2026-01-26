@@ -10,6 +10,7 @@ use App\Models\Lotter;
 use App\Models\Notice;
 use App\Models\Partner;
 use App\Models\Privacypolicy;
+use App\Models\Setting;
 use App\Models\Slider;
 use App\Models\User_widthdraw;
 use App\Models\Whychooseinvestmentplan;
@@ -22,7 +23,8 @@ class FrontendController extends Controller
 
         $sliders = Slider::all();
         $partners = Partner::all();
-        return view('Frontend.index',compact('sliders','partners'));
+        $settings=Setting::first();
+        return view('Frontend.index',compact('sliders','partners','settings'));
     }
     public function privacy()
     {

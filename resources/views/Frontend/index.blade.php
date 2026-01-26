@@ -130,80 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     </div>
-
-    <!-- Our Services Section -->
-    <div style="background: white; padding: 80px 0;">
-        <div class="container">
-            <div style="margin-bottom: 60px;">
-                <h2 style="font-size: 48px; font-weight: 800; color: #ff6b35; margin-bottom: 15px;">Our Services:</h2>
-                <div style="width: 150px; height: 4px; background: #ff6b35;"></div>
-            </div>
-
-            <div class="row align-items-center" style="position: relative;">
-                <!-- Left Side - VRF System -->
-                <div class="col-md-4">
-                    <div style="margin-bottom: 50px;">
-                        <h3 style="font-size: 24px; font-weight: 700; color: #1a1a1a; margin-bottom: 25px; border-left: 4px solid #ff6b35; padding-left: 15px;">VRF SYSTEM</h3>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Mini VRF</span>
-                            </li>
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Cooling Only</span>
-                            </li>
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Heating & Cooling</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Center - Connection Design -->
-                <div class="col-md-4 text-center" style="position: relative;">
-                    <svg width="100%" height="150" viewBox="0 0 400 150" style="margin: 30px 0;">
-                        <!-- Left Pipe -->
-                        <path d="M 0 75 Q 100 75, 150 75" stroke="#5DADE2" stroke-width="25" fill="none" stroke-linecap="round"/>
-                        <!-- Right Pipe -->
-                        <path d="M 250 75 Q 300 75, 400 75" stroke="#5DADE2" stroke-width="25" fill="none" stroke-linecap="round"/>
-                        <!-- Center Circle -->
-                        <circle cx="200" cy="75" r="45" fill="#5DADE2" opacity="0.3"/>
-                        <circle cx="200" cy="75" r="30" fill="#ff6b35"/>
-                        <circle cx="200" cy="75" r="18" fill="white"/>
-                    </svg>
-                </div>
-
-                <!-- Right Side - Ventilation System -->
-                <div class="col-md-4">
-                    <div style="margin-bottom: 50px;">
-                        <h3 style="font-size: 24px; font-weight: 700; color: #1a1a1a; margin-bottom: 25px; border-left: 4px solid #ff6b35; padding-left: 15px;">VENTILATION SYSTEM</h3>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Industrial Ventilation</span>
-                            </li>
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Force Ventilation</span>
-                            </li>
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Tunnel Ventilation</span>
-                            </li>
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Plant Room Ventilation</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Section -->
+        <!-- About Section -->
     <div style="background: #f8f9fa; padding: 80px 0;">
         <div class="container">
             <!-- About Us Header -->
@@ -291,6 +218,80 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     </div>
+
+    <!-- Our Services Section -->
+    <div style="background: white; padding: 80px 0;">
+        <div class="container">
+            <div style="margin-bottom: 60px;">
+                <h2 style="font-size: 48px; font-weight: 800; color: #ff6b35; margin-bottom: 15px;">Our Services:</h2>
+                <div style="width: 150px; height: 4px; background: #ff6b35;"></div>
+            </div>
+
+            <div class="row align-items-center" style="position: relative;">
+                <!-- Left Side - VRF System -->
+                <div class="col-md-4">
+                    <div style="margin-bottom: 50px;">
+                        <h3 style="font-size: 24px; font-weight: 700; color: #1a1a1a; margin-bottom: 25px; border-left: 4px solid #ff6b35; padding-left: 15px;">VRF SYSTEM</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
+                                <span style="font-size: 16px; color: #333;">Mini VRF</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
+                                <span style="font-size: 16px; color: #333;">Cooling Only</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
+                                <span style="font-size: 16px; color: #333;">Heating & Cooling</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Center - Connection Design -->
+                <div class="col-md-4 text-center" style="position: relative;">
+                    <svg width="100%" height="150" viewBox="0 0 400 150" style="margin: 30px 0;">
+                        <!-- Left Pipe -->
+                        <path d="M 0 75 Q 100 75, 150 75" stroke="#5DADE2" stroke-width="25" fill="none" stroke-linecap="round"/>
+                        <!-- Right Pipe -->
+                        <path d="M 250 75 Q 300 75, 400 75" stroke="#5DADE2" stroke-width="25" fill="none" stroke-linecap="round"/>
+                        <!-- Center Circle -->
+                        <circle cx="200" cy="75" r="45" fill="#5DADE2" opacity="0.3"/>
+                        <circle cx="200" cy="75" r="30" fill="#ff6b35"/>
+                        <circle cx="200" cy="75" r="18" fill="white"/>
+                    </svg>
+                </div>
+
+                <!-- Right Side - Ventilation System -->
+                <div class="col-md-4">
+                    <div style="margin-bottom: 50px;">
+                        <h3 style="font-size: 24px; font-weight: 700; color: #1a1a1a; margin-bottom: 25px; border-left: 4px solid #ff6b35; padding-left: 15px;">VENTILATION SYSTEM</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
+                                <span style="font-size: 16px; color: #333;">Industrial Ventilation</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
+                                <span style="font-size: 16px; color: #333;">Force Ventilation</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
+                                <span style="font-size: 16px; color: #333;">Tunnel Ventilation</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
+                                <span style="font-size: 16px; color: #333;">Plant Room Ventilation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 <!-- Our Partner Section -->
 <div class="partner-section" style="background: #fff; padding: 80px 0;">
