@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BfOvAP4VMpxm6PfM',
+            '_route' => 'generated::6IOuLsVZhNdO6jgG',
           ),
           1 => NULL,
           2 => 
@@ -912,6 +912,62 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/subcategories' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/subcategories/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/register' => 
       array (
         0 => 
@@ -1306,7 +1362,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/whychooseusinvesment/([^/]++)(?|(*:40)|/edit(*:52)|(*:59))|/a(?|boutus/([^/]++)(?|(*:90)|/edit(*:102)|(*:110))|dmin/profile/([^/]++)(*:140))|/s(?|ettings/([^/]++)(?|(*:173)|/edit(*:186)|(*:194))|lider/([^/]++)(?|(*:220)|/edit(*:233)|(*:241))|upportlink/([^/]++)(?|(*:272)|/edit(*:285)|(*:293))|torage/(.*)(*:313))|/p(?|r(?|ivacypolicy/([^/]++)(?|(*:354)|/edit(*:367)|(*:375))|ofile/([^/]++)(*:398))|a(?|rtner/([^/]++)(?|(*:428)|/edit(*:441)|(*:449))|ssword/reset/([^/]++)(*:479)))|/c(?|o(?|unter/([^/]++)(?|(*:515)|/edit(*:528)|(*:536))|ntact/([^/]++)(?|(*:562)|/edit(*:575)|(*:583)))|ategories/([^/]++)(?|(*:614)|/edit(*:627)|(*:635)))|/Termscondition/([^/]++)(?|(*:672)|/edit(*:685)|(*:693))|/users/([^/]++)/status(*:724)|/notices/([^/]++)(?|(*:752)|/edit(*:765)|(*:773)))/?$}sDu',
+      0 => '{^(?|/whychooseusinvesment/([^/]++)(?|(*:40)|/edit(*:52)|(*:59))|/a(?|boutus/([^/]++)(?|(*:90)|/edit(*:102)|(*:110))|dmin/profile/([^/]++)(*:140))|/s(?|ettings/([^/]++)(?|(*:173)|/edit(*:186)|(*:194))|lider/([^/]++)(?|(*:220)|/edit(*:233)|(*:241))|u(?|pportlink/([^/]++)(?|(*:275)|/edit(*:288)|(*:296))|bcategories/([^/]++)(?|(*:328)|/edit(*:341)|(*:349)))|torage/(.*)(*:370))|/p(?|r(?|ivacypolicy/([^/]++)(?|(*:411)|/edit(*:424)|(*:432))|ofile/([^/]++)(*:455))|a(?|rtner/([^/]++)(?|(*:485)|/edit(*:498)|(*:506))|ssword/reset/([^/]++)(*:536)))|/c(?|o(?|unter/([^/]++)(?|(*:572)|/edit(*:585)|(*:593))|ntact/([^/]++)(?|(*:619)|/edit(*:632)|(*:640)))|ategories/([^/]++)(?|(*:671)|/edit(*:684)|(*:692)))|/Termscondition/([^/]++)(?|(*:729)|/edit(*:742)|(*:750))|/users/([^/]++)/status(*:781)|/notices/([^/]++)(?|(*:809)|/edit(*:822)|(*:830)))/?$}sDu',
     ),
     3 => 
     array (
@@ -1684,7 +1740,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      272 => 
+      275 => 
       array (
         0 => 
         array (
@@ -1707,7 +1763,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      285 => 
+      288 => 
       array (
         0 => 
         array (
@@ -1730,7 +1786,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      293 => 
+      296 => 
       array (
         0 => 
         array (
@@ -1772,7 +1828,95 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      313 => 
+      328 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.show',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      341 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.edit',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      349 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.update',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      370 => 
       array (
         0 => 
         array (
@@ -1795,7 +1939,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      354 => 
+      411 => 
       array (
         0 => 
         array (
@@ -1818,7 +1962,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      367 => 
+      424 => 
       array (
         0 => 
         array (
@@ -1841,7 +1985,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      375 => 
+      432 => 
       array (
         0 => 
         array (
@@ -1883,7 +2027,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      398 => 
+      455 => 
       array (
         0 => 
         array (
@@ -1905,7 +2049,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      428 => 
+      485 => 
       array (
         0 => 
         array (
@@ -1928,7 +2072,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      441 => 
+      498 => 
       array (
         0 => 
         array (
@@ -1951,7 +2095,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      449 => 
+      506 => 
       array (
         0 => 
         array (
@@ -1993,7 +2137,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      479 => 
+      536 => 
       array (
         0 => 
         array (
@@ -2016,7 +2160,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      515 => 
+      572 => 
       array (
         0 => 
         array (
@@ -2039,7 +2183,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      528 => 
+      585 => 
       array (
         0 => 
         array (
@@ -2062,7 +2206,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      536 => 
+      593 => 
       array (
         0 => 
         array (
@@ -2104,7 +2248,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      562 => 
+      619 => 
       array (
         0 => 
         array (
@@ -2127,7 +2271,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      575 => 
+      632 => 
       array (
         0 => 
         array (
@@ -2150,7 +2294,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      583 => 
+      640 => 
       array (
         0 => 
         array (
@@ -2192,7 +2336,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      614 => 
+      671 => 
       array (
         0 => 
         array (
@@ -2215,7 +2359,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      627 => 
+      684 => 
       array (
         0 => 
         array (
@@ -2238,7 +2382,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      635 => 
+      692 => 
       array (
         0 => 
         array (
@@ -2280,7 +2424,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      672 => 
+      729 => 
       array (
         0 => 
         array (
@@ -2303,7 +2447,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      685 => 
+      742 => 
       array (
         0 => 
         array (
@@ -2326,7 +2470,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      693 => 
+      750 => 
       array (
         0 => 
         array (
@@ -2368,7 +2512,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      724 => 
+      781 => 
       array (
         0 => 
         array (
@@ -2390,7 +2534,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      752 => 
+      809 => 
       array (
         0 => 
         array (
@@ -2413,7 +2557,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      765 => 
+      822 => 
       array (
         0 => 
         array (
@@ -2436,7 +2580,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      773 => 
+      830 => 
       array (
         0 => 
         array (
@@ -2493,7 +2637,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::BfOvAP4VMpxm6PfM' => 
+    'generated::6IOuLsVZhNdO6jgG' => 
     array (
       'methods' => 
       array (
@@ -2522,7 +2666,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002b70000000000000000";}}',
-        'as' => 'generated::BfOvAP4VMpxm6PfM',
+        'as' => 'generated::6IOuLsVZhNdO6jgG',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6171,6 +6315,270 @@ app('router')->setCompiledRoutes(
         'as' => 'categories.destroy',
         'uses' => 'App\\Http\\Controllers\\Backend\\CategoryController@destroy',
         'controller' => 'App\\Http\\Controllers\\Backend\\CategoryController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'subcategories.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'subcategories',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'subcategories.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'subcategories.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'subcategories/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'subcategories.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'subcategories.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'subcategories',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'subcategories.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'subcategories.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'subcategories/{subcategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'subcategories.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'subcategories.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'subcategories/{subcategory}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'subcategories.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'subcategories.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'subcategories/{subcategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'subcategories.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'subcategories.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'subcategories/{subcategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'subcategories.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SubCategoryController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 

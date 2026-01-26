@@ -25,6 +25,7 @@ use App\Http\Controllers\Backend\PaswordchangeController;
 use App\Http\Controllers\Backend\PrivacypolicyController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SliderController;
+use App\Http\Controllers\Backend\SubCategoryController;
 use App\Http\Controllers\Backend\SupportControler;
 use App\Http\Controllers\Backend\TermsconditionController;
 use App\Http\Controllers\Backend\userBlanceController;
@@ -81,7 +82,7 @@ Route::middleware(['admin'])->group(function () {
     Route::put('/admin/profile/{id}', [AdminpasswordchangeController::class, 'adminProfileSubmit'])->name('admin.profile.update');
     Route::resource('notices', NoticesController::class);
     Route::resource('categories',CategoryController::class);
-
+    Route::resource('subcategories',SubCategoryController::class);
 
 
     //   admin user account view start end
