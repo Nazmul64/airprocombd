@@ -29,8 +29,12 @@
             </a>
         </li>
 
-
-
+        <li>
+            <a href="{{ route('product.index') }}">
+                <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
+                <div class="menu-title">Product</div>
+            </a>
+        </li>
          <li>
             <a href="{{ route('categories.index') }}">
                 <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>

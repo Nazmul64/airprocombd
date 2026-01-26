@@ -86,50 +86,133 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <!-- Products Section -->
-    <div class="container" style="padding: 80px 0;">
-        <div style="text-align: center; margin-bottom: 60px;">
-            <div style="color: #ff6b35; font-style: italic; font-size: 18px;">What we do</div>
-            <div style="font-size: 42px; font-weight: 800; color: #1a1a1a; text-transform: uppercase; letter-spacing: 2px; margin-top: 10px;">OUR PRODUCTS</div>
-        </div>
-        <div class="row">
+<!-- Products Section -->
+<div class="container" style="padding: 80px 0;">
+    <div style="text-align: center; margin-bottom: 60px;">
+        <div style="color: #ff6b35; font-style: italic; font-size: 18px;">What we do</div>
+        <div style="font-size: 42px; font-weight: 800; color: #1a1a1a; text-transform: uppercase; letter-spacing: 2px; margin-top: 10px;">OUR PRODUCTS</div>
+    </div>
+    <div class="row">
+        @foreach ($products as $index => $product)
             <div class="col-md-4 mb-4">
                 <div style="background: white; border-radius: 15px; padding: 40px 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.4s; border: 2px solid transparent; height: 100%;" class="product-card">
-                    <div style="background: linear-gradient(135deg, #e8f4ff, #f0f8ff); width: 120px; height: 120px; margin: 0 auto 25px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-snowflake" style="font-size: 60px; color: #0056b3;"></i>
+                    <div style="position: relative; height: 200px; margin-bottom: 20px; overflow: hidden; border-radius: 10px; cursor: pointer;" class="image-container" onclick="openSlider({{ $index }})">
+                        @if(!empty($product->product_image))
+                            <img src="{{ asset('uploads/products/'.$product->product_image) }}"
+                                alt="{{ $product->product_name ?? 'Product Image' }}"
+                                class="product-image"
+                                style="width: 100%; height: 100%; object-fit: contain; transition: transform 0.5s ease;">
+                        @else
+                            <span style="color:#999; display: flex; align-items: center; justify-content: center; height: 100%;">No Image</span>
+                        @endif
                     </div>
-                    <h3 style="color: #0056b3; font-size: 22px; font-weight: 700; margin-bottom: 20px; text-align: center;">Midea VRF V8</h3>
-                    <p style="color: #666; line-height: 1.8; text-align: center; margin-bottom: 25px;">The latest Midea VRF V8 is equipped with industry-revolutionary technologies with an increased annual energy efficiency of 28%.</p>
+                    <h3 style="color: #0056b3; font-size: 22px; font-weight: 700; margin-bottom: 20px; text-align: center;">{{ $product->product_name ?? ''}}</h3>
+                    <p style="color: #666; line-height: 1.8; text-align: center; margin-bottom: 25px;">{{ Str::limit($product->product_description ?? '', 100) }}</p>
                     <div style="text-align: center;">
-                        <a href="#" style="background: #ff6b35; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Click Here to Read More</a>
+                        {{-- Changed this line - added $product->product_slug parameter --}}
+                        <a href="{{ route('productdetails', $product->product_slug) }}" style="background: #ff6b35; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Click Here to Read More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div style="background: white; border-radius: 15px; padding: 40px 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); border: 2px solid transparent; height: 100%;" class="product-card">
-                    <div style="background: linear-gradient(135deg, #e8f4ff, #f0f8ff); width: 120px; height: 120px; margin: 0 auto 25px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-fan" style="font-size: 60px; color: #0056b3;"></i>
-                    </div>
-                    <h3 style="color: #0056b3; font-size: 22px; font-weight: 700; margin-bottom: 20px; text-align: center;">SMARDT OIL FREE Chiller</h3>
-                    <p style="color: #666; line-height: 1.8; text-align: center; margin-bottom: 25px;">Designed for a 30-year operating life, with the lowest lifetime operating costs in the market.</p>
-                    <div style="text-align: center;">
-                        <a href="#" style="background: #ff6b35; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Click Here to Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div style="background: white; border-radius: 15px; padding: 40px 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); border: 2px solid transparent; height: 100%;" class="product-card">
-                    <div style="background: linear-gradient(135deg, #e8f4ff, #f0f8ff); width: 120px; height: 120px; margin: 0 auto 25px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
-                        <i class="fas fa-wind" style="font-size: 60px; color: #0056b3;"></i>
-                    </div>
-                    <h3 style="color: #0056b3; font-size: 22px; font-weight: 700; margin-bottom: 20px; text-align: center;">FabricAir Systems</h3>
-                    <p style="color: #666; line-height: 1.8; text-align: center; margin-bottom: 25px;">Non-metal HVAC solutions for air distribution creating outstanding value for our customers.</p>
-                    <div style="text-align: center;">
-                        <a href="#" style="background: #ff6b35; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block;">Click Here to Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
+</div>
+
+<!-- Image Slider Modal -->
+<div id="imageSliderModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; align-items: center; justify-content: center;">
+    <button onclick="closeSlider()" style="position: absolute; top: 20px; right: 30px; background: transparent; border: none; color: white; font-size: 40px; cursor: pointer; z-index: 10000;">&times;</button>
+
+    <button onclick="changeSlideModal(-1)" style="position: absolute; left: 30px; background: rgba(255,255,255,0.3); border: none; color: white; font-size: 30px; padding: 10px 20px; cursor: pointer; border-radius: 5px; transition: 0.3s;">&lt;</button>
+
+    <div style="max-width: 90%; max-height: 90%; text-align: center;">
+        <img id="sliderImage" src="" alt="Product" style="max-width: 100%; max-height: 80vh; object-fit: contain; border-radius: 10px;">
+        <h3 id="sliderTitle" style="color: white; margin-top: 20px; font-size: 24px;"></h3>
+    </div>
+
+    <button onclick="changeSlideModal(1)" style="position: absolute; right: 30px; background: rgba(255,255,255,0.3); border: none; color: white; font-size: 30px; padding: 10px 20px; cursor: pointer; border-radius: 5px; transition: 0.3s;">&gt;</button>
+</div>
+
+<style>
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        border-color: #ff6b35;
+    }
+
+    .image-container:hover .product-image {
+        transform: scale(1.1);
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .product-card {
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    .product-card:nth-child(1) { animation-delay: 0.1s; }
+    .product-card:nth-child(2) { animation-delay: 0.2s; }
+    .product-card:nth-child(3) { animation-delay: 0.3s; }
+    .product-card:nth-child(4) { animation-delay: 0.4s; }
+    .product-card:nth-child(5) { animation-delay: 0.5s; }
+    .product-card:nth-child(6) { animation-delay: 0.6s; }
+</style>
+
+<script>
+    let currentSlideIndex = 0;
+    const products = @json($products);
+
+    function openSlider(index) {
+        currentSlideIndex = index;
+        showSlide();
+        document.getElementById('imageSliderModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeSlider() {
+        document.getElementById('imageSliderModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    function changeSlideModal(direction) {
+        currentSlideIndex += direction;
+        if (currentSlideIndex >= products.length) currentSlideIndex = 0;
+        if (currentSlideIndex < 0) currentSlideIndex = products.length - 1;
+        showSlide();
+    }
+
+    function showSlide() {
+        const product = products[currentSlideIndex];
+        const imagePath = product.product_image ?
+            "{{ asset('uploads/products/') }}/" + product.product_image :
+            '';
+
+        document.getElementById('sliderImage').src = imagePath;
+        document.getElementById('sliderTitle').textContent = product.product_name || '';
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (document.getElementById('imageSliderModal').style.display === 'flex') {
+            if (e.key === 'ArrowLeft') changeSlideModal(-1);
+            if (e.key === 'ArrowRight') changeSlideModal(1);
+            if (e.key === 'Escape') closeSlider();
+        }
+    });
+
+    // Close on click outside
+    document.getElementById('imageSliderModal')?.addEventListener('click', function(e) {
+        if (e.target === this) closeSlider();
+    });
+</script>
         <!-- About Section -->
     <div style="background: #f8f9fa; padding: 80px 0;">
         <div class="container">

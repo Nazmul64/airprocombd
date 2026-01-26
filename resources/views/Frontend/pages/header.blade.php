@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airpro.com.bd - HVAC Solutions</title>
+    <title>Airpro.com.bd </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('frontend/assets/front/css/style.css') }}">
@@ -52,58 +52,92 @@
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg main-nav">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#about">About Tritech</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#why">Why Tritech</a></li>
-                            <li><a class="dropdown-item" href="#team">Our Team</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#products">Products</a>
-                        <ul class="dropdown-menu">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg main-nav">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('frontend') }}">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Tritech
+                    </a>
+                    <ul class="dropdown-menu">
+                        @foreach ($categories as $category)
                             <li class="dropdown-submenu">
-                                <a class="dropdown-item" href="#vrf">
-                                    VRF AC <i class="fas fa-chevron-right float-end"></i>
+                                <a class="dropdown-item" href="#{{ $category->category_slug }}">
+                                    {{ $category->category_name }}
+                                    @if($category->subcategories->count() > 0)
+                                        <i class="fas fa-chevron-right float-end"></i>
+                                    @endif
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#daikin">Daikin VRV System</a></li>
-                                    <li><a class="dropdown-item" href="#lg">LG VRF System</a></li>
-                                    <li><a class="dropdown-item" href="#midea">Midea VRF System</a></li>
-                                </ul>
+
+                                @if($category->subcategories->count() > 0)
+                                    <ul class="dropdown-menu">
+                                        @foreach($category->subcategories as $subcategory)
+                                            <li>
+                                                <a class="dropdown-item" href="#{{ $subcategory->subcategory_slug ?? '' }}">
+                                                    {{ $subcategory->subcategory_name ?? $subcategory->name }}
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                @endif
                             </li>
-                            <li><a class="dropdown-item" href="#chillers">Electric Chillers</a></li>
-                            <li><a class="dropdown-item" href="#oil-free">Oil Free Chiller</a></li>
-                        </ul>
-                    </li>
+                        @endforeach
+                    </ul>
+                </li>
+
+                {{-- Dynamic Categories with Subcategories --}}
+                @foreach ($categories as $category)
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#solutions">Solutions</a>
+                        <a class="nav-link dropdown-toggle" href="#{{ $category->category_slug }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ $category->category_name }}
+                        </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#commercial">Commercial HVAC</a></li>
-                            <li><a class="dropdown-item" href="#industrial">Industrial HVAC</a></li>
+                            @foreach($category->subcategories as $subcategory)
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#{{ $subcategory->subcategory_slug ?? '' }}">
+                                        {{ $subcategory->subcategory_name ?? $subcategory->name }}
+                                        @if(isset($subcategory->children) && $subcategory->children->count() > 0)
+                                            <i class="fas fa-chevron-right float-end"></i>
+                                        @endif
+                                    </a>
+
+                                    {{-- Third level if exists --}}
+                                    @if(isset($subcategory->children) && $subcategory->children->count() > 0)
+                                        <ul class="dropdown-menu">
+                                            @foreach($subcategory->children as $child)
+                                                <li>
+                                                    <a class="dropdown-item" href="#{{ $child->subcategory_slug ?? '' }}">
+                                                        {{ $child->subcategory_name ?? $child->name }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    @endif
+                                </li>
+                            @endforeach
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Work References</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#media">Media and Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact us</a>
-                    </li>
-                </ul>
-            </div>
+                @endforeach
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work References</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#media">Media and Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact us</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>

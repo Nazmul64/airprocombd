@@ -23,6 +23,7 @@ use App\Http\Controllers\Backend\NoticesController;
 use App\Http\Controllers\Backend\PartnarController;
 use App\Http\Controllers\Backend\PaswordchangeController;
 use App\Http\Controllers\Backend\PrivacypolicyController;
+use App\Http\Controllers\Backend\ProductctController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SliderController;
 use App\Http\Controllers\Backend\SubCategoryController;
@@ -43,16 +44,26 @@ use App\Http\Controllers\UserlottryController;
 use App\Http\Controllers\UserregistionController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Start Admin login routes
 
 // Admin login/logout
 Route::get('admin/login', [AdminController::class, 'showLoginForm'])->name('admin.login');
 Route::post('admin/login', [AdminController::class, 'login'])->name('admin.login.submit');
 Route::post('logout', [AdminController::class, 'logout'])->name('logout');
+
+
+// Frontend route
+ Route::get('/', [FrontendController::class, 'frontend'])->name('frontend');
+ Route::get('privacy', [FrontendController::class, 'privacy'])->name('privacy');
+ Route::get('contacts', [FrontendController::class, 'contacts'])->name('contacts');
+ Route::get('termsconditions', [FrontendController::class, 'termsconditions'])->name('termsconditions');
+ // Change this
+
+Route::get('product/{slug}', [FrontendController::class, 'productdetails'])->name('productdetails');
+Route::get('user/chat',        [ChatController::class, 'index'])->name('user.chat');
+Route::get('user/chat/fetch',  [ChatController::class, 'fetch'])->name('user.chat.fetch');
+Route::post('user/chat/send',  [ChatController::class, 'send'])->name('user.chat.send');
+Route::get('user/chat/list',   [ChatController::class, 'userList'])->name('user.chat.list');
+
 
 // Protected admin routes
 Route::middleware(['admin'])->group(function () {
@@ -83,64 +94,13 @@ Route::middleware(['admin'])->group(function () {
     Route::resource('notices', NoticesController::class);
     Route::resource('categories',CategoryController::class);
     Route::resource('subcategories',SubCategoryController::class);
-
+    Route::resource('product',ProductctController::class);
 
     //   admin user account view start end
 
 
 });
 
-// End Admin login routesadmin_login_submit
-
-// ==========================================
-// FIXED ROUTES
-// ==========================================
-
-// Public routes
-Route::get('register', [UserregistionController::class, 'register'])->name('register');
-Route::get('user/login', [UserregistionController::class, 'userlogin'])->name('user.login');
-Route::post('logout', [UserregistionController::class, 'userlogout'])->name('logout');
-// POST routes for form submissions
-Route::post('register/submit', [UserregistionController::class, 'registersubmit'])->name('register.submit');
-Route::post('login/submit', [UserregistionController::class, 'loginSubmit'])->name('login.submit');
-
-// Protected routes - IMPORTANT: Make sure this matches your URL
-Route::middleware(['user'])->group(function () {
-    Route::get('user/dashboard', [UserregistionController::class, 'userdashboard'])->name('user.dashboard');
-
-    Route::get('user/chat',        [ChatController::class, 'index'])->name('user.chat');
-    Route::get('user/chat/fetch',  [ChatController::class, 'fetch'])->name('user.chat.fetch');
-    Route::post('user/chat/send',  [ChatController::class, 'send'])->name('user.chat.send');
-    Route::get('user/chat/list',   [ChatController::class, 'userList'])->name('user.chat.list');
-
-
-  // user profile update route and controller
-
-   Route::get('/profile', [UserprofileController::class, 'profile'])->name('profile.index');
-   Route::put('/profile/{id}', [UserprofileController::class, 'updateProfile'])->name('profile.update');
-   Route::get('/password', [PaswordchangeController::class, 'password'])->name('password.index');
-   Route::post('/password/change', [PaswordchangeController::class, 'passwordchange'])->name('password.change');
-
-
-
-  // user support for link
-  Route::get('supprts/link/show', [SupportControler::class, 'supprtslinkshow'])->name('supprtslinks.show');
-
-  Route::get('password/forget', [ForgotPasswordController::class, 'showForgetForm'])->name('password.forget');
-  Route::post('password/forget', [ForgotPasswordController::class, 'submitForgetForm'])->name('password.forget.post');
-  Route::get('password/reset/{token}', [ForgotPasswordController::class, 'showResetForm'])->name('password.reset');
-  Route::post('password/reset', [ForgotPasswordController::class, 'submitResetForm'])->name('password.reset.post');
-  // user support for link end
-
-
-});
-
-
-// Frontend route
- Route::get('/', [FrontendController::class, 'frontend'])->name('frontend');
- Route::get('privacy', [FrontendController::class, 'privacy'])->name('privacy');
- Route::get('contacts', [FrontendController::class, 'contacts'])->name('contacts');
- Route::get('termsconditions', [FrontendController::class, 'termsconditions'])->name('termsconditions');
 
 
 

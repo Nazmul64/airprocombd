@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::6IOuLsVZhNdO6jgG',
+            '_route' => 'generated::0gMucUgiNtfIRYQJ',
           ),
           1 => NULL,
           2 => 
@@ -75,6 +75,165 @@ app('router')->setCompiledRoutes(
           2 => 
           array (
             'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'frontend',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/privacy' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'privacy',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/contacts' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contacts',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/termsconditions' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'termsconditions',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/user/chat' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'user.chat',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/user/chat/fetch' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'user.chat.fetch',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/user/chat/send' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'user.chat.send',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/user/chat/list' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'user.chat.list',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
           ),
           3 => NULL,
           4 => false,
@@ -968,269 +1127,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/register' => 
+      '/product' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'register',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/user/login' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.login',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/register/submit' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'register.submit',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/login/submit' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'login.submit',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/user/dashboard' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.dashboard',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/user/chat' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.chat',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/user/chat/fetch' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.chat.fetch',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/user/chat/send' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.chat.send',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/user/chat/list' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.chat.list',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/profile' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'profile.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/password' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'password.index',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/password/change' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'password.change',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/supprts/link/show' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'supprtslinks.show',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/password/forget' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'password.forget',
+            '_route' => 'product.index',
           ),
           1 => NULL,
           2 => 
@@ -1247,111 +1150,12 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'password.forget.post',
+            '_route' => 'product.store',
           ),
           1 => NULL,
           2 => 
           array (
             'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/password/reset' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'password.reset.post',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'frontend',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/privacy' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'privacy',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/contacts' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'contacts',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/termsconditions' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'termsconditions',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
           ),
           3 => NULL,
           4 => false,
@@ -1362,21 +1166,21 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/whychooseusinvesment/([^/]++)(?|(*:40)|/edit(*:52)|(*:59))|/a(?|boutus/([^/]++)(?|(*:90)|/edit(*:102)|(*:110))|dmin/profile/([^/]++)(*:140))|/s(?|ettings/([^/]++)(?|(*:173)|/edit(*:186)|(*:194))|lider/([^/]++)(?|(*:220)|/edit(*:233)|(*:241))|u(?|pportlink/([^/]++)(?|(*:275)|/edit(*:288)|(*:296))|bcategories/([^/]++)(?|(*:328)|/edit(*:341)|(*:349)))|torage/(.*)(*:370))|/p(?|r(?|ivacypolicy/([^/]++)(?|(*:411)|/edit(*:424)|(*:432))|ofile/([^/]++)(*:455))|a(?|rtner/([^/]++)(?|(*:485)|/edit(*:498)|(*:506))|ssword/reset/([^/]++)(*:536)))|/c(?|o(?|unter/([^/]++)(?|(*:572)|/edit(*:585)|(*:593))|ntact/([^/]++)(?|(*:619)|/edit(*:632)|(*:640)))|ategories/([^/]++)(?|(*:671)|/edit(*:684)|(*:692)))|/Termscondition/([^/]++)(?|(*:729)|/edit(*:742)|(*:750))|/users/([^/]++)/status(*:781)|/notices/([^/]++)(?|(*:809)|/edit(*:822)|(*:830)))/?$}sDu',
+      0 => '{^(?|/p(?|r(?|oduct/(?|([^/]++)(*:33)|create(*:46)|([^/]++)(?|(*:64)|/edit(*:76)|(*:83)))|ivacypolicy/([^/]++)(?|(*:115)|/edit(*:128)|(*:136)))|artner/([^/]++)(?|(*:164)|/edit(*:177)|(*:185)))|/whychooseusinvesment/([^/]++)(?|(*:228)|/edit(*:241)|(*:249))|/a(?|boutus/([^/]++)(?|(*:281)|/edit(*:294)|(*:302))|dmin/profile/([^/]++)(*:332))|/s(?|ettings/([^/]++)(?|(*:365)|/edit(*:378)|(*:386))|lider/([^/]++)(?|(*:412)|/edit(*:425)|(*:433))|u(?|pportlink/([^/]++)(?|(*:467)|/edit(*:480)|(*:488))|bcategories/([^/]++)(?|(*:520)|/edit(*:533)|(*:541)))|torage/(.*)(*:562))|/c(?|o(?|unter/([^/]++)(?|(*:597)|/edit(*:610)|(*:618))|ntact/([^/]++)(?|(*:644)|/edit(*:657)|(*:665)))|ategories/([^/]++)(?|(*:696)|/edit(*:709)|(*:717)))|/Termscondition/([^/]++)(?|(*:754)|/edit(*:767)|(*:775))|/users/([^/]++)/status(*:806)|/notices/([^/]++)(?|(*:834)|/edit(*:847)|(*:855)))/?$}sDu',
     ),
     3 => 
     array (
-      40 => 
+      33 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'whychooseusinvesment.show',
+            '_route' => 'productdetails',
           ),
           1 => 
           array (
-            0 => 'whychooseusinvesment',
+            0 => 'slug',
           ),
           2 => 
           array (
@@ -1389,17 +1193,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      52 => 
+      46 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'whychooseusinvesment.edit',
+            '_route' => 'product.create',
           ),
           1 => 
           array (
-            0 => 'whychooseusinvesment',
           ),
           2 => 
           array (
@@ -1412,17 +1215,63 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      59 => 
+      64 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'whychooseusinvesment.update',
+            '_route' => 'product.show',
           ),
           1 => 
           array (
-            0 => 'whychooseusinvesment',
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      76 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.edit',
+          ),
+          1 => 
+          array (
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      83 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.update',
+          ),
+          1 => 
+          array (
+            0 => 'product',
           ),
           2 => 
           array (
@@ -1438,11 +1287,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'whychooseusinvesment.destroy',
+            '_route' => 'product.destroy',
           ),
           1 => 
           array (
-            0 => 'whychooseusinvesment',
+            0 => 'product',
           ),
           2 => 
           array (
@@ -1454,492 +1303,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      90 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'aboutus.show',
-          ),
-          1 => 
-          array (
-            0 => 'aboutu',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      102 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'aboutus.edit',
-          ),
-          1 => 
-          array (
-            0 => 'aboutu',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      110 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'aboutus.update',
-          ),
-          1 => 
-          array (
-            0 => 'aboutu',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'aboutus.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'aboutu',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      140 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'admin.profile.update',
-          ),
-          1 => 
-          array (
-            0 => 'id',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      173 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.show',
-          ),
-          1 => 
-          array (
-            0 => 'setting',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      186 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.edit',
-          ),
-          1 => 
-          array (
-            0 => 'setting',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      194 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.update',
-          ),
-          1 => 
-          array (
-            0 => 'setting',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'setting',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      220 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'slider.show',
-          ),
-          1 => 
-          array (
-            0 => 'slider',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      233 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'slider.edit',
-          ),
-          1 => 
-          array (
-            0 => 'slider',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      241 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'slider.update',
-          ),
-          1 => 
-          array (
-            0 => 'slider',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'slider.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'slider',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      275 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'supportlink.show',
-          ),
-          1 => 
-          array (
-            0 => 'supportlink',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      288 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'supportlink.edit',
-          ),
-          1 => 
-          array (
-            0 => 'supportlink',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      296 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'supportlink.update',
-          ),
-          1 => 
-          array (
-            0 => 'supportlink',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'supportlink.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'supportlink',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      328 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'subcategories.show',
-          ),
-          1 => 
-          array (
-            0 => 'subcategory',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      341 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'subcategories.edit',
-          ),
-          1 => 
-          array (
-            0 => 'subcategory',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      349 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'subcategories.update',
-          ),
-          1 => 
-          array (
-            0 => 'subcategory',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'subcategories.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'subcategory',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      370 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'storage.local',
-          ),
-          1 => 
-          array (
-            0 => 'path',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      411 => 
+      115 => 
       array (
         0 => 
         array (
@@ -1962,7 +1326,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      424 => 
+      128 => 
       array (
         0 => 
         array (
@@ -1985,7 +1349,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      432 => 
+      136 => 
       array (
         0 => 
         array (
@@ -2027,29 +1391,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      455 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'profile.update',
-          ),
-          1 => 
-          array (
-            0 => 'id',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      485 => 
+      164 => 
       array (
         0 => 
         array (
@@ -2072,7 +1414,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      498 => 
+      177 => 
       array (
         0 => 
         array (
@@ -2095,7 +1437,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      506 => 
+      185 => 
       array (
         0 => 
         array (
@@ -2137,17 +1479,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      536 => 
+      228 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'password.reset',
+            '_route' => 'whychooseusinvesment.show',
           ),
           1 => 
           array (
-            0 => 'token',
+            0 => 'whychooseusinvesment',
           ),
           2 => 
           array (
@@ -2160,7 +1502,557 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      572 => 
+      241 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'whychooseusinvesment.edit',
+          ),
+          1 => 
+          array (
+            0 => 'whychooseusinvesment',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      249 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'whychooseusinvesment.update',
+          ),
+          1 => 
+          array (
+            0 => 'whychooseusinvesment',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'whychooseusinvesment.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'whychooseusinvesment',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      281 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'aboutus.show',
+          ),
+          1 => 
+          array (
+            0 => 'aboutu',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      294 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'aboutus.edit',
+          ),
+          1 => 
+          array (
+            0 => 'aboutu',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      302 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'aboutus.update',
+          ),
+          1 => 
+          array (
+            0 => 'aboutu',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'aboutus.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'aboutu',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      332 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.profile.update',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      365 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'settings.show',
+          ),
+          1 => 
+          array (
+            0 => 'setting',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      378 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'settings.edit',
+          ),
+          1 => 
+          array (
+            0 => 'setting',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      386 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'settings.update',
+          ),
+          1 => 
+          array (
+            0 => 'setting',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'settings.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'setting',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      412 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slider.show',
+          ),
+          1 => 
+          array (
+            0 => 'slider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      425 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slider.edit',
+          ),
+          1 => 
+          array (
+            0 => 'slider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      433 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slider.update',
+          ),
+          1 => 
+          array (
+            0 => 'slider',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slider.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'slider',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      467 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'supportlink.show',
+          ),
+          1 => 
+          array (
+            0 => 'supportlink',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      480 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'supportlink.edit',
+          ),
+          1 => 
+          array (
+            0 => 'supportlink',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      488 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'supportlink.update',
+          ),
+          1 => 
+          array (
+            0 => 'supportlink',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'supportlink.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'supportlink',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      520 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.show',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      533 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.edit',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      541 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.update',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      562 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'storage.local',
+          ),
+          1 => 
+          array (
+            0 => 'path',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      597 => 
       array (
         0 => 
         array (
@@ -2183,7 +2075,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      585 => 
+      610 => 
       array (
         0 => 
         array (
@@ -2206,7 +2098,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      593 => 
+      618 => 
       array (
         0 => 
         array (
@@ -2248,7 +2140,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      619 => 
+      644 => 
       array (
         0 => 
         array (
@@ -2271,7 +2163,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      632 => 
+      657 => 
       array (
         0 => 
         array (
@@ -2294,7 +2186,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      640 => 
+      665 => 
       array (
         0 => 
         array (
@@ -2336,7 +2228,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      671 => 
+      696 => 
       array (
         0 => 
         array (
@@ -2359,7 +2251,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      684 => 
+      709 => 
       array (
         0 => 
         array (
@@ -2382,7 +2274,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      692 => 
+      717 => 
       array (
         0 => 
         array (
@@ -2424,7 +2316,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      729 => 
+      754 => 
       array (
         0 => 
         array (
@@ -2447,7 +2339,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      742 => 
+      767 => 
       array (
         0 => 
         array (
@@ -2470,7 +2362,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      750 => 
+      775 => 
       array (
         0 => 
         array (
@@ -2512,7 +2404,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      781 => 
+      806 => 
       array (
         0 => 
         array (
@@ -2534,7 +2426,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      809 => 
+      834 => 
       array (
         0 => 
         array (
@@ -2557,7 +2449,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      822 => 
+      847 => 
       array (
         0 => 
         array (
@@ -2580,7 +2472,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      830 => 
+      855 => 
       array (
         0 => 
         array (
@@ -2637,7 +2529,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::6IOuLsVZhNdO6jgG' => 
+    'generated::0gMucUgiNtfIRYQJ' => 
     array (
       'methods' => 
       array (
@@ -2666,7 +2558,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002b70000000000000000";}}',
-        'as' => 'generated::6IOuLsVZhNdO6jgG',
+        'as' => 'generated::0gMucUgiNtfIRYQJ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2768,14 +2660,346 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\UserregistionController@userlogout',
-        'controller' => 'App\\Http\\Controllers\\UserregistionController@userlogout',
+        'uses' => 'App\\Http\\Controllers\\AdminController@logout',
+        'controller' => 'App\\Http\\Controllers\\AdminController@logout',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
         'as' => 'logout',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'frontend' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => '/',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\FrontendController@frontend',
+        'controller' => 'App\\Http\\Controllers\\FrontendController@frontend',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'frontend',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'privacy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'privacy',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\FrontendController@privacy',
+        'controller' => 'App\\Http\\Controllers\\FrontendController@privacy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'privacy',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contacts' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'contacts',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\FrontendController@contacts',
+        'controller' => 'App\\Http\\Controllers\\FrontendController@contacts',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'contacts',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'termsconditions' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'termsconditions',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\FrontendController@termsconditions',
+        'controller' => 'App\\Http\\Controllers\\FrontendController@termsconditions',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'termsconditions',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'productdetails' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'product/{slug}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\FrontendController@productdetails',
+        'controller' => 'App\\Http\\Controllers\\FrontendController@productdetails',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'productdetails',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'user.chat' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'user/chat',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ChatController@index',
+        'controller' => 'App\\Http\\Controllers\\ChatController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'user.chat',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'user.chat.fetch' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'user/chat/fetch',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ChatController@fetch',
+        'controller' => 'App\\Http\\Controllers\\ChatController@fetch',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'user.chat.fetch',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'user.chat.send' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'user/chat/send',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ChatController@send',
+        'controller' => 'App\\Http\\Controllers\\ChatController@send',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'user.chat.send',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'user.chat.list' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'user/chat/list',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ChatController@userList',
+        'controller' => 'App\\Http\\Controllers\\ChatController@userList',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'user.chat.list',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6599,28 +6823,29 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'register' => 
+    'product.index' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'register',
+      'uri' => 'product',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
+          1 => 'admin',
         ),
-        'uses' => 'App\\Http\\Controllers\\UserregistionController@register',
-        'controller' => 'App\\Http\\Controllers\\UserregistionController@register',
+        'as' => 'product.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductctController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductctController@index',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'register',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6636,28 +6861,29 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'user.login' => 
+    'product.create' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'user/login',
+      'uri' => 'product/create',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
+          1 => 'admin',
         ),
-        'uses' => 'App\\Http\\Controllers\\UserregistionController@userlogin',
-        'controller' => 'App\\Http\\Controllers\\UserregistionController@userlogin',
+        'as' => 'product.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductctController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductctController@create',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'user.login',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6673,27 +6899,28 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'register.submit' => 
+    'product.store' => 
     array (
       'methods' => 
       array (
         0 => 'POST',
       ),
-      'uri' => 'register/submit',
+      'uri' => 'product',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
+          1 => 'admin',
         ),
-        'uses' => 'App\\Http\\Controllers\\UserregistionController@registersubmit',
-        'controller' => 'App\\Http\\Controllers\\UserregistionController@registersubmit',
+        'as' => 'product.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductctController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductctController@store',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'register.submit',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6709,65 +6936,29 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'login.submit' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'login/submit',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\UserregistionController@loginSubmit',
-        'controller' => 'App\\Http\\Controllers\\UserregistionController@loginSubmit',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'login.submit',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'user.dashboard' => 
+    'product.show' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'user/dashboard',
+      'uri' => 'product/{product}',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'user',
+          1 => 'admin',
         ),
-        'uses' => 'App\\Http\\Controllers\\UserregistionController@userdashboard',
-        'controller' => 'App\\Http\\Controllers\\UserregistionController@userdashboard',
+        'as' => 'product.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductctController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductctController@show',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'user.dashboard',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6783,29 +6974,29 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'user.chat' => 
+    'product.edit' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'user/chat',
+      'uri' => 'product/{product}/edit',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'user',
+          1 => 'admin',
         ),
-        'uses' => 'App\\Http\\Controllers\\ChatController@index',
-        'controller' => 'App\\Http\\Controllers\\ChatController@index',
+        'as' => 'product.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductctController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductctController@edit',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'user.chat',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6821,179 +7012,29 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'user.chat.fetch' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'user/chat/fetch',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'user',
-        ),
-        'uses' => 'App\\Http\\Controllers\\ChatController@fetch',
-        'controller' => 'App\\Http\\Controllers\\ChatController@fetch',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'user.chat.fetch',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'user.chat.send' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'user/chat/send',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'user',
-        ),
-        'uses' => 'App\\Http\\Controllers\\ChatController@send',
-        'controller' => 'App\\Http\\Controllers\\ChatController@send',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'user.chat.send',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'user.chat.list' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'user/chat/list',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'user',
-        ),
-        'uses' => 'App\\Http\\Controllers\\ChatController@userList',
-        'controller' => 'App\\Http\\Controllers\\ChatController@userList',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'user.chat.list',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'profile.index' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'profile',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'user',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Backend\\UserprofileController@profile',
-        'controller' => 'App\\Http\\Controllers\\Backend\\UserprofileController@profile',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'profile.index',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'profile.update' => 
+    'product.update' => 
     array (
       'methods' => 
       array (
         0 => 'PUT',
+        1 => 'PATCH',
       ),
-      'uri' => 'profile/{id}',
+      'uri' => 'product/{product}',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'user',
+          1 => 'admin',
         ),
-        'uses' => 'App\\Http\\Controllers\\Backend\\UserprofileController@updateProfile',
-        'controller' => 'App\\Http\\Controllers\\Backend\\UserprofileController@updateProfile',
+        'as' => 'product.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductctController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductctController@update',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'profile.update',
       ),
       'fallback' => false,
       'defaults' => 
@@ -7009,402 +7050,28 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'password.index' => 
+    'product.destroy' => 
     array (
       'methods' => 
       array (
-        0 => 'GET',
-        1 => 'HEAD',
+        0 => 'DELETE',
       ),
-      'uri' => 'password',
+      'uri' => 'product/{product}',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'user',
+          1 => 'admin',
         ),
-        'uses' => 'App\\Http\\Controllers\\Backend\\PaswordchangeController@password',
-        'controller' => 'App\\Http\\Controllers\\Backend\\PaswordchangeController@password',
+        'as' => 'product.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductctController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductctController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'password.index',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.change' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'password/change',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'user',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Backend\\PaswordchangeController@passwordchange',
-        'controller' => 'App\\Http\\Controllers\\Backend\\PaswordchangeController@passwordchange',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.change',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'supprtslinks.show' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'supprts/link/show',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'user',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Backend\\SupportControler@supprtslinkshow',
-        'controller' => 'App\\Http\\Controllers\\Backend\\SupportControler@supprtslinkshow',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'supprtslinks.show',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.forget' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'password/forget',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'user',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Userauth\\ForgotPasswordController@showForgetForm',
-        'controller' => 'App\\Http\\Controllers\\Userauth\\ForgotPasswordController@showForgetForm',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.forget',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.forget.post' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'password/forget',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'user',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Userauth\\ForgotPasswordController@submitForgetForm',
-        'controller' => 'App\\Http\\Controllers\\Userauth\\ForgotPasswordController@submitForgetForm',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.forget.post',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.reset' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'password/reset/{token}',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'user',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Userauth\\ForgotPasswordController@showResetForm',
-        'controller' => 'App\\Http\\Controllers\\Userauth\\ForgotPasswordController@showResetForm',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.reset',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'password.reset.post' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'password/reset',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-          1 => 'user',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Userauth\\ForgotPasswordController@submitResetForm',
-        'controller' => 'App\\Http\\Controllers\\Userauth\\ForgotPasswordController@submitResetForm',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'password.reset.post',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'frontend' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => '/',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\FrontendController@frontend',
-        'controller' => 'App\\Http\\Controllers\\FrontendController@frontend',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'frontend',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'privacy' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'privacy',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\FrontendController@privacy',
-        'controller' => 'App\\Http\\Controllers\\FrontendController@privacy',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'privacy',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'contacts' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'contacts',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\FrontendController@contacts',
-        'controller' => 'App\\Http\\Controllers\\FrontendController@contacts',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'contacts',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'termsconditions' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'termsconditions',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\FrontendController@termsconditions',
-        'controller' => 'App\\Http\\Controllers\\FrontendController@termsconditions',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'termsconditions',
       ),
       'fallback' => false,
       'defaults' => 
