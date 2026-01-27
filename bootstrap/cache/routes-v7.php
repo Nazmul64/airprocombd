@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::59ydWMmrA6w9BArC',
+            '_route' => 'generated::eeZ160Ab25yx7fjS',
           ),
           1 => NULL,
           2 => 
@@ -1275,10 +1275,122 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/solutionprovider' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/solutionprovider/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/serviceprovider' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/serviceprovider/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/p(?|r(?|oduct/(?|([^/]++)(*:33)|create(*:46)|([^/]++)(?|(*:64)|/edit(*:76)|(*:83)))|ivacypolicy/([^/]++)(?|(*:115)|/edit(*:128)|(*:136)))|a(?|rtner/([^/]++)(?|(*:167)|/edit(*:180)|(*:188))|ssionsection/([^/]++)(?|(*:221)|/edit(*:234)|(*:242))))|/whychooseusinvesment/([^/]++)(?|(*:286)|/edit(*:299)|(*:307))|/a(?|boutus/([^/]++)(?|(*:339)|/edit(*:352)|(*:360))|dmin/profile/([^/]++)(*:390))|/s(?|ettings/([^/]++)(?|(*:423)|/edit(*:436)|(*:444))|lider/([^/]++)(?|(*:470)|/edit(*:483)|(*:491))|u(?|pportlink/([^/]++)(?|(*:525)|/edit(*:538)|(*:546))|bcategories/([^/]++)(?|(*:578)|/edit(*:591)|(*:599)))|torage/(.*)(*:620))|/c(?|o(?|unter/([^/]++)(?|(*:655)|/edit(*:668)|(*:676))|ntact/([^/]++)(?|(*:702)|/edit(*:715)|(*:723)))|ategories/([^/]++)(?|(*:754)|/edit(*:767)|(*:775)))|/Termscondition/([^/]++)(?|(*:812)|/edit(*:825)|(*:833))|/users/([^/]++)/status(*:864)|/notices/([^/]++)(?|(*:892)|/edit(*:905)|(*:913))|/mission/([^/]++)(?|(*:942)|/edit(*:955)|(*:963)))/?$}sDu',
+      0 => '{^(?|/p(?|r(?|oduct/(?|([^/]++)(*:33)|create(*:46)|([^/]++)(?|(*:64)|/edit(*:76)|(*:83)))|ivacypolicy/([^/]++)(?|(*:115)|/edit(*:128)|(*:136)))|a(?|rtner/([^/]++)(?|(*:167)|/edit(*:180)|(*:188))|ssionsection/([^/]++)(?|(*:221)|/edit(*:234)|(*:242))))|/whychooseusinvesment/([^/]++)(?|(*:286)|/edit(*:299)|(*:307))|/a(?|boutus/([^/]++)(?|(*:339)|/edit(*:352)|(*:360))|dmin/profile/([^/]++)(*:390))|/s(?|e(?|ttings/([^/]++)(?|(*:426)|/edit(*:439)|(*:447))|rviceprovider/([^/]++)(?|(*:481)|/edit(*:494)|(*:502)))|lider/([^/]++)(?|(*:529)|/edit(*:542)|(*:550))|u(?|pportlink/([^/]++)(?|(*:584)|/edit(*:597)|(*:605))|bcategories/([^/]++)(?|(*:637)|/edit(*:650)|(*:658)))|olutionprovider/([^/]++)(?|(*:695)|/edit(*:708)|(*:716))|torage/(.*)(*:736))|/c(?|o(?|unter/([^/]++)(?|(*:771)|/edit(*:784)|(*:792))|ntact/([^/]++)(?|(*:818)|/edit(*:831)|(*:839)))|ategories/([^/]++)(?|(*:870)|/edit(*:883)|(*:891)))|/Termscondition/([^/]++)(?|(*:928)|/edit(*:941)|(*:949))|/users/([^/]++)/status(*:980)|/notices/([^/]++)(?|(*:1008)|/edit(*:1022)|(*:1031))|/mission/([^/]++)(?|(*:1061)|/edit(*:1075)|(*:1084)))/?$}sDu',
     ),
     3 => 
     array (
@@ -1877,7 +1989,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      423 => 
+      426 => 
       array (
         0 => 
         array (
@@ -1900,7 +2012,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      436 => 
+      439 => 
       array (
         0 => 
         array (
@@ -1923,7 +2035,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      444 => 
+      447 => 
       array (
         0 => 
         array (
@@ -1965,7 +2077,95 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      470 => 
+      481 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.show',
+          ),
+          1 => 
+          array (
+            0 => 'serviceprovider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      494 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.edit',
+          ),
+          1 => 
+          array (
+            0 => 'serviceprovider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      502 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.update',
+          ),
+          1 => 
+          array (
+            0 => 'serviceprovider',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'serviceprovider',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      529 => 
       array (
         0 => 
         array (
@@ -1988,7 +2188,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      483 => 
+      542 => 
       array (
         0 => 
         array (
@@ -2011,7 +2211,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      491 => 
+      550 => 
       array (
         0 => 
         array (
@@ -2053,7 +2253,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      525 => 
+      584 => 
       array (
         0 => 
         array (
@@ -2076,7 +2276,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      538 => 
+      597 => 
       array (
         0 => 
         array (
@@ -2099,7 +2299,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      546 => 
+      605 => 
       array (
         0 => 
         array (
@@ -2141,7 +2341,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      578 => 
+      637 => 
       array (
         0 => 
         array (
@@ -2164,7 +2364,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      591 => 
+      650 => 
       array (
         0 => 
         array (
@@ -2187,7 +2387,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      599 => 
+      658 => 
       array (
         0 => 
         array (
@@ -2229,7 +2429,95 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      620 => 
+      695 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.show',
+          ),
+          1 => 
+          array (
+            0 => 'solutionprovider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      708 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.edit',
+          ),
+          1 => 
+          array (
+            0 => 'solutionprovider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      716 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.update',
+          ),
+          1 => 
+          array (
+            0 => 'solutionprovider',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'solutionprovider',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      736 => 
       array (
         0 => 
         array (
@@ -2252,7 +2540,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      655 => 
+      771 => 
       array (
         0 => 
         array (
@@ -2275,7 +2563,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      668 => 
+      784 => 
       array (
         0 => 
         array (
@@ -2298,7 +2586,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      676 => 
+      792 => 
       array (
         0 => 
         array (
@@ -2340,7 +2628,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      702 => 
+      818 => 
       array (
         0 => 
         array (
@@ -2363,7 +2651,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      715 => 
+      831 => 
       array (
         0 => 
         array (
@@ -2386,7 +2674,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      723 => 
+      839 => 
       array (
         0 => 
         array (
@@ -2428,7 +2716,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      754 => 
+      870 => 
       array (
         0 => 
         array (
@@ -2451,7 +2739,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      767 => 
+      883 => 
       array (
         0 => 
         array (
@@ -2474,7 +2762,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      775 => 
+      891 => 
       array (
         0 => 
         array (
@@ -2516,7 +2804,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      812 => 
+      928 => 
       array (
         0 => 
         array (
@@ -2539,7 +2827,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      825 => 
+      941 => 
       array (
         0 => 
         array (
@@ -2562,7 +2850,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      833 => 
+      949 => 
       array (
         0 => 
         array (
@@ -2604,7 +2892,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      864 => 
+      980 => 
       array (
         0 => 
         array (
@@ -2626,7 +2914,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      892 => 
+      1008 => 
       array (
         0 => 
         array (
@@ -2649,7 +2937,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      905 => 
+      1022 => 
       array (
         0 => 
         array (
@@ -2672,7 +2960,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      913 => 
+      1031 => 
       array (
         0 => 
         array (
@@ -2714,7 +3002,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      942 => 
+      1061 => 
       array (
         0 => 
         array (
@@ -2737,7 +3025,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      955 => 
+      1075 => 
       array (
         0 => 
         array (
@@ -2760,7 +3048,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      963 => 
+      1084 => 
       array (
         0 => 
         array (
@@ -2817,7 +3105,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::59ydWMmrA6w9BArC' => 
+    'generated::eeZ160Ab25yx7fjS' => 
     array (
       'methods' => 
       array (
@@ -2846,7 +3134,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002b70000000000000000";}}',
-        'as' => 'generated::59ydWMmrA6w9BArC',
+        'as' => 'generated::eeZ160Ab25yx7fjS',
       ),
       'fallback' => false,
       'defaults' => 
@@ -7883,6 +8171,534 @@ app('router')->setCompiledRoutes(
         'as' => 'passionsection.destroy',
         'uses' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@destroy',
         'controller' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionprovider.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'solutionprovider',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionprovider.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionprovider.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'solutionprovider/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionprovider.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionprovider.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'solutionprovider',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionprovider.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionprovider.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'solutionprovider/{solutionprovider}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionprovider.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionprovider.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'solutionprovider/{solutionprovider}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionprovider.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionprovider.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'solutionprovider/{solutionprovider}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionprovider.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionprovider.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'solutionprovider/{solutionprovider}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionprovider.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionproviderController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'serviceprovider.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'serviceprovider',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'serviceprovider.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'serviceprovider.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'serviceprovider/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'serviceprovider.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'serviceprovider.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'serviceprovider',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'serviceprovider.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'serviceprovider.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'serviceprovider/{serviceprovider}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'serviceprovider.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'serviceprovider.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'serviceprovider/{serviceprovider}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'serviceprovider.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'serviceprovider.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'serviceprovider/{serviceprovider}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'serviceprovider.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'serviceprovider.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'serviceprovider/{serviceprovider}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'serviceprovider.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ServiceproviderController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 

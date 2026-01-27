@@ -73,13 +73,21 @@
             </a>
         </li>
 
+       <li>
+            <a href="{{ route('solutionprovider.index') }}">
+                <div class="parent-icon"><i class="bi bi-people"></i></div>
+                <div class="menu-title">Solution Provider</div>
+            </a>
+      </li>
 
+       <li>
+            <a href="{{ route('serviceprovider.index') }}">
+                <div class="parent-icon"><i class="bi bi-people"></i></div>
+                <div class="menu-title">Service Provider</div>
+            </a>
+      </li>
 
-
-
-
-
-
+   <!-- Solution Provider -->
  <li>
              <a href="{{ route('supportlink.index') }}"><i class="bi bi-circle"></i>Support Link</a>
            </li>

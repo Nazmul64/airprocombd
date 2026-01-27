@@ -26,8 +26,10 @@ use App\Http\Controllers\Backend\PassionsectionController;
 use App\Http\Controllers\Backend\PaswordchangeController;
 use App\Http\Controllers\Backend\PrivacypolicyController;
 use App\Http\Controllers\Backend\ProductctController;
+use App\Http\Controllers\Backend\ServiceproviderController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SliderController;
+use App\Http\Controllers\Backend\SolutionproviderController;
 use App\Http\Controllers\Backend\SubCategoryController;
 use App\Http\Controllers\Backend\SupportControler;
 use App\Http\Controllers\Backend\TermsconditionController;
@@ -99,6 +101,10 @@ Route::middleware(['admin'])->group(function () {
     Route::resource('product',ProductctController::class);
     Route::resource('mission',MissionController::class);
     Route::resource('passionsection',PassionsectionController::class);
+    Route::resource('solutionprovider',SolutionproviderController::class);
+    Route::resource('serviceprovider',ServiceproviderController::class);
+
+
     //   admin user account view start end
 
 

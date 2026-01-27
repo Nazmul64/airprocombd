@@ -14,8 +14,10 @@ use App\Models\Partner;
 use App\Models\Passionsection;
 use App\Models\Privacypolicy;
 use App\Models\Product;
+use App\Models\Serviceprovider;
 use App\Models\Setting;
 use App\Models\Slider;
+use App\Models\Solutionprovider;
 use App\Models\Subcategory;
 use App\Models\User_widthdraw;
 use App\Models\Whychooseinvestmentplan;
@@ -23,27 +25,29 @@ use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
-   public function frontend()
+public function frontend()
 {
-    // Eager load relationships to avoid N+1 queries
+    // Latest 6 products with category and subcategory
     $products = Product::with(['category', 'subcategory'])
         ->latest()
-        ->limit(6) // Show only 6 products on home page
+        ->limit(6)
         ->get();
 
-    $sliders = Slider::orderBy('id', 'desc')->get();
-
-    $partners = Partner::orderBy('id', 'desc')->get();
-
+    $sliders = Slider::latest()->get();
+    $partners = Partner::latest()->get();
     $settings = Setting::first();
-
-    // Categories with subcategories (already optimized)
     $categories = Category::with('subcategories')->get();
-    $about = About::orderBy('id', 'desc')->get();
-    $mission = Mission::orderBy('id', 'desc')->get();
-    $passion = Passionsection::orderBy('id', 'desc')->get();
+    $about = About::latest()->get();
+    $mission = Mission::latest()->get();
+    $passion = Passionsection::latest()->get();
 
-    // No need to load all subcategories separately since they're already loaded with categories
+    // Solution providers and services
+    $solutionprovider  = Solutionprovider::latest()->get();
+    $services = Serviceprovider::latest()->get();
+
+    // Split services into left and right for frontend display
+    $leftProviders = $services->where('side', 'left');
+    $rightProviders = $services->where('side', 'right');
 
     return view('Frontend.index', compact(
         'sliders',
@@ -54,8 +58,13 @@ class FrontendController extends Controller
         'about',
         'mission',
         'passion',
+        'solutionprovider',
+        'services',
+        'leftProviders',
+        'rightProviders'
     ));
 }
+
     public function privacy()
     {
         $priavacypolicy =Privacypolicy::all();

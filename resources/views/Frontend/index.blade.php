@@ -67,23 +67,115 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    <!-- Stats Section -->
-    <div style="background: linear-gradient(135deg, #0056b3, #003d82); color: white; padding: 60px 0;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <div style="font-size: 56px; font-weight: 800; color: #ff6b35;">700+</div>
-                    <div style="font-size: 20px; font-weight: 600; letter-spacing: 1px;">PROJECTS COMPLETED</div>
-                </div>
-                <div class="col-md-8">
-                    <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
-                        Hotels, Hospitals, Restaurants, Garments & Textiles factories, Offices, Commercial & Residential Buildings, Pharmaceutical Production Facilities, Poultry & Hatcheries, Showrooms, Banks, Shopping Malls
-                    </p>
-                    <a href="#" style="background: white; color: #0056b3; padding: 12px 35px; border-radius: 5px; font-weight: 700; text-decoration: none; display: inline-block;">GET A QUOTE</a>
-                </div>
+<!-- Stats Section with Background -->
+@foreach ($solutionprovider as $solutionproviders)
+<section class="stats-section" style="background-image: url('{{ asset('uploads/solutionprovider/'.$solutionproviders->photo) }}');">
+    <div class="stats-overlay"></div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-9">
+                <p class="stats-description">
+                    {!! nl2br(e($solutionproviders->title ?? '')) !!}
+                </p>
+            </div>
+            <div class="col-md-3 text-end">
+                <a href="#" class="stats-cta-button">GET A QUOTE</a>
             </div>
         </div>
     </div>
+</section>
+@endforeach
+
+<style>
+.stats-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.stats-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 86, 179, 0.95), rgba(0, 61, 130, 0.95));
+    z-index: 1;
+}
+
+.stats-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.stats-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-weight: 400;
+    max-width: 100%;
+}
+
+.stats-cta-button {
+    background: #E63946;
+    color: #ffffff;
+    padding: 16px 45px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.stats-cta-button:hover {
+    background: #ff6b35;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: #ff6b35;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-section {
+        padding: 30px 0;
+    }
+
+    .stats-description {
+        font-size: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .col-md-3 {
+        text-align: center !important;
+    }
+
+    .stats-cta-button {
+        padding: 14px 35px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-description {
+        font-size: 14px;
+    }
+
+    .stats-cta-button {
+        padding: 12px 30px;
+        font-size: 13px;
+    }
+}
+</style>
 
     <!-- Products Section -->
 <!-- Products Section -->
@@ -267,39 +359,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <button onclick="changeSlideModal(1)" style="position: absolute; right: 30px; background: rgba(255,255,255,0.3); border: none; color: white; font-size: 30px; padding: 10px 20px; cursor: pointer; border-radius: 5px; transition: 0.3s;">&gt;</button>
 </div>
 
-<style>
-    .product-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-        border-color: #ff6b35;
-    }
-
-    .image-container:hover .product-image {
-        transform: scale(1.1);
-    }
-
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .product-card {
-        animation: fadeInUp 0.6s ease-out;
-    }
-
-    .product-card:nth-child(1) { animation-delay: 0.1s; }
-    .product-card:nth-child(2) { animation-delay: 0.2s; }
-    .product-card:nth-child(3) { animation-delay: 0.3s; }
-    .product-card:nth-child(4) { animation-delay: 0.4s; }
-    .product-card:nth-child(5) { animation-delay: 0.5s; }
-    .product-card:nth-child(6) { animation-delay: 0.6s; }
-</style>
 
 <script>
     let currentSlideIndex = 0;
@@ -438,79 +497,73 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 
-    <!-- Our Services Section -->
-    <div style="background: white; padding: 80px 0;">
-        <div class="container">
-            <div style="margin-bottom: 60px;">
-                <h2 style="font-size: 48px; font-weight: 800; color: #ff6b35; margin-bottom: 15px;">Our Services:</h2>
-                <div style="width: 150px; height: 4px; background: #ff6b35;"></div>
+<!-- Our Services Section -->
+<div style="background: white; padding: 80px 0;">
+    <div class="container">
+        <div style="margin-bottom: 60px; text-align: center;">
+            <h2 style="font-size: 48px; font-weight: 800; color: #ff6b35; margin-bottom: 15px;">Our Services:</h2>
+            <div style="width: 150px; height: 4px; background: #ff6b35; margin: auto;"></div>
+        </div>
+
+        <div class="row align-items-center" style="position: relative;">
+            <!-- Left Side -->
+            <div class="col-md-4">
+                @foreach($leftProviders as $provider)
+                    <div style="margin-bottom: 50px;">
+                        <h3 style="font-size: 24px; font-weight: 700; color: #1a1a1a; margin-bottom: 25px; border-left: 4px solid #ff6b35; padding-left: 15px;">
+                            {{ $provider->title }}
+                        </h3>
+                        @if($provider->items->count() > 0)
+                            <ul style="list-style: none; padding: 0;">
+                                @foreach($provider->items as $item)
+                                    <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                        <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block; flex-shrink: 0;"></span>
+                                        <span style="font-size: 16px; color: #333;">{{ $item->item_name }}</span>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        @endif
+                    </div>
+                @endforeach
             </div>
 
-            <div class="row align-items-center" style="position: relative;">
-                <!-- Left Side - VRF System -->
-                <div class="col-md-4">
-                    <div style="margin-bottom: 50px;">
-                        <h3 style="font-size: 24px; font-weight: 700; color: #1a1a1a; margin-bottom: 25px; border-left: 4px solid #ff6b35; padding-left: 15px;">VRF SYSTEM</h3>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Mini VRF</span>
-                            </li>
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Cooling Only</span>
-                            </li>
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Heating & Cooling</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <!-- Center SVG -->
+            <div class="col-md-4 text-center" style="position: relative;">
+                <svg width="100%" height="150" viewBox="0 0 400 150" style="margin: 30px 0;">
+                    <!-- Left Pipe -->
+                    <path d="M 0 75 Q 100 75, 150 75" stroke="#5DADE2" stroke-width="25" fill="none" stroke-linecap="round"/>
+                    <!-- Right Pipe -->
+                    <path d="M 250 75 Q 300 75, 400 75" stroke="#5DADE2" stroke-width="25" fill="none" stroke-linecap="round"/>
+                    <!-- Center Circle -->
+                    <circle cx="200" cy="75" r="45" fill="#5DADE2" opacity="0.3"/>
+                    <circle cx="200" cy="75" r="30" fill="#ff6b35"/>
+                    <circle cx="200" cy="75" r="18" fill="white"/>
+                </svg>
+            </div>
 
-                <!-- Center - Connection Design -->
-                <div class="col-md-4 text-center" style="position: relative;">
-                    <svg width="100%" height="150" viewBox="0 0 400 150" style="margin: 30px 0;">
-                        <!-- Left Pipe -->
-                        <path d="M 0 75 Q 100 75, 150 75" stroke="#5DADE2" stroke-width="25" fill="none" stroke-linecap="round"/>
-                        <!-- Right Pipe -->
-                        <path d="M 250 75 Q 300 75, 400 75" stroke="#5DADE2" stroke-width="25" fill="none" stroke-linecap="round"/>
-                        <!-- Center Circle -->
-                        <circle cx="200" cy="75" r="45" fill="#5DADE2" opacity="0.3"/>
-                        <circle cx="200" cy="75" r="30" fill="#ff6b35"/>
-                        <circle cx="200" cy="75" r="18" fill="white"/>
-                    </svg>
-                </div>
-
-                <!-- Right Side - Ventilation System -->
-                <div class="col-md-4">
+            <!-- Right Side -->
+            <div class="col-md-4">
+                @foreach($rightProviders as $provider)
                     <div style="margin-bottom: 50px;">
-                        <h3 style="font-size: 24px; font-weight: 700; color: #1a1a1a; margin-bottom: 25px; border-left: 4px solid #ff6b35; padding-left: 15px;">VENTILATION SYSTEM</h3>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Industrial Ventilation</span>
-                            </li>
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Force Ventilation</span>
-                            </li>
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Tunnel Ventilation</span>
-                            </li>
-                            <li style="margin-bottom: 15px; display: flex; align-items: center;">
-                                <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block;"></span>
-                                <span style="font-size: 16px; color: #333;">Plant Room Ventilation</span>
-                            </li>
-                        </ul>
+                        <h3 style="font-size: 24px; font-weight: 700; color: #1a1a1a; margin-bottom: 25px; border-left: 4px solid #ff6b35; padding-left: 15px;">
+                            {{ $provider->title }}
+                        </h3>
+                        @if($provider->items->count() > 0)
+                            <ul style="list-style: none; padding: 0;">
+                                @foreach($provider->items as $item)
+                                    <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                                        <span style="width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; margin-right: 15px; display: inline-block; flex-shrink: 0;"></span>
+                                        <span style="font-size: 16px; color: #333;">{{ $item->item_name }}</span>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        @endif
                     </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
-
-
+</div>
 
 <!-- Our Partner Section -->
 <div class="partner-section" style="background: #fff; padding: 80px 0;">
