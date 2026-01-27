@@ -8,8 +8,10 @@ use App\Models\Category;
 use App\Models\Counter;
 use App\Models\Deposite;
 use App\Models\Lotter;
+use App\Models\Mission;
 use App\Models\Notice;
 use App\Models\Partner;
+use App\Models\Passionsection;
 use App\Models\Privacypolicy;
 use App\Models\Product;
 use App\Models\Setting;
@@ -37,6 +39,9 @@ class FrontendController extends Controller
 
     // Categories with subcategories (already optimized)
     $categories = Category::with('subcategories')->get();
+    $about = About::orderBy('id', 'desc')->get();
+    $mission = Mission::orderBy('id', 'desc')->get();
+    $passion = Passionsection::orderBy('id', 'desc')->get();
 
     // No need to load all subcategories separately since they're already loaded with categories
 
@@ -45,7 +50,10 @@ class FrontendController extends Controller
         'partners',
         'settings',
         'categories',
-        'products'
+        'products',
+        'about',
+        'mission',
+        'passion',
     ));
 }
     public function privacy()

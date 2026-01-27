@@ -117,6 +117,141 @@ document.addEventListener('DOMContentLoaded', () => {
         @endforeach
     </div>
 </div>
+{{-- HVAC Passion Section with Background --}}
+@foreach ( $passion as  $passions)
+
+<section class="hvac-passion-section" style="background-image: url('{{ asset('uploads/passion/'.$passions->photo) }}');">
+    <div class="background-overlay"></div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <h2 class="main-title">
+                <span class="highlight-text">{{ $passions->title ?? ''}}</span>
+            </h2>
+
+            <p class="description-text">
+                {!! nl2br(e($passions->description ?? '')) !!}
+            </p>
+
+            <a href="{{ asset('uploads/passion/'.$passions->pdf) }}" target="_blank" class="cta-button">OUR STORY</a>
+        </div>
+    </div>
+</section>
+@endforeach
+
+<style>
+.hvac-passion-section {
+    position: relative;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(13, 27, 62, 0.92) 0%, rgba(27, 38, 73, 0.88) 50%, rgba(42, 52, 84, 0.85) 100%);
+    z-index: 1;
+}
+
+.hvac-passion-section .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-wrapper {
+    max-width: 900px;
+}
+
+.main-title {
+    margin: 0 0 30px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.highlight-text {
+    color: #FF5722;
+    display: block;
+}
+
+.description-text {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 40px 0;
+    font-weight: 300;
+    max-width: 850px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF5722;
+    color: #ffffff;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid #FF5722;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: #FF5722;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 87, 34, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hvac-passion-section {
+        padding: 60px 0;
+        min-height: 400px;
+    }
+
+    .main-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .description-text {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 26px;
+    }
+
+    .description-text {
+        font-size: 13px;
+    }
+}
+</style>
 
 <!-- Image Slider Modal -->
 <div id="imageSliderModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; align-items: center; justify-content: center;">
@@ -213,94 +348,95 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target === this) closeSlider();
     });
 </script>
-        <!-- About Section -->
-    <div style="background: #f8f9fa; padding: 80px 0;">
-        <div class="container">
-            <!-- About Us Header -->
+<!-- About Section -->
+<div style="background: #f8f9fa; padding: 80px 0;">
+    <div class="container">
+
+        {{-- About Content --}}
+        @foreach ($about as $abouts)
+            <!-- About Header -->
             <div style="margin-bottom: 50px;">
                 <div style="width: 80px; height: 3px; background: #5DADE2; margin-bottom: 15px;"></div>
-                <h2 style="font-size: 48px; font-weight: 800; color: #ff6b35; margin-bottom: 20px;">About us</h2>
+
+                <h2 style="font-size: 48px; font-weight: 800; color: #ff6b35; margin-bottom: 20px;">
+                    {{ $abouts->title ?? '' }}
+                </h2>
+
                 <div style="width: 100px; height: 4px; background: #ff6b35;"></div>
             </div>
 
-            <!-- About Text Content -->
+            <!-- About Description -->
             <div style="margin-bottom: 60px;">
-                <p style="font-size: 16px; line-height: 1.9; color: #333; text-align: justify; margin-bottom: 25px;">
-                    Purchasing a reliable brand of air conditioning for optimum performance and energy efficiency is a thing of the past. Meticulous considerations during design, installation and routine maintenance are pivotal factors in establishing an air conditioning system that protects the earth and economy of the owner. AirPro Limited, being the professional engineer in air conditioning business has this professional commitment to ensure energy efficiency along with commercial efficiency for the client. The management team of AirPro Limited is in the trade of building services for decades, stepping into the air conditioning business with the aim to fill in the void of professional engineers providing air conditioning system services in local market.
-                </p>
                 <p style="font-size: 16px; line-height: 1.9; color: #333; text-align: justify;">
-                    The Management Team of AirPro Limited with their previous design background has extensive experience in project management of different air conditioning system. AirPro Limited is specialized in central system with air and water-cooled chillers, magnetic bearing chillers, absorption chillers, VRF system and split air conditioning system.
+                    {!! nl2br(e($abouts->description ?? '')) !!}
                 </p>
             </div>
+        @endforeach
 
-            <!-- Mission, Vision, Values Section -->
-            <div class="row" style="margin-top: 60px;">
-                <!-- Mission -->
-                <div class="col-md-4 mb-4">
+        {{-- Mission Section --}}
+        <div class="row" style="margin-top: 60px;">
+
+            @foreach ($mission as $missions)
+                <div class="col-md-4 mb-5">
                     <div style="position: relative; text-align: center;">
-                        <!-- Hexagon Shape -->
-                        <div style="width: 280px; height: 280px; margin: 0 auto; position: relative; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: linear-gradient(135deg, #5DADE2, #3498DB); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; box-shadow: 0 10px 30px rgba(93, 173, 226, 0.3);">
+
+                        <!-- Hexagon Card -->
+                        <div style="
+                            width: 280px;
+                            height: 280px;
+                            margin: 0 auto;
+                            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                            background: linear-gradient(135deg, #5DADE2, #3498DB);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 35px;
+                            box-shadow: 0 10px 30px rgba(93, 173, 226, 0.3);
+                        ">
+
                             <!-- Icon -->
-                            <div style="background: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                                <i class="fas fa-bullseye" style="font-size: 40px; color: #e74c3c;"></i>
+                            <div style="
+                                background: #fff;
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 15px;
+                            ">
+                                <i class="{{ $missions->icon ?? '' }}" style="font-size: 38px; color: #e74c3c;"></i>
                             </div>
+
                             <!-- Title -->
-                            <h3 style="color: white; font-size: 24px; font-weight: 800; margin-bottom: 15px; letter-spacing: 1px;">MISSION:</h3>
+                            <h3 style="color: #fff; font-size: 22px; font-weight: 800; margin-bottom: 10px;">
+                                {{ $missions->title ?? '' }}
+                            </h3>
+
                             <!-- Description -->
-                            <p style="color: white; font-size: 14px; line-height: 1.6;">To fill in the void of professional engineers providing air conditioning system services</p>
+                            <p style="color: #fff; font-size: 14px; line-height: 1.6;">
+                                {{ $missions->description ?? '' }}
+                            </p>
                         </div>
-                        <!-- Shadow Effect -->
-                        <div style="width: 250px; height: 20px; margin: -10px auto 0; background: radial-gradient(ellipse, rgba(0,0,0,0.15), transparent); border-radius: 50%;"></div>
+
+                        <!-- Shadow -->
+                        <div style="
+                            width: 240px;
+                            height: 18px;
+                            margin: -10px auto 0;
+                            background: radial-gradient(ellipse, rgba(0,0,0,0.15), transparent);
+                            border-radius: 50%;
+                        "></div>
+
                     </div>
                 </div>
+            @endforeach
 
-                <!-- Vision -->
-                <div class="col-md-4 mb-4">
-                    <div style="position: relative; text-align: center;">
-                        <!-- Hexagon Shape -->
-                        <div style="width: 280px; height: 280px; margin: 0 auto; position: relative; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: linear-gradient(135deg, #FF6B35, #E55A24); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);">
-                            <!-- Icon -->
-                            <div style="background: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                                <i class="fas fa-eye" style="font-size: 40px; color: #2c3e50;"></i>
-                            </div>
-                            <!-- Title -->
-                            <h3 style="color: white; font-size: 24px; font-weight: 800; margin-bottom: 15px; letter-spacing: 1px;">VISION:</h3>
-                            <!-- Description -->
-                            <p style="color: white; font-size: 14px; line-height: 1.6;">Provide carbon neutral solutions in the HVAC market at an optimum cost.</p>
-                        </div>
-                        <!-- Shadow Effect -->
-                        <div style="width: 250px; height: 20px; margin: -10px auto 0; background: radial-gradient(ellipse, rgba(0,0,0,0.15), transparent); border-radius: 50%;"></div>
-                    </div>
-                </div>
-
-                <!-- Values -->
-                <div class="col-md-4 mb-4">
-                    <div style="position: relative; text-align: center;">
-                        <!-- Hexagon Shape -->
-                        <div style="width: 280px; height: 280px; margin: 0 auto; position: relative; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: linear-gradient(135deg, #5DADE2, #3498DB); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; box-shadow: 0 10px 30px rgba(93, 173, 226, 0.3);">
-                            <!-- Icon -->
-                            <div style="background: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                                <i class="fas fa-balance-scale" style="font-size: 40px; color: #f39c12;"></i>
-                            </div>
-                            <!-- Title -->
-                            <h3 style="color: white; font-size: 24px; font-weight: 800; margin-bottom: 15px; letter-spacing: 1px;">VALUES</h3>
-                            <!-- Description -->
-                            <p style="color: white; font-size: 14px; line-height: 1.6;">Establish committed and trusted relationship with the customer.</p>
-                        </div>
-                        <!-- Shadow Effect -->
-                        <div style="width: 250px; height: 20px; margin: -10px auto 0; background: radial-gradient(ellipse, rgba(0,0,0,0.15), transparent); border-radius: 50%;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Call to Action -->
-            <div style="text-align: center; margin-top: 50px;">
-                <h3 style="font-size: 32px; font-weight: 700; color: #1a1a1a; margin-bottom: 15px;">Because HVAC is our passion</h3>
-                <p style="font-size: 18px; color: #666; margin-bottom: 30px;">With our broad partnership network covering a wide range of global leading HVAC brands</p>
-                <a href="#" style="background: #0056b3; color: white; padding: 14px 40px; border-radius: 8px; font-weight: 700; text-decoration: none; display: inline-block; font-size: 16px; transition: all 0.3s;">Our Story</a>
-            </div>
         </div>
     </div>
+</div>
+
 
     <!-- Our Services Section -->
     <div style="background: white; padding: 80px 0;">

@@ -19,8 +19,10 @@ use App\Http\Controllers\Backend\DepositeContrller;
 use App\Http\Controllers\Backend\DepositeController;
 use App\Http\Controllers\Backend\LotterycreateController;
 use App\Http\Controllers\Backend\LotteryResultController;
+use App\Http\Controllers\Backend\MissionController;
 use App\Http\Controllers\Backend\NoticesController;
 use App\Http\Controllers\Backend\PartnarController;
+use App\Http\Controllers\Backend\PassionsectionController;
 use App\Http\Controllers\Backend\PaswordchangeController;
 use App\Http\Controllers\Backend\PrivacypolicyController;
 use App\Http\Controllers\Backend\ProductctController;
@@ -95,7 +97,8 @@ Route::middleware(['admin'])->group(function () {
     Route::resource('categories',CategoryController::class);
     Route::resource('subcategories',SubCategoryController::class);
     Route::resource('product',ProductctController::class);
-
+    Route::resource('mission',MissionController::class);
+    Route::resource('passionsection',PassionsectionController::class);
     //   admin user account view start end
 
 

@@ -59,6 +59,25 @@
             </a>
         </li>
 
+        <li>
+            <a href="{{ route('mission.index') }}">
+                <div class="parent-icon"><i class="bi bi-people"></i></div>
+                <div class="menu-title">Mission</div>
+            </a>
+        </li>
+
+           <li>
+            <a href="{{ route('passionsection.index') }}">
+                <div class="parent-icon"><i class="bi bi-people"></i></div>
+                <div class="menu-title">Passion Section</div>
+            </a>
+        </li>
+
+
+
+
+
+
 
 
  <li>

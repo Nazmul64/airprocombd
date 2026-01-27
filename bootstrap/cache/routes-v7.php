@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::0gMucUgiNtfIRYQJ',
+            '_route' => 'generated::59ydWMmrA6w9BArC',
           ),
           1 => NULL,
           2 => 
@@ -1163,10 +1163,122 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/mission' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'mission.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'mission.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/mission/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'mission.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/passionsection' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/passionsection/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/p(?|r(?|oduct/(?|([^/]++)(*:33)|create(*:46)|([^/]++)(?|(*:64)|/edit(*:76)|(*:83)))|ivacypolicy/([^/]++)(?|(*:115)|/edit(*:128)|(*:136)))|artner/([^/]++)(?|(*:164)|/edit(*:177)|(*:185)))|/whychooseusinvesment/([^/]++)(?|(*:228)|/edit(*:241)|(*:249))|/a(?|boutus/([^/]++)(?|(*:281)|/edit(*:294)|(*:302))|dmin/profile/([^/]++)(*:332))|/s(?|ettings/([^/]++)(?|(*:365)|/edit(*:378)|(*:386))|lider/([^/]++)(?|(*:412)|/edit(*:425)|(*:433))|u(?|pportlink/([^/]++)(?|(*:467)|/edit(*:480)|(*:488))|bcategories/([^/]++)(?|(*:520)|/edit(*:533)|(*:541)))|torage/(.*)(*:562))|/c(?|o(?|unter/([^/]++)(?|(*:597)|/edit(*:610)|(*:618))|ntact/([^/]++)(?|(*:644)|/edit(*:657)|(*:665)))|ategories/([^/]++)(?|(*:696)|/edit(*:709)|(*:717)))|/Termscondition/([^/]++)(?|(*:754)|/edit(*:767)|(*:775))|/users/([^/]++)/status(*:806)|/notices/([^/]++)(?|(*:834)|/edit(*:847)|(*:855)))/?$}sDu',
+      0 => '{^(?|/p(?|r(?|oduct/(?|([^/]++)(*:33)|create(*:46)|([^/]++)(?|(*:64)|/edit(*:76)|(*:83)))|ivacypolicy/([^/]++)(?|(*:115)|/edit(*:128)|(*:136)))|a(?|rtner/([^/]++)(?|(*:167)|/edit(*:180)|(*:188))|ssionsection/([^/]++)(?|(*:221)|/edit(*:234)|(*:242))))|/whychooseusinvesment/([^/]++)(?|(*:286)|/edit(*:299)|(*:307))|/a(?|boutus/([^/]++)(?|(*:339)|/edit(*:352)|(*:360))|dmin/profile/([^/]++)(*:390))|/s(?|ettings/([^/]++)(?|(*:423)|/edit(*:436)|(*:444))|lider/([^/]++)(?|(*:470)|/edit(*:483)|(*:491))|u(?|pportlink/([^/]++)(?|(*:525)|/edit(*:538)|(*:546))|bcategories/([^/]++)(?|(*:578)|/edit(*:591)|(*:599)))|torage/(.*)(*:620))|/c(?|o(?|unter/([^/]++)(?|(*:655)|/edit(*:668)|(*:676))|ntact/([^/]++)(?|(*:702)|/edit(*:715)|(*:723)))|ategories/([^/]++)(?|(*:754)|/edit(*:767)|(*:775)))|/Termscondition/([^/]++)(?|(*:812)|/edit(*:825)|(*:833))|/users/([^/]++)/status(*:864)|/notices/([^/]++)(?|(*:892)|/edit(*:905)|(*:913))|/mission/([^/]++)(?|(*:942)|/edit(*:955)|(*:963)))/?$}sDu',
     ),
     3 => 
     array (
@@ -1391,7 +1503,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      164 => 
+      167 => 
       array (
         0 => 
         array (
@@ -1414,7 +1526,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      177 => 
+      180 => 
       array (
         0 => 
         array (
@@ -1437,7 +1549,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      185 => 
+      188 => 
       array (
         0 => 
         array (
@@ -1479,7 +1591,95 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      228 => 
+      221 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.show',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      234 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.edit',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      242 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.update',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      286 => 
       array (
         0 => 
         array (
@@ -1502,7 +1702,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      241 => 
+      299 => 
       array (
         0 => 
         array (
@@ -1525,7 +1725,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      249 => 
+      307 => 
       array (
         0 => 
         array (
@@ -1567,7 +1767,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      281 => 
+      339 => 
       array (
         0 => 
         array (
@@ -1590,7 +1790,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      294 => 
+      352 => 
       array (
         0 => 
         array (
@@ -1613,7 +1813,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      302 => 
+      360 => 
       array (
         0 => 
         array (
@@ -1655,7 +1855,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      332 => 
+      390 => 
       array (
         0 => 
         array (
@@ -1677,7 +1877,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      365 => 
+      423 => 
       array (
         0 => 
         array (
@@ -1700,7 +1900,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      378 => 
+      436 => 
       array (
         0 => 
         array (
@@ -1723,7 +1923,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      386 => 
+      444 => 
       array (
         0 => 
         array (
@@ -1765,7 +1965,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      412 => 
+      470 => 
       array (
         0 => 
         array (
@@ -1788,7 +1988,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      425 => 
+      483 => 
       array (
         0 => 
         array (
@@ -1811,7 +2011,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      433 => 
+      491 => 
       array (
         0 => 
         array (
@@ -1853,7 +2053,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      467 => 
+      525 => 
       array (
         0 => 
         array (
@@ -1876,7 +2076,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      480 => 
+      538 => 
       array (
         0 => 
         array (
@@ -1899,7 +2099,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      488 => 
+      546 => 
       array (
         0 => 
         array (
@@ -1941,7 +2141,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      520 => 
+      578 => 
       array (
         0 => 
         array (
@@ -1964,7 +2164,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      533 => 
+      591 => 
       array (
         0 => 
         array (
@@ -1987,7 +2187,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      541 => 
+      599 => 
       array (
         0 => 
         array (
@@ -2029,7 +2229,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      562 => 
+      620 => 
       array (
         0 => 
         array (
@@ -2052,7 +2252,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      597 => 
+      655 => 
       array (
         0 => 
         array (
@@ -2075,7 +2275,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      610 => 
+      668 => 
       array (
         0 => 
         array (
@@ -2098,7 +2298,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      618 => 
+      676 => 
       array (
         0 => 
         array (
@@ -2140,7 +2340,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      644 => 
+      702 => 
       array (
         0 => 
         array (
@@ -2163,7 +2363,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      657 => 
+      715 => 
       array (
         0 => 
         array (
@@ -2186,7 +2386,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      665 => 
+      723 => 
       array (
         0 => 
         array (
@@ -2228,7 +2428,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      696 => 
+      754 => 
       array (
         0 => 
         array (
@@ -2251,7 +2451,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      709 => 
+      767 => 
       array (
         0 => 
         array (
@@ -2274,7 +2474,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      717 => 
+      775 => 
       array (
         0 => 
         array (
@@ -2316,7 +2516,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      754 => 
+      812 => 
       array (
         0 => 
         array (
@@ -2339,7 +2539,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      767 => 
+      825 => 
       array (
         0 => 
         array (
@@ -2362,7 +2562,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      775 => 
+      833 => 
       array (
         0 => 
         array (
@@ -2404,7 +2604,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      806 => 
+      864 => 
       array (
         0 => 
         array (
@@ -2426,7 +2626,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      834 => 
+      892 => 
       array (
         0 => 
         array (
@@ -2449,7 +2649,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      847 => 
+      905 => 
       array (
         0 => 
         array (
@@ -2472,7 +2672,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      855 => 
+      913 => 
       array (
         0 => 
         array (
@@ -2513,6 +2713,94 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
+      ),
+      942 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'mission.show',
+          ),
+          1 => 
+          array (
+            0 => 'mission',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      955 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'mission.edit',
+          ),
+          1 => 
+          array (
+            0 => 'mission',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      963 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'mission.update',
+          ),
+          1 => 
+          array (
+            0 => 'mission',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'mission.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'mission',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
         2 => 
         array (
           0 => NULL,
@@ -2529,7 +2817,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::0gMucUgiNtfIRYQJ' => 
+    'generated::59ydWMmrA6w9BArC' => 
     array (
       'methods' => 
       array (
@@ -2558,7 +2846,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002b70000000000000000";}}',
-        'as' => 'generated::0gMucUgiNtfIRYQJ',
+        'as' => 'generated::59ydWMmrA6w9BArC',
       ),
       'fallback' => false,
       'defaults' => 
@@ -7067,6 +7355,534 @@ app('router')->setCompiledRoutes(
         'as' => 'product.destroy',
         'uses' => 'App\\Http\\Controllers\\Backend\\ProductctController@destroy',
         'controller' => 'App\\Http\\Controllers\\Backend\\ProductctController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'mission.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'mission',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'mission.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\MissionController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\MissionController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'mission.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'mission/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'mission.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\MissionController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\MissionController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'mission.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'mission',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'mission.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\MissionController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\MissionController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'mission.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'mission/{mission}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'mission.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\MissionController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\MissionController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'mission.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'mission/{mission}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'mission.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\MissionController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\MissionController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'mission.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'mission/{mission}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'mission.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\MissionController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\MissionController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'mission.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'mission/{mission}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'mission.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\MissionController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\MissionController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'passionsection.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'passionsection',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'passionsection.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'passionsection.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'passionsection/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'passionsection.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'passionsection.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'passionsection',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'passionsection.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'passionsection.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'passionsection/{passionsection}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'passionsection.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'passionsection.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'passionsection/{passionsection}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'passionsection.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'passionsection.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'passionsection/{passionsection}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'passionsection.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'passionsection.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'passionsection/{passionsection}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'passionsection.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PassionsectionController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
