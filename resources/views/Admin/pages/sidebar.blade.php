@@ -86,21 +86,22 @@
                 <div class="menu-title">Service Provider</div>
             </a>
       </li>
+    <li>
+        <a href="{{ route('contact.index') }}">
+            <div class="parent-icon"><i class="bi bi-envelope"></i></div>
+            <div class="menu-title">Contact Messages</div>
+        </a>
+    </li>
+    <li>
+        <a href="{{ route('contactinfo.index') }}">
+            <div class="parent-icon"><i class="bi bi-envelope"></i></div>
+            <div class="menu-title">Contactinfo</div>
+        </a>
+    </li>
 
-   <!-- Solution Provider -->
+
  <li>
-             <a href="{{ route('supportlink.index') }}"><i class="bi bi-circle"></i>Support Link</a>
-           </li>
-        <!-- Why Choose Us Investment -->
-        <li>
-            <a class="has-arrow" href="javascript:;">
-                <div class="parent-icon"><i class="bi bi-graph-up-arrow"></i></div>
-                <div class="menu-title">Why Choose Us Investment</div>
-            </a>
-            <ul>
-                <li><a href="{{ route('whychooseusinvesment.index') }}"><i class="bi bi-circle"></i> Why Choose Us Investment</a></li>
-            </ul>
-        </li>
+
 
         <!-- About Us -->
         <li>
@@ -113,13 +114,7 @@
             </ul>
         </li>
 
-        <!-- Counter -->
-        <li>
-            <a href="{{ route('counter.index') }}">
-                <div class="parent-icon"><i class="bi bi-speedometer2"></i></div>
-                <div class="menu-title">Counter</div>
-            </a>
-        </li>
+
 
         <!-- Settings -->
         <li>

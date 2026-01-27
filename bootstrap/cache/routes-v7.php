@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::eeZ160Ab25yx7fjS',
+            '_route' => 'generated::Dkln3kzbNqWHH9te',
           ),
           1 => NULL,
           2 => 
@@ -149,6 +149,62 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'termsconditions',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/contactform' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contactform.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contactform.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/contactform/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contactform.create',
           ),
           1 => NULL,
           2 => 
@@ -1387,24 +1443,99 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/contactinfo' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contactinfo.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contactinfo.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/contactinfo/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contactinfo.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/contact-bulk-delete' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contact.bulk-delete',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/p(?|r(?|oduct/(?|([^/]++)(*:33)|create(*:46)|([^/]++)(?|(*:64)|/edit(*:76)|(*:83)))|ivacypolicy/([^/]++)(?|(*:115)|/edit(*:128)|(*:136)))|a(?|rtner/([^/]++)(?|(*:167)|/edit(*:180)|(*:188))|ssionsection/([^/]++)(?|(*:221)|/edit(*:234)|(*:242))))|/whychooseusinvesment/([^/]++)(?|(*:286)|/edit(*:299)|(*:307))|/a(?|boutus/([^/]++)(?|(*:339)|/edit(*:352)|(*:360))|dmin/profile/([^/]++)(*:390))|/s(?|e(?|ttings/([^/]++)(?|(*:426)|/edit(*:439)|(*:447))|rviceprovider/([^/]++)(?|(*:481)|/edit(*:494)|(*:502)))|lider/([^/]++)(?|(*:529)|/edit(*:542)|(*:550))|u(?|pportlink/([^/]++)(?|(*:584)|/edit(*:597)|(*:605))|bcategories/([^/]++)(?|(*:637)|/edit(*:650)|(*:658)))|olutionprovider/([^/]++)(?|(*:695)|/edit(*:708)|(*:716))|torage/(.*)(*:736))|/c(?|o(?|unter/([^/]++)(?|(*:771)|/edit(*:784)|(*:792))|ntact/([^/]++)(?|(*:818)|/edit(*:831)|(*:839)))|ategories/([^/]++)(?|(*:870)|/edit(*:883)|(*:891)))|/Termscondition/([^/]++)(?|(*:928)|/edit(*:941)|(*:949))|/users/([^/]++)/status(*:980)|/notices/([^/]++)(?|(*:1008)|/edit(*:1022)|(*:1031))|/mission/([^/]++)(?|(*:1061)|/edit(*:1075)|(*:1084)))/?$}sDu',
+      0 => '{^(?|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:40)|/edit(*:52)|(*:59))|/([^/]++)(?|(*:79)|/(?|edit(*:94)|status(*:107))|(*:116))|info/([^/]++)(?|(*:141)|/edit(*:154)|(*:162)))|unter/([^/]++)(?|(*:189)|/edit(*:202)|(*:210)))|ategories/([^/]++)(?|(*:241)|/edit(*:254)|(*:262)))|/p(?|r(?|oduct/(?|([^/]++)(*:298)|create(*:312)|([^/]++)(?|(*:331)|/edit(*:344)|(*:352)))|ivacypolicy/([^/]++)(?|(*:385)|/edit(*:398)|(*:406)))|a(?|rtner/([^/]++)(?|(*:437)|/edit(*:450)|(*:458))|ssionsection/([^/]++)(?|(*:491)|/edit(*:504)|(*:512))))|/whychooseusinvesment/([^/]++)(?|(*:556)|/edit(*:569)|(*:577))|/a(?|boutus/([^/]++)(?|(*:609)|/edit(*:622)|(*:630))|dmin/profile/([^/]++)(*:660))|/s(?|e(?|ttings/([^/]++)(?|(*:696)|/edit(*:709)|(*:717))|rviceprovider/([^/]++)(?|(*:751)|/edit(*:764)|(*:772)))|lider/([^/]++)(?|(*:799)|/edit(*:812)|(*:820))|u(?|pportlink/([^/]++)(?|(*:854)|/edit(*:867)|(*:875))|bcategories/([^/]++)(?|(*:907)|/edit(*:920)|(*:928)))|olutionprovider/([^/]++)(?|(*:965)|/edit(*:978)|(*:986))|torage/(.*)(*:1006))|/Termscondition/([^/]++)(?|(*:1043)|/edit(*:1057)|(*:1066))|/users/([^/]++)/status(*:1098)|/notices/([^/]++)(?|(*:1127)|/edit(*:1141)|(*:1150))|/mission/([^/]++)(?|(*:1180)|/edit(*:1194)|(*:1203)))/?$}sDu',
     ),
     3 => 
     array (
-      33 => 
+      40 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'productdetails',
+            '_route' => 'contactform.show',
           ),
           1 => 
           array (
-            0 => 'slug',
+            0 => 'contactform',
           ),
           2 => 
           array (
@@ -1417,16 +1548,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      46 => 
+      52 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'product.create',
+            '_route' => 'contactform.edit',
           ),
           1 => 
           array (
+            0 => 'contactform',
           ),
           2 => 
           array (
@@ -1439,63 +1571,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      64 => 
+      59 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'product.show',
+            '_route' => 'contactform.update',
           ),
           1 => 
           array (
-            0 => 'product',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      76 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'product.edit',
-          ),
-          1 => 
-          array (
-            0 => 'product',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      83 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'product.update',
-          ),
-          1 => 
-          array (
-            0 => 'product',
+            0 => 'contactform',
           ),
           2 => 
           array (
@@ -1511,11 +1597,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'product.destroy',
+            '_route' => 'contactform.destroy',
           ),
           1 => 
           array (
-            0 => 'product',
+            0 => 'contactform',
           ),
           2 => 
           array (
@@ -1527,1108 +1613,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      115 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'privacypolicy.show',
-          ),
-          1 => 
-          array (
-            0 => 'privacypolicy',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      128 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'privacypolicy.edit',
-          ),
-          1 => 
-          array (
-            0 => 'privacypolicy',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      136 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'privacypolicy.update',
-          ),
-          1 => 
-          array (
-            0 => 'privacypolicy',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'privacypolicy.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'privacypolicy',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      167 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'partner.show',
-          ),
-          1 => 
-          array (
-            0 => 'partner',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      180 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'partner.edit',
-          ),
-          1 => 
-          array (
-            0 => 'partner',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      188 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'partner.update',
-          ),
-          1 => 
-          array (
-            0 => 'partner',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'partner.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'partner',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      221 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'passionsection.show',
-          ),
-          1 => 
-          array (
-            0 => 'passionsection',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      234 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'passionsection.edit',
-          ),
-          1 => 
-          array (
-            0 => 'passionsection',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      242 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'passionsection.update',
-          ),
-          1 => 
-          array (
-            0 => 'passionsection',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'passionsection.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'passionsection',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      286 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'whychooseusinvesment.show',
-          ),
-          1 => 
-          array (
-            0 => 'whychooseusinvesment',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      299 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'whychooseusinvesment.edit',
-          ),
-          1 => 
-          array (
-            0 => 'whychooseusinvesment',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      307 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'whychooseusinvesment.update',
-          ),
-          1 => 
-          array (
-            0 => 'whychooseusinvesment',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'whychooseusinvesment.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'whychooseusinvesment',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      339 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'aboutus.show',
-          ),
-          1 => 
-          array (
-            0 => 'aboutu',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      352 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'aboutus.edit',
-          ),
-          1 => 
-          array (
-            0 => 'aboutu',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      360 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'aboutus.update',
-          ),
-          1 => 
-          array (
-            0 => 'aboutu',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'aboutus.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'aboutu',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      390 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'admin.profile.update',
-          ),
-          1 => 
-          array (
-            0 => 'id',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      426 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.show',
-          ),
-          1 => 
-          array (
-            0 => 'setting',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      439 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.edit',
-          ),
-          1 => 
-          array (
-            0 => 'setting',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      447 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.update',
-          ),
-          1 => 
-          array (
-            0 => 'setting',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'settings.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'setting',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      481 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'serviceprovider.show',
-          ),
-          1 => 
-          array (
-            0 => 'serviceprovider',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      494 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'serviceprovider.edit',
-          ),
-          1 => 
-          array (
-            0 => 'serviceprovider',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      502 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'serviceprovider.update',
-          ),
-          1 => 
-          array (
-            0 => 'serviceprovider',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'serviceprovider.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'serviceprovider',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      529 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'slider.show',
-          ),
-          1 => 
-          array (
-            0 => 'slider',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      542 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'slider.edit',
-          ),
-          1 => 
-          array (
-            0 => 'slider',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      550 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'slider.update',
-          ),
-          1 => 
-          array (
-            0 => 'slider',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'slider.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'slider',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      584 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'supportlink.show',
-          ),
-          1 => 
-          array (
-            0 => 'supportlink',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      597 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'supportlink.edit',
-          ),
-          1 => 
-          array (
-            0 => 'supportlink',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      605 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'supportlink.update',
-          ),
-          1 => 
-          array (
-            0 => 'supportlink',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'supportlink.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'supportlink',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      637 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'subcategories.show',
-          ),
-          1 => 
-          array (
-            0 => 'subcategory',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      650 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'subcategories.edit',
-          ),
-          1 => 
-          array (
-            0 => 'subcategory',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      658 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'subcategories.update',
-          ),
-          1 => 
-          array (
-            0 => 'subcategory',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'subcategories.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'subcategory',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      695 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'solutionprovider.show',
-          ),
-          1 => 
-          array (
-            0 => 'solutionprovider',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      708 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'solutionprovider.edit',
-          ),
-          1 => 
-          array (
-            0 => 'solutionprovider',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      716 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'solutionprovider.update',
-          ),
-          1 => 
-          array (
-            0 => 'solutionprovider',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'solutionprovider.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'solutionprovider',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      736 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'storage.local',
-          ),
-          1 => 
-          array (
-            0 => 'path',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      771 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'counter.show',
-          ),
-          1 => 
-          array (
-            0 => 'counter',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      784 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'counter.edit',
-          ),
-          1 => 
-          array (
-            0 => 'counter',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      792 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'counter.update',
-          ),
-          1 => 
-          array (
-            0 => 'counter',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'counter.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'counter',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      818 => 
+      79 => 
       array (
         0 => 
         array (
@@ -2651,7 +1636,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      831 => 
+      94 => 
       array (
         0 => 
         array (
@@ -2674,7 +1659,29 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      839 => 
+      107 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contact.update-status',
+          ),
+          1 => 
+          array (
+            0 => 'contact',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      116 => 
       array (
         0 => 
         array (
@@ -2716,7 +1723,183 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      870 => 
+      141 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contactinfo.show',
+          ),
+          1 => 
+          array (
+            0 => 'contactinfo',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      154 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contactinfo.edit',
+          ),
+          1 => 
+          array (
+            0 => 'contactinfo',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      162 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contactinfo.update',
+          ),
+          1 => 
+          array (
+            0 => 'contactinfo',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'contactinfo.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'contactinfo',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      189 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'counter.show',
+          ),
+          1 => 
+          array (
+            0 => 'counter',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      202 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'counter.edit',
+          ),
+          1 => 
+          array (
+            0 => 'counter',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      210 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'counter.update',
+          ),
+          1 => 
+          array (
+            0 => 'counter',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'counter.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'counter',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      241 => 
       array (
         0 => 
         array (
@@ -2739,7 +1922,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      883 => 
+      254 => 
       array (
         0 => 
         array (
@@ -2762,7 +1945,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      891 => 
+      262 => 
       array (
         0 => 
         array (
@@ -2804,7 +1987,1153 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      298 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'productdetails',
+          ),
+          1 => 
+          array (
+            0 => 'slug',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      312 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.create',
+          ),
+          1 => 
+          array (
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      331 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.show',
+          ),
+          1 => 
+          array (
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      344 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.edit',
+          ),
+          1 => 
+          array (
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      352 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.update',
+          ),
+          1 => 
+          array (
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      385 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'privacypolicy.show',
+          ),
+          1 => 
+          array (
+            0 => 'privacypolicy',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      398 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'privacypolicy.edit',
+          ),
+          1 => 
+          array (
+            0 => 'privacypolicy',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      406 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'privacypolicy.update',
+          ),
+          1 => 
+          array (
+            0 => 'privacypolicy',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'privacypolicy.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'privacypolicy',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      437 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'partner.show',
+          ),
+          1 => 
+          array (
+            0 => 'partner',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      450 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'partner.edit',
+          ),
+          1 => 
+          array (
+            0 => 'partner',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      458 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'partner.update',
+          ),
+          1 => 
+          array (
+            0 => 'partner',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'partner.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'partner',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      491 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.show',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      504 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.edit',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      512 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.update',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      556 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'whychooseusinvesment.show',
+          ),
+          1 => 
+          array (
+            0 => 'whychooseusinvesment',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      569 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'whychooseusinvesment.edit',
+          ),
+          1 => 
+          array (
+            0 => 'whychooseusinvesment',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      577 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'whychooseusinvesment.update',
+          ),
+          1 => 
+          array (
+            0 => 'whychooseusinvesment',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'whychooseusinvesment.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'whychooseusinvesment',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      609 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'aboutus.show',
+          ),
+          1 => 
+          array (
+            0 => 'aboutu',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      622 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'aboutus.edit',
+          ),
+          1 => 
+          array (
+            0 => 'aboutu',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      630 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'aboutus.update',
+          ),
+          1 => 
+          array (
+            0 => 'aboutu',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'aboutus.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'aboutu',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      660 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'admin.profile.update',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      696 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'settings.show',
+          ),
+          1 => 
+          array (
+            0 => 'setting',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      709 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'settings.edit',
+          ),
+          1 => 
+          array (
+            0 => 'setting',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      717 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'settings.update',
+          ),
+          1 => 
+          array (
+            0 => 'setting',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'settings.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'setting',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      751 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.show',
+          ),
+          1 => 
+          array (
+            0 => 'serviceprovider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      764 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.edit',
+          ),
+          1 => 
+          array (
+            0 => 'serviceprovider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      772 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.update',
+          ),
+          1 => 
+          array (
+            0 => 'serviceprovider',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'serviceprovider.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'serviceprovider',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      799 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slider.show',
+          ),
+          1 => 
+          array (
+            0 => 'slider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      812 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slider.edit',
+          ),
+          1 => 
+          array (
+            0 => 'slider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      820 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slider.update',
+          ),
+          1 => 
+          array (
+            0 => 'slider',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'slider.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'slider',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      854 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'supportlink.show',
+          ),
+          1 => 
+          array (
+            0 => 'supportlink',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      867 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'supportlink.edit',
+          ),
+          1 => 
+          array (
+            0 => 'supportlink',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      875 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'supportlink.update',
+          ),
+          1 => 
+          array (
+            0 => 'supportlink',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'supportlink.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'supportlink',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      907 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.show',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      920 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.edit',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       928 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.update',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'subcategories.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'subcategory',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      965 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.show',
+          ),
+          1 => 
+          array (
+            0 => 'solutionprovider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      978 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.edit',
+          ),
+          1 => 
+          array (
+            0 => 'solutionprovider',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      986 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.update',
+          ),
+          1 => 
+          array (
+            0 => 'solutionprovider',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionprovider.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'solutionprovider',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1006 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'storage.local',
+          ),
+          1 => 
+          array (
+            0 => 'path',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1043 => 
       array (
         0 => 
         array (
@@ -2827,7 +3156,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      941 => 
+      1057 => 
       array (
         0 => 
         array (
@@ -2850,7 +3179,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      949 => 
+      1066 => 
       array (
         0 => 
         array (
@@ -2892,7 +3221,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      980 => 
+      1098 => 
       array (
         0 => 
         array (
@@ -2914,7 +3243,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1008 => 
+      1127 => 
       array (
         0 => 
         array (
@@ -2937,7 +3266,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1022 => 
+      1141 => 
       array (
         0 => 
         array (
@@ -2960,7 +3289,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1031 => 
+      1150 => 
       array (
         0 => 
         array (
@@ -3002,7 +3331,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1061 => 
+      1180 => 
       array (
         0 => 
         array (
@@ -3025,7 +3354,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1075 => 
+      1194 => 
       array (
         0 => 
         array (
@@ -3048,7 +3377,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1084 => 
+      1203 => 
       array (
         0 => 
         array (
@@ -3105,7 +3434,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::eeZ160Ab25yx7fjS' => 
+    'generated::Dkln3kzbNqWHH9te' => 
     array (
       'methods' => 
       array (
@@ -3134,7 +3463,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002b70000000000000000";}}',
-        'as' => 'generated::eeZ160Ab25yx7fjS',
+        'as' => 'generated::Dkln3kzbNqWHH9te',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3392,6 +3721,263 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'termsconditions',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactform.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'contactform',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'contactform.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContacformController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContacformController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactform.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'contactform/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'contactform.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContacformController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContacformController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactform.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'contactform',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'contactform.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContacformController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContacformController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactform.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'contactform/{contactform}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'contactform.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContacformController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContacformController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactform.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'contactform/{contactform}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'contactform.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContacformController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContacformController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactform.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'contactform/{contactform}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'contactform.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContacformController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContacformController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactform.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'contactform/{contactform}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'as' => 'contactform.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContacformController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContacformController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
       ),
       'fallback' => false,
       'defaults' => 
@@ -5341,14 +5927,14 @@ app('router')->setCompiledRoutes(
           0 => 'web',
           1 => 'admin',
         ),
-        'as' => 'contact.index',
-        'uses' => 'App\\Http\\Controllers\\Backend\\ContactController@index',
-        'controller' => 'App\\Http\\Controllers\\Backend\\ContactController@index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\AdminContactController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AdminContactController@index',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
+        'as' => 'contact.index',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5454,14 +6040,14 @@ app('router')->setCompiledRoutes(
           0 => 'web',
           1 => 'admin',
         ),
-        'as' => 'contact.show',
-        'uses' => 'App\\Http\\Controllers\\Backend\\ContactController@show',
-        'controller' => 'App\\Http\\Controllers\\Backend\\ContactController@show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\AdminContactController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AdminContactController@show',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
+        'as' => 'contact.show',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5567,14 +6153,14 @@ app('router')->setCompiledRoutes(
           0 => 'web',
           1 => 'admin',
         ),
-        'as' => 'contact.destroy',
-        'uses' => 'App\\Http\\Controllers\\Backend\\ContactController@destroy',
-        'controller' => 'App\\Http\\Controllers\\Backend\\ContactController@destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\AdminContactController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AdminContactController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
+        'as' => 'contact.destroy',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8704,6 +9290,344 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactinfo.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'contactinfo',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'contactinfo.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactinfo.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'contactinfo/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'contactinfo.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactinfo.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'contactinfo',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'contactinfo.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactinfo.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'contactinfo/{contactinfo}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'contactinfo.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactinfo.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'contactinfo/{contactinfo}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'contactinfo.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactinfo.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'contactinfo/{contactinfo}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'contactinfo.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contactinfo.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'contactinfo/{contactinfo}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'contactinfo.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ContactinfoController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contact.update-status' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+      ),
+      'uri' => 'contact/{contact}/status',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\AdminContactController@updateStatus',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AdminContactController@updateStatus',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'contact.update-status',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'contact.bulk-delete' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'contact-bulk-delete',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\AdminContactController@bulkDelete',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AdminContactController@bulkDelete',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'contact.bulk-delete',
       ),
       'fallback' => false,
       'defaults' => 

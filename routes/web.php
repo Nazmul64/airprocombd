@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\AboutController;
 use App\Http\Controllers\Backend\AdminBlanceController;
+use App\Http\Controllers\Backend\AdminContactController;
 use App\Http\Controllers\Backend\AdmindepositeblanceaddController;
 use App\Http\Controllers\Backend\AdmindepositeEditController;
 use App\Http\Controllers\Backend\AdminpasswordchangeController;
@@ -40,12 +41,15 @@ use App\Http\Controllers\Backend\WhychooseinvestmentplanConroller;
 use App\Http\Controllers\Backend\WidthrawhistoryanddepositehistoryController;
 use App\Http\Controllers\Backend\WithdrawcommissonController;
 use App\Http\Controllers\Backend\WithdrawController;
+use App\Http\Controllers\Backend\ContacformController;
+use App\Http\Controllers\Backend\ContactinfoController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\TotalreferreduseController;
 use App\Http\Controllers\Userauth\ForgotPasswordController;
 use App\Http\Controllers\UserlottryController;
 use App\Http\Controllers\UserregistionController;
+use App\Models\Contacinfo;
 use Illuminate\Support\Facades\Route;
 
 
@@ -60,6 +64,7 @@ Route::post('logout', [AdminController::class, 'logout'])->name('logout');
  Route::get('privacy', [FrontendController::class, 'privacy'])->name('privacy');
  Route::get('contacts', [FrontendController::class, 'contacts'])->name('contacts');
  Route::get('termsconditions', [FrontendController::class, 'termsconditions'])->name('termsconditions');
+ Route::resource('contactform',ContacformController::class);
  // Change this
 
 Route::get('product/{slug}', [FrontendController::class, 'productdetails'])->name('productdetails');
@@ -103,6 +108,13 @@ Route::middleware(['admin'])->group(function () {
     Route::resource('passionsection',PassionsectionController::class);
     Route::resource('solutionprovider',SolutionproviderController::class);
     Route::resource('serviceprovider',ServiceproviderController::class);
+    Route::resource('contactinfo',ContactinfoController::class);
+
+    Route::get('/contact', [AdminContactController::class, 'index'])->name('contact.index');
+    Route::get('/contact/{contact}', [AdminContactController::class, 'show'])->name('contact.show');
+    Route::put('/contact/{contact}/status', [AdminContactController::class, 'updateStatus'])->name('contact.update-status');
+    Route::delete('/contact/{contact}', [AdminContactController::class, 'destroy'])->name('contact.destroy');
+    Route::delete('/contact-bulk-delete', [AdminContactController::class, 'bulkDelete'])->name('contact.bulk-delete');
 
 
     //   admin user account view start end

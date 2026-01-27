@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\About;
 use App\Models\Category;
+use App\Models\Contactinfo;
 use App\Models\Counter;
 use App\Models\Deposite;
 use App\Models\Lotter;
@@ -72,9 +73,13 @@ public function frontend()
     }
 
     public function contacts()
+
     {
-        $contacts = \App\Models\Contact::all();
-         return view('Frontend.pages.contact', compact('contacts'));
+        $contactinfo=Contactinfo::first();
+        $settings = Setting::first();
+        $categories = Category::with('subcategories')->get();
+        $contacts = \App\Models\Contacform::all();
+         return view('Frontend.pages.contact', compact('contacts','categories','settings','contactinfo'));
     }
     // User registration and login methods can be added here
     public function termsconditions()
