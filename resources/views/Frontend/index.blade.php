@@ -44,7 +44,7 @@
                 </p>
             </div>
             <div class="col-md-3 text-end">
-                <a href="#" class="stats-cta-button">GET A QUOTE</a>
+                <a href="{{route('contacts')}}" class="stats-cta-button">GET A QUOTE</a>
             </div>
         </div>
     </div>

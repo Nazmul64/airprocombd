@@ -42,15 +42,20 @@
             </a>
         </li>
 
+
+
     <li>
         <a href="{{ route('subcategories.index') }}">
             <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
             <div class="menu-title">SubCategories</div>
         </a>
     </li>
-
-
-
+    <li>
+        <a href="{{ route('blogcategory.index') }}">
+            <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
+            <div class="menu-title">Blog Category</div>
+        </a>
+    </li>
 
       <li>
             <a href="{{ route('partner.index') }}">

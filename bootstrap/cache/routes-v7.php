@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Dkln3kzbNqWHH9te',
+            '_route' => 'generated::mAhIJzIHHPw743TW',
           ),
           1 => NULL,
           2 => 
@@ -1518,10 +1518,66 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/blogcategory' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'blogcategory.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'blogcategory.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/blogcategory/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'blogcategory.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:40)|/edit(*:52)|(*:59))|/([^/]++)(?|(*:79)|/(?|edit(*:94)|status(*:107))|(*:116))|info/([^/]++)(?|(*:141)|/edit(*:154)|(*:162)))|unter/([^/]++)(?|(*:189)|/edit(*:202)|(*:210)))|ategories/([^/]++)(?|(*:241)|/edit(*:254)|(*:262)))|/p(?|r(?|oduct/(?|([^/]++)(*:298)|create(*:312)|([^/]++)(?|(*:331)|/edit(*:344)|(*:352)))|ivacypolicy/([^/]++)(?|(*:385)|/edit(*:398)|(*:406)))|a(?|rtner/([^/]++)(?|(*:437)|/edit(*:450)|(*:458))|ssionsection/([^/]++)(?|(*:491)|/edit(*:504)|(*:512))))|/whychooseusinvesment/([^/]++)(?|(*:556)|/edit(*:569)|(*:577))|/a(?|boutus/([^/]++)(?|(*:609)|/edit(*:622)|(*:630))|dmin/profile/([^/]++)(*:660))|/s(?|e(?|ttings/([^/]++)(?|(*:696)|/edit(*:709)|(*:717))|rviceprovider/([^/]++)(?|(*:751)|/edit(*:764)|(*:772)))|lider/([^/]++)(?|(*:799)|/edit(*:812)|(*:820))|u(?|pportlink/([^/]++)(?|(*:854)|/edit(*:867)|(*:875))|bcategories/([^/]++)(?|(*:907)|/edit(*:920)|(*:928)))|olutionprovider/([^/]++)(?|(*:965)|/edit(*:978)|(*:986))|torage/(.*)(*:1006))|/Termscondition/([^/]++)(?|(*:1043)|/edit(*:1057)|(*:1066))|/users/([^/]++)/status(*:1098)|/notices/([^/]++)(?|(*:1127)|/edit(*:1141)|(*:1150))|/mission/([^/]++)(?|(*:1180)|/edit(*:1194)|(*:1203)))/?$}sDu',
+      0 => '{^(?|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:40)|/edit(*:52)|(*:59))|/([^/]++)(?|(*:79)|/(?|edit(*:94)|status(*:107))|(*:116))|info/([^/]++)(?|(*:141)|/edit(*:154)|(*:162)))|unter/([^/]++)(?|(*:189)|/edit(*:202)|(*:210)))|ategories/([^/]++)(?|(*:241)|/edit(*:254)|(*:262)))|/p(?|r(?|oduct/(?|([^/]++)(*:298)|create(*:312)|([^/]++)(?|(*:331)|/edit(*:344)|(*:352)))|ivacypolicy/([^/]++)(?|(*:385)|/edit(*:398)|(*:406)))|a(?|rtner/([^/]++)(?|(*:437)|/edit(*:450)|(*:458))|ssionsection/([^/]++)(?|(*:491)|/edit(*:504)|(*:512))))|/whychooseusinvesment/([^/]++)(?|(*:556)|/edit(*:569)|(*:577))|/a(?|boutus/([^/]++)(?|(*:609)|/edit(*:622)|(*:630))|dmin/profile/([^/]++)(*:660))|/s(?|e(?|ttings/([^/]++)(?|(*:696)|/edit(*:709)|(*:717))|rviceprovider/([^/]++)(?|(*:751)|/edit(*:764)|(*:772)))|lider/([^/]++)(?|(*:799)|/edit(*:812)|(*:820))|u(?|pportlink/([^/]++)(?|(*:854)|/edit(*:867)|(*:875))|bcategories/([^/]++)(?|(*:907)|/edit(*:920)|(*:928)))|olutionprovider/([^/]++)(?|(*:965)|/edit(*:978)|(*:986))|torage/(.*)(*:1006))|/Termscondition/([^/]++)(?|(*:1043)|/edit(*:1057)|(*:1066))|/users/([^/]++)/status(*:1098)|/notices/([^/]++)(?|(*:1127)|/edit(*:1141)|(*:1150))|/mission/([^/]++)(?|(*:1180)|/edit(*:1194)|(*:1203))|/blogcategory/([^/]++)(?|(*:1238)|/edit(*:1252)|(*:1261)))/?$}sDu',
     ),
     3 => 
     array (
@@ -3418,6 +3474,94 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
+      ),
+      1238 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'blogcategory.show',
+          ),
+          1 => 
+          array (
+            0 => 'blogcategory',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1252 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'blogcategory.edit',
+          ),
+          1 => 
+          array (
+            0 => 'blogcategory',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      1261 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'blogcategory.update',
+          ),
+          1 => 
+          array (
+            0 => 'blogcategory',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'blogcategory.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'blogcategory',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
         2 => 
         array (
           0 => NULL,
@@ -3434,7 +3578,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::Dkln3kzbNqWHH9te' => 
+    'generated::mAhIJzIHHPw743TW' => 
     array (
       'methods' => 
       array (
@@ -3463,7 +3607,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002b70000000000000000";}}',
-        'as' => 'generated::Dkln3kzbNqWHH9te',
+        'as' => 'generated::mAhIJzIHHPw743TW',
       ),
       'fallback' => false,
       'defaults' => 
@@ -9628,6 +9772,270 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'contact.bulk-delete',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'blogcategory.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'blogcategory',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'blogcategory.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'blogcategory.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'blogcategory/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'blogcategory.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'blogcategory.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'blogcategory',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'blogcategory.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'blogcategory.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'blogcategory/{blogcategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'blogcategory.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'blogcategory.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'blogcategory/{blogcategory}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'blogcategory.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'blogcategory.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'blogcategory/{blogcategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'blogcategory.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'blogcategory.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'blogcategory/{blogcategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'blogcategory.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\BlogcategoryController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
       ),
       'fallback' => false,
       'defaults' => 

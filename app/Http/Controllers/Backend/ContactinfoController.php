@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Models\Contacinfo;
 use App\Models\Contactinfo;
 use Illuminate\Http\Request;
 

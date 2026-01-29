@@ -43,6 +43,7 @@ use App\Http\Controllers\Backend\WithdrawcommissonController;
 use App\Http\Controllers\Backend\WithdrawController;
 use App\Http\Controllers\Backend\ContacformController;
 use App\Http\Controllers\Backend\ContactinfoController;
+use App\Http\Controllers\Backend\BlogcategoryController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\TotalreferreduseController;
@@ -115,6 +116,9 @@ Route::middleware(['admin'])->group(function () {
     Route::put('/contact/{contact}/status', [AdminContactController::class, 'updateStatus'])->name('contact.update-status');
     Route::delete('/contact/{contact}', [AdminContactController::class, 'destroy'])->name('contact.destroy');
     Route::delete('/contact-bulk-delete', [AdminContactController::class, 'bulkDelete'])->name('contact.bulk-delete');
+
+
+    Route::resource('blogcategory', BlogcategoryController::class);
 
 
     //   admin user account view start end
