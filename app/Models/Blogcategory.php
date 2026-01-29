@@ -12,4 +12,14 @@ class Blogcategory extends Model
         'blog_category_name',
         'blog_category_slug',
     ];
+    public function blog_category()
+    {
+        return $this->hasMany(Blog::class, 'blog_category_id');
+    }
+
+    // Alternative method name for convenience
+    public function blogs()
+    {
+        return $this->hasMany(Blog::class, 'blog_category_id');
+    }
 }

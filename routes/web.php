@@ -44,6 +44,7 @@ use App\Http\Controllers\Backend\WithdrawController;
 use App\Http\Controllers\Backend\ContacformController;
 use App\Http\Controllers\Backend\ContactinfoController;
 use App\Http\Controllers\Backend\BlogcategoryController;
+use App\Http\Controllers\Backend\Blogcontroller;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\TotalreferreduseController;
@@ -65,6 +66,8 @@ Route::post('logout', [AdminController::class, 'logout'])->name('logout');
  Route::get('privacy', [FrontendController::class, 'privacy'])->name('privacy');
  Route::get('contacts', [FrontendController::class, 'contacts'])->name('contacts');
  Route::get('termsconditions', [FrontendController::class, 'termsconditions'])->name('termsconditions');
+ Route::get('blogposts', [FrontendController::class, 'blogpost'])->name('blogpost');
+ Route::get('blogslug/{slug}', [FrontendController::class, 'blogShow'])->name('blogshowpost');
  Route::resource('contactform',ContacformController::class);
  // Change this
 
@@ -119,7 +122,7 @@ Route::middleware(['admin'])->group(function () {
 
 
     Route::resource('blogcategory', BlogcategoryController::class);
-
+    Route::resource('blog', Blogcontroller::class);
 
     //   admin user account view start end
 

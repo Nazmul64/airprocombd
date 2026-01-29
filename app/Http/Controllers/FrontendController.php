@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\About;
+use App\Models\Blog;
+use App\Models\Blogcategory;
 use App\Models\Category;
 use App\Models\Contactinfo;
 use App\Models\Counter;
@@ -105,4 +107,46 @@ public function productdetails($slug)
     return view('Frontend.pages.productdetails', compact('categories', 'subcategories', 'product', 'relatedProducts', 'settings'));
 }
 
+// Blog post listing page with search and category filter
+public function blogpost(Request $request)
+{
+    $settings = Setting::first();
+    $categories = Category::all();
+
+    // Start building the query
+    $query = Blog::with('category');
+
+    // Search functionality
+    if ($request->has('search') && $request->search != '') {
+        $searchTerm = $request->search;
+        $query->where(function($q) use ($searchTerm) {
+            $q->where('blog_title', 'LIKE', "%{$searchTerm}%")
+              ->orWhere('blog_content', 'LIKE', "%{$searchTerm}%");
+        });
+    }
+
+    // Category filter
+    if ($request->has('category') && $request->category != '') {
+        $query->where('blog_category_id', $request->category);
+    }
+
+    // Get paginated results
+    $blogposts = $query->latest()->paginate(6);
+
+    // Get all blog categories with post count
+    $blogcategories = Blogcategory::has('blogs')
+        ->withCount('blogs')
+        ->get();
+
+    return view('Frontend.pages.blogpost', compact('settings', 'categories', 'blogposts', 'blogcategories'));
+}
+
+public function blogShow($slug)
+{
+    $settings = Setting::first();
+    $categories = Category::all();
+    $blog = Blog::with('category')->where('blog_slug', $slug)->firstOrFail();
+
+    return view('Frontend.pages.blog-show', compact('settings', 'categories', 'blog'));
+}
 }

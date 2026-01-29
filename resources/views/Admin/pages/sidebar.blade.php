@@ -57,6 +57,15 @@
         </a>
     </li>
 
+    <li>
+        <a href="{{ route('blog.index') }}">
+            <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
+            <div class="menu-title">Blog </div>
+        </a>
+    </li>
+
+
+
       <li>
             <a href="{{ route('partner.index') }}">
                 <div class="parent-icon"><i class="bi bi-people"></i></div>

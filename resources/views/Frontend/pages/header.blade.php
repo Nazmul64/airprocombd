@@ -132,7 +132,7 @@
                     <a class="nav-link" href="#work">Work References</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#media">Media and Blog</a>
+                    <a class="nav-link" href="{{route('blogpost')}}">Media and Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('contacts') }}">Contact us</a>
