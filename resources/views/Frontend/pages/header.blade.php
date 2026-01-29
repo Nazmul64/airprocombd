@@ -133,6 +133,29 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('blogpost')}}">Media and Blog</a>
+                    <ul class="dropdown-menu">
+                         <li class="dropdown-submenu"><a href="{{route('blogpost')}}"class="dropdown-item">Blog</a></li>
+                         <li class="dropdown-submenu"><a href="{{route('videoe.section')}}"class="dropdown-item">Airpro.com.bd Videoes</a></li>
+
+                         @php
+                        use App\Models\Presentationvideo;
+                        $presentationVideo = Presentationvideo::latest()->first();
+                    @endphp
+
+                    @if(!empty($presentationVideo?->video_link))
+                    <li>
+                        <a href="{{ $presentationVideo->video_link }}"
+                        target="_blank"
+                        class="dropdown-item">
+                            Presentation Videos
+                        </a>
+                    </li>
+                    @endif
+
+
+
+
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('contacts') }}">Contact us</a>

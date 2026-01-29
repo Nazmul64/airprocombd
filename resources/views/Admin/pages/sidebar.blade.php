@@ -50,6 +50,7 @@
             <div class="menu-title">SubCategories</div>
         </a>
     </li>
+
     <li>
         <a href="{{ route('blogcategory.index') }}">
             <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
@@ -60,10 +61,24 @@
     <li>
         <a href="{{ route('blog.index') }}">
             <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
-            <div class="menu-title">Blog </div>
+            <div class="menu-title">Blog</div>
         </a>
     </li>
 
+
+
+   <li>
+        <a href="{{ route('videosection.index') }}">
+            <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
+            <div class="menu-title">Video Section</div>
+        </a>
+    </li>
+    <li>
+        <a href="{{ route('Presentationvideo.index') }}">
+            <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
+            <div class="menu-title">Presentation video</div>
+        </a>
+    </li>
 
 
       <li>

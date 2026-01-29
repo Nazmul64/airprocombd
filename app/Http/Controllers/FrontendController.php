@@ -15,6 +15,7 @@ use App\Models\Mission;
 use App\Models\Notice;
 use App\Models\Partner;
 use App\Models\Passionsection;
+use App\Models\Presentationvideo;
 use App\Models\Privacypolicy;
 use App\Models\Product;
 use App\Models\Serviceprovider;
@@ -23,6 +24,7 @@ use App\Models\Slider;
 use App\Models\Solutionprovider;
 use App\Models\Subcategory;
 use App\Models\User_widthdraw;
+use App\Models\Videosection;
 use App\Models\Whychooseinvestmentplan;
 use Illuminate\Http\Request;
 
@@ -51,6 +53,8 @@ public function frontend()
     // Split services into left and right for frontend display
     $leftProviders = $services->where('side', 'left');
     $rightProviders = $services->where('side', 'right');
+   $presentationVideos = Presentationvideo::latest()->first();
+
 
     return view('Frontend.index', compact(
         'sliders',
@@ -64,7 +68,8 @@ public function frontend()
         'solutionprovider',
         'services',
         'leftProviders',
-        'rightProviders'
+        'rightProviders',
+        'presentationVideos'
     ));
 }
 
@@ -148,5 +153,15 @@ public function blogShow($slug)
     $blog = Blog::with('category')->where('blog_slug', $slug)->firstOrFail();
 
     return view('Frontend.pages.blog-show', compact('settings', 'categories', 'blog'));
+}
+
+
+public function videosections()
+{
+    $settings = Setting::first();
+    $categories = Category::all();
+    $videosections = Videosection::latest()->get();
+
+    return view('Frontend.pages.videosection', compact('settings', 'categories', 'videosections'));
 }
 }

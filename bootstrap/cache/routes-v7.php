@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::hPYUECO45Mqxg4JW',
+            '_route' => 'generated::3y51jJLuOR0Z6tBJ',
           ),
           1 => NULL,
           2 => 
@@ -225,6 +225,26 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'contactform.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/videosections' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'videoe.section',
           ),
           1 => NULL,
           2 => 
@@ -1650,10 +1670,122 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/videosection' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'videosection.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'videosection.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/videosection/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'videosection.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/Presentationvideo' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'Presentationvideo.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'Presentationvideo.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/Presentationvideo/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'Presentationvideo.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/blog(?|slug/([^/]++)(*:28)|category/([^/]++)(?|(*:55)|/edit(*:67)|(*:74))|/([^/]++)(?|(*:94)|/edit(*:106)|(*:114)))|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:157)|/edit(*:170)|(*:178))|/([^/]++)(?|(*:199)|/(?|edit(*:215)|status(*:229))|(*:238))|info/([^/]++)(?|(*:263)|/edit(*:276)|(*:284)))|unter/([^/]++)(?|(*:311)|/edit(*:324)|(*:332)))|ategories/([^/]++)(?|(*:363)|/edit(*:376)|(*:384)))|/p(?|r(?|oduct/(?|([^/]++)(*:420)|create(*:434)|([^/]++)(?|(*:453)|/edit(*:466)|(*:474)))|ivacypolicy/([^/]++)(?|(*:507)|/edit(*:520)|(*:528)))|a(?|rtner/([^/]++)(?|(*:559)|/edit(*:572)|(*:580))|ssionsection/([^/]++)(?|(*:613)|/edit(*:626)|(*:634))))|/whychooseusinvesment/([^/]++)(?|(*:678)|/edit(*:691)|(*:699))|/a(?|boutus/([^/]++)(?|(*:731)|/edit(*:744)|(*:752))|dmin/profile/([^/]++)(*:782))|/s(?|e(?|ttings/([^/]++)(?|(*:818)|/edit(*:831)|(*:839))|rviceprovider/([^/]++)(?|(*:873)|/edit(*:886)|(*:894)))|lider/([^/]++)(?|(*:921)|/edit(*:934)|(*:942))|u(?|pportlink/([^/]++)(?|(*:976)|/edit(*:989)|(*:997))|bcategories/([^/]++)(?|(*:1029)|/edit(*:1043)|(*:1052)))|olutionprovider/([^/]++)(?|(*:1090)|/edit(*:1104)|(*:1113))|torage/(.*)(*:1134))|/Termscondition/([^/]++)(?|(*:1171)|/edit(*:1185)|(*:1194))|/users/([^/]++)/status(*:1226)|/notices/([^/]++)(?|(*:1255)|/edit(*:1269)|(*:1278))|/mission/([^/]++)(?|(*:1308)|/edit(*:1322)|(*:1331)))/?$}sDu',
+      0 => '{^(?|/blog(?|slug/([^/]++)(*:28)|category/([^/]++)(?|(*:55)|/edit(*:67)|(*:74))|/([^/]++)(?|(*:94)|/edit(*:106)|(*:114)))|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:157)|/edit(*:170)|(*:178))|/([^/]++)(?|(*:199)|/(?|edit(*:215)|status(*:229))|(*:238))|info/([^/]++)(?|(*:263)|/edit(*:276)|(*:284)))|unter/([^/]++)(?|(*:311)|/edit(*:324)|(*:332)))|ategories/([^/]++)(?|(*:363)|/edit(*:376)|(*:384)))|/p(?|r(?|oduct/(?|([^/]++)(*:420)|create(*:434)|([^/]++)(?|(*:453)|/edit(*:466)|(*:474)))|ivacypolicy/([^/]++)(?|(*:507)|/edit(*:520)|(*:528)))|a(?|rtner/([^/]++)(?|(*:559)|/edit(*:572)|(*:580))|ssionsection/([^/]++)(?|(*:613)|/edit(*:626)|(*:634))))|/whychooseusinvesment/([^/]++)(?|(*:678)|/edit(*:691)|(*:699))|/a(?|boutus/([^/]++)(?|(*:731)|/edit(*:744)|(*:752))|dmin/profile/([^/]++)(*:782))|/s(?|e(?|ttings/([^/]++)(?|(*:818)|/edit(*:831)|(*:839))|rviceprovider/([^/]++)(?|(*:873)|/edit(*:886)|(*:894)))|lider/([^/]++)(?|(*:921)|/edit(*:934)|(*:942))|u(?|pportlink/([^/]++)(?|(*:976)|/edit(*:989)|(*:997))|bcategories/([^/]++)(?|(*:1029)|/edit(*:1043)|(*:1052)))|olutionprovider/([^/]++)(?|(*:1090)|/edit(*:1104)|(*:1113))|torage/(.*)(*:1134))|/Termscondition/([^/]++)(?|(*:1171)|/edit(*:1185)|(*:1194))|/users/([^/]++)/status(*:1226)|/notices/([^/]++)(?|(*:1255)|/edit(*:1269)|(*:1278))|/mission/([^/]++)(?|(*:1308)|/edit(*:1322)|(*:1331))|/videosection/([^/]++)(?|(*:1366)|/edit(*:1380)|(*:1389))|/Presentationvideo/([^/]++)(?|(*:1429)|/edit(*:1443)|(*:1452)))/?$}sDu',
     ),
     3 => 
     array (
@@ -3749,6 +3881,182 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
+      ),
+      1366 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'videosection.show',
+          ),
+          1 => 
+          array (
+            0 => 'videosection',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1380 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'videosection.edit',
+          ),
+          1 => 
+          array (
+            0 => 'videosection',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      1389 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'videosection.update',
+          ),
+          1 => 
+          array (
+            0 => 'videosection',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'videosection.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'videosection',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1429 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'Presentationvideo.show',
+          ),
+          1 => 
+          array (
+            0 => 'Presentationvideo',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1443 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'Presentationvideo.edit',
+          ),
+          1 => 
+          array (
+            0 => 'Presentationvideo',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      1452 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'Presentationvideo.update',
+          ),
+          1 => 
+          array (
+            0 => 'Presentationvideo',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'Presentationvideo.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'Presentationvideo',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
         2 => 
         array (
           0 => NULL,
@@ -3765,7 +4073,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::hPYUECO45Mqxg4JW' => 
+    'generated::3y51jJLuOR0Z6tBJ' => 
     array (
       'methods' => 
       array (
@@ -3794,7 +4102,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002b70000000000000000";}}',
-        'as' => 'generated::hPYUECO45Mqxg4JW',
+        'as' => 'generated::3y51jJLuOR0Z6tBJ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4383,6 +4691,43 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'videoe.section' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'videosections',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\FrontendController@videosections',
+        'controller' => 'App\\Http\\Controllers\\FrontendController@videosections',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'videoe.section',
       ),
       'fallback' => false,
       'defaults' => 
@@ -10556,6 +10901,534 @@ app('router')->setCompiledRoutes(
         'as' => 'blog.destroy',
         'uses' => 'App\\Http\\Controllers\\Backend\\Blogcontroller@destroy',
         'controller' => 'App\\Http\\Controllers\\Backend\\Blogcontroller@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'videosection.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'videosection',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'videosection.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\VideosectionController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\VideosectionController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'videosection.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'videosection/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'videosection.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\VideosectionController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\VideosectionController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'videosection.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'videosection',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'videosection.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\VideosectionController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\VideosectionController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'videosection.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'videosection/{videosection}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'videosection.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\VideosectionController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\VideosectionController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'videosection.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'videosection/{videosection}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'videosection.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\VideosectionController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\VideosectionController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'videosection.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'videosection/{videosection}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'videosection.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\VideosectionController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\VideosectionController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'videosection.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'videosection/{videosection}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'videosection.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\VideosectionController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\VideosectionController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'Presentationvideo.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Presentationvideo',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'Presentationvideo.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'Presentationvideo.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Presentationvideo/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'Presentationvideo.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'Presentationvideo.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'Presentationvideo',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'Presentationvideo.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'Presentationvideo.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Presentationvideo/{Presentationvideo}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'Presentationvideo.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'Presentationvideo.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Presentationvideo/{Presentationvideo}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'Presentationvideo.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'Presentationvideo.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'Presentationvideo/{Presentationvideo}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'Presentationvideo.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'Presentationvideo.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'Presentationvideo/{Presentationvideo}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'Presentationvideo.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
