@@ -45,6 +45,7 @@ use App\Http\Controllers\Backend\ContacformController;
 use App\Http\Controllers\Backend\ContactinfoController;
 use App\Http\Controllers\Backend\BlogcategoryController;
 use App\Http\Controllers\Backend\Blogcontroller;
+use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Backend\PresentationvideoController;
 use App\Http\Controllers\Backend\VideosectionController;
 use App\Http\Controllers\ChatController;
@@ -72,6 +73,7 @@ Route::post('logout', [AdminController::class, 'logout'])->name('logout');
  Route::get('blogslug/{slug}', [FrontendController::class, 'blogShow'])->name('blogshowpost');
  Route::resource('contactform',ContacformController::class);
  Route::get('videosections', [FrontendController::class, 'videosections'])->name('videoe.section');
+ Route::get('galleries', [FrontendController::class, 'galleries'])->name('galleries.video');
  // Change this
 
 Route::get('product/{slug}', [FrontendController::class, 'productdetails'])->name('productdetails');
@@ -128,6 +130,8 @@ Route::middleware(['admin'])->group(function () {
     Route::resource('blog', Blogcontroller::class);
     Route::resource('videosection', VideosectionController::class);
     Route::resource('Presentationvideo', PresentationvideoController::class);
+    Route::resource('Presentationvideo', PresentationvideoController::class);
+    Route::resource('gallery', GalleryController::class);
     //   admin user account view start end
 
 

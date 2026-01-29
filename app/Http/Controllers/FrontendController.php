@@ -10,6 +10,7 @@ use App\Models\Category;
 use App\Models\Contactinfo;
 use App\Models\Counter;
 use App\Models\Deposite;
+use App\Models\Gallery;
 use App\Models\Lotter;
 use App\Models\Mission;
 use App\Models\Notice;
@@ -164,4 +165,15 @@ public function videosections()
 
     return view('Frontend.pages.videosection', compact('settings', 'categories', 'videosections'));
 }
+
+public function galleries()
+{
+    $settings = Setting::first();
+    $categories = Category::all();
+    $gallery=Gallery::latest()->get();
+    return view('Frontend.pages.gallery', compact('settings', 'categories','gallery'));
+}
+
+
+
 }

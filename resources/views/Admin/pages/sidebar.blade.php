@@ -80,6 +80,12 @@
         </a>
     </li>
 
+    <li>
+        <a href="{{ route('gallery.index') }}">
+            <div class="parent-icon"><i class="fas fa-sliders-h"></i></div>
+            <div class="menu-title">Gallery</div>
+        </a>
+    </li>
 
       <li>
             <a href="{{ route('partner.index') }}">

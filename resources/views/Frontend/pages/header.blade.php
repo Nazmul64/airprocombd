@@ -136,6 +136,7 @@
                     <ul class="dropdown-menu">
                          <li class="dropdown-submenu"><a href="{{route('blogpost')}}"class="dropdown-item">Blog</a></li>
                          <li class="dropdown-submenu"><a href="{{route('videoe.section')}}"class="dropdown-item">Airpro.com.bd Videoes</a></li>
+                        <li class="dropdown-submenu"><a href="{{route('galleries.video')}}"class="dropdown-item">Airpro.com.bd Gallery</a></li>
 
                          @php
                         use App\Models\Presentationvideo;
@@ -151,10 +152,6 @@
                         </a>
                     </li>
                     @endif
-
-
-
-
                     </ul>
                 </li>
                 <li class="nav-item">

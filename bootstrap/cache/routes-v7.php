@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::3y51jJLuOR0Z6tBJ',
+            '_route' => 'generated::iiuCVrHF32d7VQdK',
           ),
           1 => NULL,
           2 => 
@@ -245,6 +245,26 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'videoe.section',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/galleries' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'galleries.video',
           ),
           1 => NULL,
           2 => 
@@ -1782,10 +1802,66 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/gallery' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'gallery.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'gallery.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/gallery/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'gallery.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/blog(?|slug/([^/]++)(*:28)|category/([^/]++)(?|(*:55)|/edit(*:67)|(*:74))|/([^/]++)(?|(*:94)|/edit(*:106)|(*:114)))|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:157)|/edit(*:170)|(*:178))|/([^/]++)(?|(*:199)|/(?|edit(*:215)|status(*:229))|(*:238))|info/([^/]++)(?|(*:263)|/edit(*:276)|(*:284)))|unter/([^/]++)(?|(*:311)|/edit(*:324)|(*:332)))|ategories/([^/]++)(?|(*:363)|/edit(*:376)|(*:384)))|/p(?|r(?|oduct/(?|([^/]++)(*:420)|create(*:434)|([^/]++)(?|(*:453)|/edit(*:466)|(*:474)))|ivacypolicy/([^/]++)(?|(*:507)|/edit(*:520)|(*:528)))|a(?|rtner/([^/]++)(?|(*:559)|/edit(*:572)|(*:580))|ssionsection/([^/]++)(?|(*:613)|/edit(*:626)|(*:634))))|/whychooseusinvesment/([^/]++)(?|(*:678)|/edit(*:691)|(*:699))|/a(?|boutus/([^/]++)(?|(*:731)|/edit(*:744)|(*:752))|dmin/profile/([^/]++)(*:782))|/s(?|e(?|ttings/([^/]++)(?|(*:818)|/edit(*:831)|(*:839))|rviceprovider/([^/]++)(?|(*:873)|/edit(*:886)|(*:894)))|lider/([^/]++)(?|(*:921)|/edit(*:934)|(*:942))|u(?|pportlink/([^/]++)(?|(*:976)|/edit(*:989)|(*:997))|bcategories/([^/]++)(?|(*:1029)|/edit(*:1043)|(*:1052)))|olutionprovider/([^/]++)(?|(*:1090)|/edit(*:1104)|(*:1113))|torage/(.*)(*:1134))|/Termscondition/([^/]++)(?|(*:1171)|/edit(*:1185)|(*:1194))|/users/([^/]++)/status(*:1226)|/notices/([^/]++)(?|(*:1255)|/edit(*:1269)|(*:1278))|/mission/([^/]++)(?|(*:1308)|/edit(*:1322)|(*:1331))|/videosection/([^/]++)(?|(*:1366)|/edit(*:1380)|(*:1389))|/Presentationvideo/([^/]++)(?|(*:1429)|/edit(*:1443)|(*:1452)))/?$}sDu',
+      0 => '{^(?|/blog(?|slug/([^/]++)(*:28)|category/([^/]++)(?|(*:55)|/edit(*:67)|(*:74))|/([^/]++)(?|(*:94)|/edit(*:106)|(*:114)))|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:157)|/edit(*:170)|(*:178))|/([^/]++)(?|(*:199)|/(?|edit(*:215)|status(*:229))|(*:238))|info/([^/]++)(?|(*:263)|/edit(*:276)|(*:284)))|unter/([^/]++)(?|(*:311)|/edit(*:324)|(*:332)))|ategories/([^/]++)(?|(*:363)|/edit(*:376)|(*:384)))|/p(?|r(?|oduct/(?|([^/]++)(*:420)|create(*:434)|([^/]++)(?|(*:453)|/edit(*:466)|(*:474)))|ivacypolicy/([^/]++)(?|(*:507)|/edit(*:520)|(*:528)))|a(?|rtner/([^/]++)(?|(*:559)|/edit(*:572)|(*:580))|ssionsection/([^/]++)(?|(*:613)|/edit(*:626)|(*:634))))|/whychooseusinvesment/([^/]++)(?|(*:678)|/edit(*:691)|(*:699))|/a(?|boutus/([^/]++)(?|(*:731)|/edit(*:744)|(*:752))|dmin/profile/([^/]++)(*:782))|/s(?|e(?|ttings/([^/]++)(?|(*:818)|/edit(*:831)|(*:839))|rviceprovider/([^/]++)(?|(*:873)|/edit(*:886)|(*:894)))|lider/([^/]++)(?|(*:921)|/edit(*:934)|(*:942))|u(?|pportlink/([^/]++)(?|(*:976)|/edit(*:989)|(*:997))|bcategories/([^/]++)(?|(*:1029)|/edit(*:1043)|(*:1052)))|olutionprovider/([^/]++)(?|(*:1090)|/edit(*:1104)|(*:1113))|torage/(.*)(*:1134))|/Termscondition/([^/]++)(?|(*:1171)|/edit(*:1185)|(*:1194))|/users/([^/]++)/status(*:1226)|/notices/([^/]++)(?|(*:1255)|/edit(*:1269)|(*:1278))|/mission/([^/]++)(?|(*:1308)|/edit(*:1322)|(*:1331))|/videosection/([^/]++)(?|(*:1366)|/edit(*:1380)|(*:1389))|/Presentationvideo/([^/]++)(?|(*:1429)|/edit(*:1443)|(*:1452))|/gallery/([^/]++)(?|(*:1482)|/edit(*:1496)|(*:1505)))/?$}sDu',
     ),
     3 => 
     array (
@@ -4057,6 +4133,94 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
+      ),
+      1482 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'gallery.show',
+          ),
+          1 => 
+          array (
+            0 => 'gallery',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1496 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'gallery.edit',
+          ),
+          1 => 
+          array (
+            0 => 'gallery',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      1505 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'gallery.update',
+          ),
+          1 => 
+          array (
+            0 => 'gallery',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'gallery.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'gallery',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
         2 => 
         array (
           0 => NULL,
@@ -4073,7 +4237,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::3y51jJLuOR0Z6tBJ' => 
+    'generated::iiuCVrHF32d7VQdK' => 
     array (
       'methods' => 
       array (
@@ -4102,7 +4266,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002b70000000000000000";}}',
-        'as' => 'generated::3y51jJLuOR0Z6tBJ',
+        'as' => 'generated::iiuCVrHF32d7VQdK',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4728,6 +4892,43 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'videoe.section',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'galleries.video' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'galleries',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\FrontendController@galleries',
+        'controller' => 'App\\Http\\Controllers\\FrontendController@galleries',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'galleries.video',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11429,6 +11630,270 @@ app('router')->setCompiledRoutes(
         'as' => 'Presentationvideo.destroy',
         'uses' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@destroy',
         'controller' => 'App\\Http\\Controllers\\Backend\\PresentationvideoController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'gallery.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'gallery',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'gallery.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\GalleryController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\GalleryController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'gallery.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'gallery/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'gallery.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\GalleryController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\GalleryController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'gallery.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'gallery',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'gallery.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\GalleryController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\GalleryController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'gallery.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'gallery/{gallery}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'gallery.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\GalleryController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\GalleryController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'gallery.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'gallery/{gallery}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'gallery.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\GalleryController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\GalleryController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'gallery.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'gallery/{gallery}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'gallery.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\GalleryController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\GalleryController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'gallery.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'gallery/{gallery}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'gallery.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\GalleryController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\GalleryController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
