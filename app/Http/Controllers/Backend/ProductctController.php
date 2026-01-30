@@ -3,62 +3,76 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\Category;
 use App\Models\SubCategory;
-use Illuminate\Http\Request;
 
 class ProductctController extends Controller
 {
-   public function index()
-{
-    $products = Product::with('category', 'subcategory')->latest()->get();
-    return view('Admin.product.index', compact('products'));
-}
+    // List all products
+    public function index()
+    {
+        $products = Product::with('category', 'subcategory')->latest()->get();
+        return view('Admin.product.index', compact('products'));
+    }
 
+    // Show create form
     public function create()
     {
         $categories = Category::all();
         $subcategories = SubCategory::all();
-        return view('Admin.product.create', compact('categories','subcategories'));
+        return view('Admin.product.create', compact('categories', 'subcategories'));
     }
 
+    // Store new product
     public function store(Request $request)
     {
         $request->validate([
             'product_name' => 'required|string|max:255',
-            'product_slug' => 'required|unique:products,product_slug',
-            'category_id' => 'required',
-            'subcategory_id' => 'required',
-            'product_image' => 'required|image',
-            'multi_image.*' => 'image',
+            'product_slug' => 'required|string|max:255|unique:products,product_slug',
+            'category_id'  => 'required|exists:categories,id',
+            'subcategory_id' => 'nullable|exists:subcategories,id',
+            'product_image' => 'required|image|mimes:jpg,jpeg,png|max:2048',
+            'multi_image.*' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         ]);
 
-        $data = $request->all();
-
         // Single Image
+        $productImage = null;
         if ($request->hasFile('product_image')) {
-            $name = time().'_'.$request->product_image->getClientOriginalName();
-            $request->product_image->move(public_path('uploads/products'), $name);
-            $data['product_image'] = $name;
+            $productImage = time().'.'.$request->product_image->extension();
+            $request->product_image->move(public_path('uploads/products'), $productImage);
         }
 
-        // Multi Image
+        // Multiple Images
+        $multiImages = [];
         if ($request->hasFile('multi_image')) {
-            $images = [];
-            foreach ($request->file('multi_image') as $img) {
-                $imgName = time().'_'.$img->getClientOriginalName();
-                $img->move(public_path('uploads/products/multi'), $imgName);
-                $images[] = $imgName;
+            foreach ($request->file('multi_image') as $file) {
+                $name = time().'_'.uniqid().'.'.$file->extension();
+                $file->move(public_path('uploads/products/multi'), $name);
+                $multiImages[] = $name;
             }
-            $data['multi_image'] = json_encode($images);
         }
 
-        Product::create($data);
+        Product::create([
+            'product_name' => $request->product_name,
+            'product_slug' => $request->product_slug,
+            'product_description' => $request->product_description,
+            'brand' => $request->brand,
+            'country' => $request->country,
+            'origin' => $request->origin,
+            'category_id' => $request->category_id,
+            'subcategory_id' => $request->subcategory_id,
+            'product_image' => $productImage,
+            'multi_image' => json_encode($multiImages),
+            'company_details' => $request->company_details,
+            'button_title' => $request->button_title,
+        ]);
 
-        return redirect()->route('product.index')->with('success','Product Created');
+        return redirect()->route('product.index')->with('success','Product Created Successfully');
     }
 
+    // Show edit form
     public function edit($id)
     {
         $product = Product::findOrFail($id);
@@ -67,35 +81,72 @@ class ProductctController extends Controller
         return view('Admin.product.edit', compact('product','categories','subcategories'));
     }
 
+    // Update product
     public function update(Request $request, $id)
     {
         $product = Product::findOrFail($id);
 
-        $data = $request->all();
+        $request->validate([
+            'product_name' => 'required|string|max:255',
+            'product_slug' => 'required|string|max:255|unique:products,product_slug,'.$id,
+            'category_id'  => 'required|exists:categories,id',
+            'subcategory_id' => 'nullable|exists:subcategories,id',
+            'product_image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'multi_image.*' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+        ]);
 
+        // Update single image if uploaded
         if ($request->hasFile('product_image')) {
-            $name = time().'_'.$request->product_image->getClientOriginalName();
-            $request->product_image->move(public_path('uploads/products'), $name);
-            $data['product_image'] = $name;
+            $imageName = time().'.'.$request->product_image->extension();
+            $request->product_image->move(public_path('uploads/products'), $imageName);
+            $product->product_image = $imageName;
         }
 
+        // Update multiple images if uploaded
         if ($request->hasFile('multi_image')) {
-            $images = [];
-            foreach ($request->file('multi_image') as $img) {
-                $imgName = time().'_'.$img->getClientOriginalName();
-                $img->move(public_path('uploads/products/multi'), $imgName);
-                $images[] = $imgName;
+            $multiImages = [];
+            foreach ($request->file('multi_image') as $file) {
+                $name = time().'_'.uniqid().'.'.$file->extension();
+                $file->move(public_path('uploads/products/multi'), $name);
+                $multiImages[] = $name;
             }
-            $data['multi_image'] = json_encode($images);
+            $product->multi_image = json_encode($multiImages);
         }
 
-        $product->update($data);
-        return redirect()->route('product.index')->with('success','Product Updated');
+        $product->update([
+            'product_name' => $request->product_name,
+            'product_slug' => $request->product_slug,
+            'product_description' => $request->product_description,
+            'brand' => $request->brand,
+            'country' => $request->country,
+            'origin' => $request->origin,
+            'category_id' => $request->category_id,
+            'subcategory_id' => $request->subcategory_id,
+            'company_details' => $request->company_details,
+            'button_title' => $request->button_title,
+        ]);
+
+        return redirect()->route('product.index')->with('success','Product Updated Successfully');
     }
 
+    // Delete product
     public function destroy($id)
     {
-        Product::findOrFail($id)->delete();
-        return back()->with('success','Product Deleted');
+        $product = Product::findOrFail($id);
+
+        // Delete images
+        if ($product->product_image && file_exists(public_path('uploads/products/'.$product->product_image))) {
+            unlink(public_path('uploads/products/'.$product->product_image));
+        }
+        if ($product->multi_image) {
+            foreach(json_decode($product->multi_image) as $img) {
+                if(file_exists(public_path('uploads/products/multi/'.$img))) {
+                    unlink(public_path('uploads/products/multi/'.$img));
+                }
+            }
+        }
+
+        $product->delete();
+        return redirect()->route('product.index')->with('success','Product Deleted Successfully');
     }
 }

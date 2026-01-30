@@ -48,6 +48,8 @@ use App\Http\Controllers\Backend\Blogcontroller;
 use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Backend\PresentationvideoController;
 use App\Http\Controllers\Backend\VideosectionController;
+use App\Http\Controllers\Backend\WorkreferencescategoryController;
+use App\Http\Controllers\Backend\WorkreferencesController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\TotalreferreduseController;
@@ -75,6 +77,9 @@ Route::post('logout', [AdminController::class, 'logout'])->name('logout');
  Route::get('videosections', [FrontendController::class, 'videosections'])->name('videoe.section');
  Route::get('galleries', [FrontendController::class, 'galleries'])->name('galleries.video');
  // Change this
+
+Route::get('work-reference', [FrontendController::class, 'workReference'])->name('work.reference');
+Route::get('work-reference/{slug}', [FrontendController::class, 'workReferenceShow'])->name('work.reference.show');
 
 Route::get('product/{slug}', [FrontendController::class, 'productdetails'])->name('productdetails');
 Route::get('user/chat',        [ChatController::class, 'index'])->name('user.chat');
@@ -132,6 +137,8 @@ Route::middleware(['admin'])->group(function () {
     Route::resource('Presentationvideo', PresentationvideoController::class);
     Route::resource('Presentationvideo', PresentationvideoController::class);
     Route::resource('gallery', GalleryController::class);
+    Route::resource('workreferencecategory',WorkreferencescategoryController::class);
+    Route::resource('workreferencec',WorkreferencesController::class);
     //   admin user account view start end
 
 

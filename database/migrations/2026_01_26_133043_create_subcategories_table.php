@@ -14,9 +14,12 @@ return new class extends Migration
         Schema::create('subcategories', function (Blueprint $table) {
             $table->id();
             $table->string('subcategory_name');
-            $table->string('subcategory_slug');
-            $table->unsignedBigInteger('category_id');
+            $table->string('subcategory_slug')->unique(); // unique constraint
+            $table->unsignedBigInteger('category_id');   // foreign key
             $table->timestamps();
+
+            // Optional: add foreign key constraint if categories table exists
+            // $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
         });
     }
 

@@ -129,7 +129,7 @@
                 @endforeach
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#work">Work References</a>
+                    <a class="nav-link" href="{{route('work.reference')}}">Work References</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('blogpost')}}">Media and Blog</a>

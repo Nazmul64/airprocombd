@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::iiuCVrHF32d7VQdK',
+            '_route' => 'generated::h8QTydYf37Vphi4O',
           ),
           1 => NULL,
           2 => 
@@ -265,6 +265,26 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'galleries.video',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/work-reference' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'work.reference',
           ),
           1 => NULL,
           2 => 
@@ -1858,10 +1878,122 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/workreferencecategory' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'workreferencecategory.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'workreferencecategory.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/workreferencecategory/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'workreferencecategory.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/workreferencec' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'workreferencec.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'workreferencec.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/workreferencec/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'workreferencec.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/blog(?|slug/([^/]++)(*:28)|category/([^/]++)(?|(*:55)|/edit(*:67)|(*:74))|/([^/]++)(?|(*:94)|/edit(*:106)|(*:114)))|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:157)|/edit(*:170)|(*:178))|/([^/]++)(?|(*:199)|/(?|edit(*:215)|status(*:229))|(*:238))|info/([^/]++)(?|(*:263)|/edit(*:276)|(*:284)))|unter/([^/]++)(?|(*:311)|/edit(*:324)|(*:332)))|ategories/([^/]++)(?|(*:363)|/edit(*:376)|(*:384)))|/p(?|r(?|oduct/(?|([^/]++)(*:420)|create(*:434)|([^/]++)(?|(*:453)|/edit(*:466)|(*:474)))|ivacypolicy/([^/]++)(?|(*:507)|/edit(*:520)|(*:528)))|a(?|rtner/([^/]++)(?|(*:559)|/edit(*:572)|(*:580))|ssionsection/([^/]++)(?|(*:613)|/edit(*:626)|(*:634))))|/whychooseusinvesment/([^/]++)(?|(*:678)|/edit(*:691)|(*:699))|/a(?|boutus/([^/]++)(?|(*:731)|/edit(*:744)|(*:752))|dmin/profile/([^/]++)(*:782))|/s(?|e(?|ttings/([^/]++)(?|(*:818)|/edit(*:831)|(*:839))|rviceprovider/([^/]++)(?|(*:873)|/edit(*:886)|(*:894)))|lider/([^/]++)(?|(*:921)|/edit(*:934)|(*:942))|u(?|pportlink/([^/]++)(?|(*:976)|/edit(*:989)|(*:997))|bcategories/([^/]++)(?|(*:1029)|/edit(*:1043)|(*:1052)))|olutionprovider/([^/]++)(?|(*:1090)|/edit(*:1104)|(*:1113))|torage/(.*)(*:1134))|/Termscondition/([^/]++)(?|(*:1171)|/edit(*:1185)|(*:1194))|/users/([^/]++)/status(*:1226)|/notices/([^/]++)(?|(*:1255)|/edit(*:1269)|(*:1278))|/mission/([^/]++)(?|(*:1308)|/edit(*:1322)|(*:1331))|/videosection/([^/]++)(?|(*:1366)|/edit(*:1380)|(*:1389))|/Presentationvideo/([^/]++)(?|(*:1429)|/edit(*:1443)|(*:1452))|/gallery/([^/]++)(?|(*:1482)|/edit(*:1496)|(*:1505)))/?$}sDu',
+      0 => '{^(?|/blog(?|slug/([^/]++)(*:28)|category/([^/]++)(?|(*:55)|/edit(*:67)|(*:74))|/([^/]++)(?|(*:94)|/edit(*:106)|(*:114)))|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:157)|/edit(*:170)|(*:178))|/([^/]++)(?|(*:199)|/(?|edit(*:215)|status(*:229))|(*:238))|info/([^/]++)(?|(*:263)|/edit(*:276)|(*:284)))|unter/([^/]++)(?|(*:311)|/edit(*:324)|(*:332)))|ategories/([^/]++)(?|(*:363)|/edit(*:376)|(*:384)))|/w(?|ork(?|\\-reference/([^/]++)(*:425)|referencec(?|ategory/([^/]++)(?|(*:465)|/edit(*:478)|(*:486))|/([^/]++)(?|(*:507)|/edit(*:520)|(*:528))))|hychooseusinvesment/([^/]++)(?|(*:570)|/edit(*:583)|(*:591)))|/p(?|r(?|oduct/(?|([^/]++)(*:627)|create(*:641)|([^/]++)(?|(*:660)|/edit(*:673)|(*:681)))|ivacypolicy/([^/]++)(?|(*:714)|/edit(*:727)|(*:735)))|a(?|rtner/([^/]++)(?|(*:766)|/edit(*:779)|(*:787))|ssionsection/([^/]++)(?|(*:820)|/edit(*:833)|(*:841))))|/a(?|boutus/([^/]++)(?|(*:875)|/edit(*:888)|(*:896))|dmin/profile/([^/]++)(*:926))|/s(?|e(?|ttings/([^/]++)(?|(*:962)|/edit(*:975)|(*:983))|rviceprovider/([^/]++)(?|(*:1017)|/edit(*:1031)|(*:1040)))|lider/([^/]++)(?|(*:1068)|/edit(*:1082)|(*:1091))|u(?|pportlink/([^/]++)(?|(*:1126)|/edit(*:1140)|(*:1149))|bcategories/([^/]++)(?|(*:1182)|/edit(*:1196)|(*:1205)))|olutionprovider/([^/]++)(?|(*:1243)|/edit(*:1257)|(*:1266))|torage/(.*)(*:1287))|/Termscondition/([^/]++)(?|(*:1324)|/edit(*:1338)|(*:1347))|/users/([^/]++)/status(*:1379)|/notices/([^/]++)(?|(*:1408)|/edit(*:1422)|(*:1431))|/mission/([^/]++)(?|(*:1461)|/edit(*:1475)|(*:1484))|/videosection/([^/]++)(?|(*:1519)|/edit(*:1533)|(*:1542))|/Presentationvideo/([^/]++)(?|(*:1582)|/edit(*:1596)|(*:1605))|/gallery/([^/]++)(?|(*:1635)|/edit(*:1649)|(*:1658)))/?$}sDu',
     ),
     3 => 
     array (
@@ -2526,13 +2658,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      420 => 
+      425 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'productdetails',
+            '_route' => 'work.reference.show',
           ),
           1 => 
           array (
@@ -2549,39 +2681,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      434 => 
+      465 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'product.create',
+            '_route' => 'workreferencecategory.show',
           ),
           1 => 
           array (
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      453 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'product.show',
-          ),
-          1 => 
-          array (
-            0 => 'product',
+            0 => 'workreferencecategory',
           ),
           2 => 
           array (
@@ -2594,17 +2704,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      466 => 
+      478 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'product.edit',
+            '_route' => 'workreferencecategory.edit',
           ),
           1 => 
           array (
-            0 => 'product',
+            0 => 'workreferencecategory',
           ),
           2 => 
           array (
@@ -2617,17 +2727,17 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      474 => 
+      486 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'product.update',
+            '_route' => 'workreferencecategory.update',
           ),
           1 => 
           array (
-            0 => 'product',
+            0 => 'workreferencecategory',
           ),
           2 => 
           array (
@@ -2643,11 +2753,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'product.destroy',
+            '_route' => 'workreferencecategory.destroy',
           ),
           1 => 
           array (
-            0 => 'product',
+            0 => 'workreferencecategory',
           ),
           2 => 
           array (
@@ -2665,11 +2775,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'privacypolicy.show',
+            '_route' => 'workreferencec.show',
           ),
           1 => 
           array (
-            0 => 'privacypolicy',
+            0 => 'workreferencec',
           ),
           2 => 
           array (
@@ -2688,11 +2798,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'privacypolicy.edit',
+            '_route' => 'workreferencec.edit',
           ),
           1 => 
           array (
-            0 => 'privacypolicy',
+            0 => 'workreferencec',
           ),
           2 => 
           array (
@@ -2711,11 +2821,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'privacypolicy.update',
+            '_route' => 'workreferencec.update',
           ),
           1 => 
           array (
-            0 => 'privacypolicy',
+            0 => 'workreferencec',
           ),
           2 => 
           array (
@@ -2731,11 +2841,11 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'privacypolicy.destroy',
+            '_route' => 'workreferencec.destroy',
           ),
           1 => 
           array (
-            0 => 'privacypolicy',
+            0 => 'workreferencec',
           ),
           2 => 
           array (
@@ -2747,183 +2857,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      559 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'partner.show',
-          ),
-          1 => 
-          array (
-            0 => 'partner',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      572 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'partner.edit',
-          ),
-          1 => 
-          array (
-            0 => 'partner',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      580 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'partner.update',
-          ),
-          1 => 
-          array (
-            0 => 'partner',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'partner.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'partner',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      613 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'passionsection.show',
-          ),
-          1 => 
-          array (
-            0 => 'passionsection',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      626 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'passionsection.edit',
-          ),
-          1 => 
-          array (
-            0 => 'passionsection',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      634 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'passionsection.update',
-          ),
-          1 => 
-          array (
-            0 => 'passionsection',
-          ),
-          2 => 
-          array (
-            'PUT' => 0,
-            'PATCH' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'passionsection.destroy',
-          ),
-          1 => 
-          array (
-            0 => 'passionsection',
-          ),
-          2 => 
-          array (
-            'DELETE' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      678 => 
+      570 => 
       array (
         0 => 
         array (
@@ -2946,7 +2880,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      691 => 
+      583 => 
       array (
         0 => 
         array (
@@ -2969,7 +2903,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      699 => 
+      591 => 
       array (
         0 => 
         array (
@@ -3011,7 +2945,404 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      731 => 
+      627 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'productdetails',
+          ),
+          1 => 
+          array (
+            0 => 'slug',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      641 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.create',
+          ),
+          1 => 
+          array (
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      660 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.show',
+          ),
+          1 => 
+          array (
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      673 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.edit',
+          ),
+          1 => 
+          array (
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      681 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.update',
+          ),
+          1 => 
+          array (
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'product.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'product',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      714 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'privacypolicy.show',
+          ),
+          1 => 
+          array (
+            0 => 'privacypolicy',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      727 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'privacypolicy.edit',
+          ),
+          1 => 
+          array (
+            0 => 'privacypolicy',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      735 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'privacypolicy.update',
+          ),
+          1 => 
+          array (
+            0 => 'privacypolicy',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'privacypolicy.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'privacypolicy',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      766 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'partner.show',
+          ),
+          1 => 
+          array (
+            0 => 'partner',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      779 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'partner.edit',
+          ),
+          1 => 
+          array (
+            0 => 'partner',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      787 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'partner.update',
+          ),
+          1 => 
+          array (
+            0 => 'partner',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'partner.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'partner',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      820 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.show',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      833 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.edit',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      841 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.update',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'passionsection.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'passionsection',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      875 => 
       array (
         0 => 
         array (
@@ -3034,7 +3365,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      744 => 
+      888 => 
       array (
         0 => 
         array (
@@ -3057,7 +3388,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      752 => 
+      896 => 
       array (
         0 => 
         array (
@@ -3099,7 +3430,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      782 => 
+      926 => 
       array (
         0 => 
         array (
@@ -3121,7 +3452,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      818 => 
+      962 => 
       array (
         0 => 
         array (
@@ -3144,7 +3475,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      831 => 
+      975 => 
       array (
         0 => 
         array (
@@ -3167,7 +3498,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      839 => 
+      983 => 
       array (
         0 => 
         array (
@@ -3209,7 +3540,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      873 => 
+      1017 => 
       array (
         0 => 
         array (
@@ -3232,7 +3563,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      886 => 
+      1031 => 
       array (
         0 => 
         array (
@@ -3255,7 +3586,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      894 => 
+      1040 => 
       array (
         0 => 
         array (
@@ -3297,7 +3628,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      921 => 
+      1068 => 
       array (
         0 => 
         array (
@@ -3320,7 +3651,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      934 => 
+      1082 => 
       array (
         0 => 
         array (
@@ -3343,7 +3674,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      942 => 
+      1091 => 
       array (
         0 => 
         array (
@@ -3385,7 +3716,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      976 => 
+      1126 => 
       array (
         0 => 
         array (
@@ -3408,7 +3739,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      989 => 
+      1140 => 
       array (
         0 => 
         array (
@@ -3431,7 +3762,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      997 => 
+      1149 => 
       array (
         0 => 
         array (
@@ -3473,7 +3804,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1029 => 
+      1182 => 
       array (
         0 => 
         array (
@@ -3496,7 +3827,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1043 => 
+      1196 => 
       array (
         0 => 
         array (
@@ -3519,7 +3850,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1052 => 
+      1205 => 
       array (
         0 => 
         array (
@@ -3561,7 +3892,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1090 => 
+      1243 => 
       array (
         0 => 
         array (
@@ -3584,7 +3915,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1104 => 
+      1257 => 
       array (
         0 => 
         array (
@@ -3607,7 +3938,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1113 => 
+      1266 => 
       array (
         0 => 
         array (
@@ -3649,7 +3980,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1134 => 
+      1287 => 
       array (
         0 => 
         array (
@@ -3672,7 +4003,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1171 => 
+      1324 => 
       array (
         0 => 
         array (
@@ -3695,7 +4026,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1185 => 
+      1338 => 
       array (
         0 => 
         array (
@@ -3718,7 +4049,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1194 => 
+      1347 => 
       array (
         0 => 
         array (
@@ -3760,7 +4091,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1226 => 
+      1379 => 
       array (
         0 => 
         array (
@@ -3782,7 +4113,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1255 => 
+      1408 => 
       array (
         0 => 
         array (
@@ -3805,7 +4136,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1269 => 
+      1422 => 
       array (
         0 => 
         array (
@@ -3828,7 +4159,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1278 => 
+      1431 => 
       array (
         0 => 
         array (
@@ -3870,7 +4201,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1308 => 
+      1461 => 
       array (
         0 => 
         array (
@@ -3893,7 +4224,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1322 => 
+      1475 => 
       array (
         0 => 
         array (
@@ -3916,7 +4247,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1331 => 
+      1484 => 
       array (
         0 => 
         array (
@@ -3958,7 +4289,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1366 => 
+      1519 => 
       array (
         0 => 
         array (
@@ -3981,7 +4312,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1380 => 
+      1533 => 
       array (
         0 => 
         array (
@@ -4004,7 +4335,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1389 => 
+      1542 => 
       array (
         0 => 
         array (
@@ -4046,7 +4377,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1429 => 
+      1582 => 
       array (
         0 => 
         array (
@@ -4069,7 +4400,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1443 => 
+      1596 => 
       array (
         0 => 
         array (
@@ -4092,7 +4423,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1452 => 
+      1605 => 
       array (
         0 => 
         array (
@@ -4134,7 +4465,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1482 => 
+      1635 => 
       array (
         0 => 
         array (
@@ -4157,7 +4488,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1496 => 
+      1649 => 
       array (
         0 => 
         array (
@@ -4180,7 +4511,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1505 => 
+      1658 => 
       array (
         0 => 
         array (
@@ -4237,7 +4568,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::iiuCVrHF32d7VQdK' => 
+    'generated::h8QTydYf37Vphi4O' => 
     array (
       'methods' => 
       array (
@@ -4266,7 +4597,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002b70000000000000000";}}',
-        'as' => 'generated::iiuCVrHF32d7VQdK',
+        'as' => 'generated::h8QTydYf37Vphi4O',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4929,6 +5260,80 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'galleries.video',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'work.reference' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'work-reference',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\FrontendController@workReference',
+        'controller' => 'App\\Http\\Controllers\\FrontendController@workReference',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'work.reference',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'work.reference.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'work-reference/{slug}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\FrontendController@workReferenceShow',
+        'controller' => 'App\\Http\\Controllers\\FrontendController@workReferenceShow',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'work.reference.show',
       ),
       'fallback' => false,
       'defaults' => 
@@ -11894,6 +12299,534 @@ app('router')->setCompiledRoutes(
         'as' => 'gallery.destroy',
         'uses' => 'App\\Http\\Controllers\\Backend\\GalleryController@destroy',
         'controller' => 'App\\Http\\Controllers\\Backend\\GalleryController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencecategory.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'workreferencecategory',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencecategory.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencecategory.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'workreferencecategory/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencecategory.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencecategory.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'workreferencecategory',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencecategory.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencecategory.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'workreferencecategory/{workreferencecategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencecategory.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencecategory.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'workreferencecategory/{workreferencecategory}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencecategory.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencecategory.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'workreferencecategory/{workreferencecategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencecategory.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencecategory.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'workreferencecategory/{workreferencecategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencecategory.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencescategoryController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencec.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'workreferencec',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencec.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencec.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'workreferencec/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencec.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencec.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'workreferencec',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencec.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencec.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'workreferencec/{workreferencec}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencec.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencec.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'workreferencec/{workreferencec}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencec.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencec.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'workreferencec/{workreferencec}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencec.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'workreferencec.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'workreferencec/{workreferencec}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'workreferencec.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\WorkreferencesController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 

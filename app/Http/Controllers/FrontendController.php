@@ -28,7 +28,8 @@ use App\Models\User_widthdraw;
 use App\Models\Videosection;
 use App\Models\Whychooseinvestmentplan;
 use Illuminate\Http\Request;
-
+use App\Models\Workreferencec;
+use App\Models\Workreferencecategory;
 class FrontendController extends Controller
 {
 public function frontend()
@@ -173,7 +174,54 @@ public function galleries()
     $gallery=Gallery::latest()->get();
     return view('Frontend.pages.gallery', compact('settings', 'categories','gallery'));
 }
+public function workReference(Request $request)
+{
+    $settings = Setting::first();
+    $categories = Category::all();
 
+    // Start building the query
+    $query = Workreferencec::with('category');
+
+    // Search functionality
+    if ($request->has('search') && $request->search != '') {
+        $searchTerm = $request->search;
+        $query->where(function($q) use ($searchTerm) {
+            $q->where('work_title', 'LIKE', "%{$searchTerm}%")
+              ->orWhere('work_content', 'LIKE', "%{$searchTerm}%");
+        });
+    }
+
+    // Category filter
+    if ($request->has('category') && $request->category != '') {
+        $query->where('work_category_id', $request->category);
+    }
+
+    // Get paginated results (6 items per page)
+    $workposts = $query->latest()->paginate(6);
+
+    // Get ALL work reference categories with post count (not just categories that have works)
+    $workcategories = Workreferencecategory::withCount('works')
+        ->orderBy('category_name', 'asc')
+        ->get();
+
+    return view('Frontend.pages.workrefernce', compact('settings', 'categories', 'workposts', 'workcategories'));
+}
+
+/**
+ * Display single work reference detail page
+ */
+public function workReferenceShow($slug)
+{
+    $settings = Setting::first();
+    $categories = Category::all();
+
+    // Get the work reference by slug
+    $work = Workreferencec::with('category')
+        ->where('work_slug', $slug)
+        ->firstOrFail();
+
+    return view('Frontend.pages.workshow', compact('settings', 'categories', 'work'));
+}
 
 
 }
