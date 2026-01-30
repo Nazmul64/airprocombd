@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::VPH7fyb0rdHHPkNm',
+            '_route' => 'generated::ixEZxnM7zuNGnoPv',
           ),
           1 => NULL,
           2 => 
@@ -2046,10 +2046,66 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/solutionsubcategory' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionsubcategory.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionsubcategory.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/solutionsubcategory/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionsubcategory.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/blog(?|slug/([^/]++)(*:28)|category/([^/]++)(?|(*:55)|/edit(*:67)|(*:74))|/([^/]++)(?|(*:94)|/edit(*:106)|(*:114)))|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:157)|/edit(*:170)|(*:178))|/([^/]++)(?|(*:199)|/(?|edit(*:215)|status(*:229))|(*:238))|info/([^/]++)(?|(*:263)|/edit(*:276)|(*:284)))|unter/([^/]++)(?|(*:311)|/edit(*:324)|(*:332)))|ategories/([^/]++)(?|(*:363)|/edit(*:376)|(*:384)))|/w(?|ork(?|\\-reference/([^/]++)(*:425)|referencec(?|ategory/([^/]++)(?|(*:465)|/edit(*:478)|(*:486))|/([^/]++)(?|(*:507)|/edit(*:520)|(*:528))))|hychooseusinvesment/([^/]++)(?|(*:570)|/edit(*:583)|(*:591)))|/p(?|r(?|oduct/(?|([^/]++)(*:627)|create(*:641)|([^/]++)(?|(*:660)|/edit(*:673)|(*:681)))|ivacypolicy/([^/]++)(?|(*:714)|/edit(*:727)|(*:735)))|a(?|rtner/([^/]++)(?|(*:766)|/edit(*:779)|(*:787))|ssionsection/([^/]++)(?|(*:820)|/edit(*:833)|(*:841))))|/a(?|boutus/([^/]++)(?|(*:875)|/edit(*:888)|(*:896))|dmin/profile/([^/]++)(*:926))|/s(?|e(?|ttings/([^/]++)(?|(*:962)|/edit(*:975)|(*:983))|rviceprovider/([^/]++)(?|(*:1017)|/edit(*:1031)|(*:1040)))|lider/([^/]++)(?|(*:1068)|/edit(*:1082)|(*:1091))|u(?|pportlink/([^/]++)(?|(*:1126)|/edit(*:1140)|(*:1149))|bcategories/([^/]++)(?|(*:1182)|/edit(*:1196)|(*:1205)))|olution(?|provider/([^/]++)(?|(*:1246)|/edit(*:1260)|(*:1269))|category/([^/]++)(?|(*:1299)|/edit(*:1313)|(*:1322)))|torage/(.*)(*:1344))|/Termscondition/([^/]++)(?|(*:1381)|/edit(*:1395)|(*:1404))|/users/([^/]++)/status(*:1436)|/notices/([^/]++)(?|(*:1465)|/edit(*:1479)|(*:1488))|/mission/([^/]++)(?|(*:1518)|/edit(*:1532)|(*:1541))|/videosection/([^/]++)(?|(*:1576)|/edit(*:1590)|(*:1599))|/Presentationvideo/([^/]++)(?|(*:1639)|/edit(*:1653)|(*:1662))|/gallery/([^/]++)(?|(*:1692)|/edit(*:1706)|(*:1715)))/?$}sDu',
+      0 => '{^(?|/blog(?|slug/([^/]++)(*:28)|category/([^/]++)(?|(*:55)|/edit(*:67)|(*:74))|/([^/]++)(?|(*:94)|/edit(*:106)|(*:114)))|/c(?|o(?|ntact(?|form/([^/]++)(?|(*:157)|/edit(*:170)|(*:178))|/([^/]++)(?|(*:199)|/(?|edit(*:215)|status(*:229))|(*:238))|info/([^/]++)(?|(*:263)|/edit(*:276)|(*:284)))|unter/([^/]++)(?|(*:311)|/edit(*:324)|(*:332)))|ategories/([^/]++)(?|(*:363)|/edit(*:376)|(*:384)))|/w(?|ork(?|\\-reference/([^/]++)(*:425)|referencec(?|ategory/([^/]++)(?|(*:465)|/edit(*:478)|(*:486))|/([^/]++)(?|(*:507)|/edit(*:520)|(*:528))))|hychooseusinvesment/([^/]++)(?|(*:570)|/edit(*:583)|(*:591)))|/p(?|r(?|oduct/(?|([^/]++)(*:627)|create(*:641)|([^/]++)(?|(*:660)|/edit(*:673)|(*:681)))|ivacypolicy/([^/]++)(?|(*:714)|/edit(*:727)|(*:735)))|a(?|rtner/([^/]++)(?|(*:766)|/edit(*:779)|(*:787))|ssionsection/([^/]++)(?|(*:820)|/edit(*:833)|(*:841))))|/a(?|boutus/([^/]++)(?|(*:875)|/edit(*:888)|(*:896))|dmin/profile/([^/]++)(*:926))|/s(?|e(?|ttings/([^/]++)(?|(*:962)|/edit(*:975)|(*:983))|rviceprovider/([^/]++)(?|(*:1017)|/edit(*:1031)|(*:1040)))|lider/([^/]++)(?|(*:1068)|/edit(*:1082)|(*:1091))|u(?|pportlink/([^/]++)(?|(*:1126)|/edit(*:1140)|(*:1149))|bcategories/([^/]++)(?|(*:1182)|/edit(*:1196)|(*:1205)))|olution(?|provider/([^/]++)(?|(*:1246)|/edit(*:1260)|(*:1269))|category/([^/]++)(?|(*:1299)|/edit(*:1313)|(*:1322))|subcategory/([^/]++)(?|(*:1355)|/edit(*:1369)|(*:1378)))|torage/(.*)(*:1400))|/Termscondition/([^/]++)(?|(*:1437)|/edit(*:1451)|(*:1460))|/users/([^/]++)/status(*:1492)|/notices/([^/]++)(?|(*:1521)|/edit(*:1535)|(*:1544))|/mission/([^/]++)(?|(*:1574)|/edit(*:1588)|(*:1597))|/videosection/([^/]++)(?|(*:1632)|/edit(*:1646)|(*:1655))|/Presentationvideo/([^/]++)(?|(*:1695)|/edit(*:1709)|(*:1718))|/gallery/([^/]++)(?|(*:1748)|/edit(*:1762)|(*:1771)))/?$}sDu',
     ),
     3 => 
     array (
@@ -4124,7 +4180,95 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1344 => 
+      1355 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionsubcategory.show',
+          ),
+          1 => 
+          array (
+            0 => 'solutionsubcategory',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1369 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionsubcategory.edit',
+          ),
+          1 => 
+          array (
+            0 => 'solutionsubcategory',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      1378 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionsubcategory.update',
+          ),
+          1 => 
+          array (
+            0 => 'solutionsubcategory',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'solutionsubcategory.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'solutionsubcategory',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1400 => 
       array (
         0 => 
         array (
@@ -4147,7 +4291,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1381 => 
+      1437 => 
       array (
         0 => 
         array (
@@ -4170,7 +4314,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1395 => 
+      1451 => 
       array (
         0 => 
         array (
@@ -4193,7 +4337,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1404 => 
+      1460 => 
       array (
         0 => 
         array (
@@ -4235,7 +4379,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1436 => 
+      1492 => 
       array (
         0 => 
         array (
@@ -4257,7 +4401,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1465 => 
+      1521 => 
       array (
         0 => 
         array (
@@ -4280,7 +4424,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1479 => 
+      1535 => 
       array (
         0 => 
         array (
@@ -4303,7 +4447,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1488 => 
+      1544 => 
       array (
         0 => 
         array (
@@ -4345,7 +4489,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1518 => 
+      1574 => 
       array (
         0 => 
         array (
@@ -4368,7 +4512,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1532 => 
+      1588 => 
       array (
         0 => 
         array (
@@ -4391,7 +4535,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1541 => 
+      1597 => 
       array (
         0 => 
         array (
@@ -4433,7 +4577,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1576 => 
+      1632 => 
       array (
         0 => 
         array (
@@ -4456,7 +4600,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1590 => 
+      1646 => 
       array (
         0 => 
         array (
@@ -4479,7 +4623,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1599 => 
+      1655 => 
       array (
         0 => 
         array (
@@ -4521,7 +4665,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1639 => 
+      1695 => 
       array (
         0 => 
         array (
@@ -4544,7 +4688,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1653 => 
+      1709 => 
       array (
         0 => 
         array (
@@ -4567,7 +4711,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1662 => 
+      1718 => 
       array (
         0 => 
         array (
@@ -4609,7 +4753,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1692 => 
+      1748 => 
       array (
         0 => 
         array (
@@ -4632,7 +4776,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1706 => 
+      1762 => 
       array (
         0 => 
         array (
@@ -4655,7 +4799,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1715 => 
+      1771 => 
       array (
         0 => 
         array (
@@ -4712,7 +4856,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::VPH7fyb0rdHHPkNm' => 
+    'generated::ixEZxnM7zuNGnoPv' => 
     array (
       'methods' => 
       array (
@@ -4741,7 +4885,7 @@ app('router')->setCompiledRoutes(
                         \'exception\' => $exception,
                     ]), status: $exception ? 500 : 200);
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002b70000000000000000";}}',
-        'as' => 'generated::VPH7fyb0rdHHPkNm',
+        'as' => 'generated::ixEZxnM7zuNGnoPv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -13235,6 +13379,270 @@ app('router')->setCompiledRoutes(
         'as' => 'solutioncategory.destroy',
         'uses' => 'App\\Http\\Controllers\\Backend\\SolutionCategoryController@destroy',
         'controller' => 'App\\Http\\Controllers\\Backend\\SolutionCategoryController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionsubcategory.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'solutionsubcategory',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionsubcategory.index',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionsubcategory.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'solutionsubcategory/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionsubcategory.create',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@create',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionsubcategory.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'solutionsubcategory',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionsubcategory.store',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionsubcategory.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'solutionsubcategory/{solutionsubcategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionsubcategory.show',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@show',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionsubcategory.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'solutionsubcategory/{solutionsubcategory}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionsubcategory.edit',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionsubcategory.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'solutionsubcategory/{solutionsubcategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionsubcategory.update',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'solutionsubcategory.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'solutionsubcategory/{solutionsubcategory}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin',
+        ),
+        'as' => 'solutionsubcategory.destroy',
+        'uses' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@destroy',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SolutionCategorysubController@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 

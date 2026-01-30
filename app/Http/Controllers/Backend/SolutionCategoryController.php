@@ -25,7 +25,7 @@ class SolutionCategoryController extends Controller
     {
         $request->validate([
             'category_name' => 'required|string|max:255',
-            'category_slug' => 'required|string|max:255|unique:categories,category_slug',
+            'category_slug' => 'required|string|max:255|unique:solution_categories,category_slug',
         ]);
 
         SolutionCategory::create([
@@ -48,7 +48,7 @@ class SolutionCategoryController extends Controller
 
         $request->validate([
             'category_name' => 'required|string|max:255',
-            'category_slug' => 'required|string|max:255|unique:categories,category_slug,' . $id,
+            'category_slug' => 'required|string|max:255|unique:solution_categories,category_slug,' . $id,
         ]);
 
         $category->update([

@@ -48,6 +48,7 @@ use App\Http\Controllers\Backend\Blogcontroller;
 use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Backend\PresentationvideoController;
 use App\Http\Controllers\Backend\SolutionCategoryController;
+use App\Http\Controllers\Backend\SolutionCategorysubController;
 use App\Http\Controllers\Backend\VideosectionController;
 use App\Http\Controllers\Backend\WorkreferencescategoryController;
 use App\Http\Controllers\Backend\WorkreferencesController;
@@ -141,6 +142,7 @@ Route::middleware(['admin'])->group(function () {
     Route::resource('workreferencecategory',WorkreferencescategoryController::class);
     Route::resource('workreferencec',WorkreferencesController::class);
     Route::resource('solutioncategory',SolutionCategoryController::class);
+    Route::resource('solutionsubcategory', SolutionCategorysubController::class);
     //   admin user account view start end
 
 
