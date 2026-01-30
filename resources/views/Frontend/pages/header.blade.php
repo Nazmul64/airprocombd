@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('frontend/assets/front/css/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ isset($settings->favicon) ? asset('uploads/settings/' . $settings->favicon) : '' }}">
+
 
 </head>
 <body>
@@ -36,7 +38,7 @@
             <div class="row align-items-center">
                 <div class="col-md-3">
                     <div class="logo">
-                        <img src="{{ asset('uploads/settings/' . ($settings->photo ?? '')) }}" alt="Company Logo">
+                        <a href="{{route('frontend')}}"><img src="{{ asset('uploads/settings/' . ($settings->photo ?? '')) }}" alt="Company Logo"></a>
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -56,7 +58,7 @@
 <nav class="navbar navbar-expand-lg main-nav">
     <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-
+             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav">
@@ -64,39 +66,40 @@
                     <a class="nav-link" href="{{ route('frontend') }}">Home</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Product
-                    </a>
+           <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Products
+    </a>
 
-                    @php
-                       $categories = \App\Models\Category::with('subcategories')->get();
-                   @endphp
+    @php
+        $categories = \App\Models\Category::with('subcategories')->get();
+    @endphp
+
+    <ul class="dropdown-menu">
+        @foreach ($categories as $category)
+            <li class="dropdown-submenu">
+                <a class="dropdown-item" href="{{ route('category.wise.products', $category->category_slug) }}">
+                    {{ $category->category_name }}
+                    @if($category->subcategories->count() > 0)
+                        <i class="fas fa-chevron-right float-end"></i>
+                    @endif
+                </a>
+
+                @if($category->subcategories->count() > 0)
                     <ul class="dropdown-menu">
-                        @foreach ($categories as $category)
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item" href="#{{ $category->category_slug }}">
-                                    {{ $category->category_name }}
-                                    @if($category->subcategories->count() > 0)
-                                        <i class="fas fa-chevron-right float-end"></i>
-                                    @endif
+                        @foreach($category->subcategories as $subcategory)
+                            <li>
+                                <a class="dropdown-item" href="{{ route('subcategory.wise.products', $subcategory->subcategory_slug) }}">
+                                    {{ $subcategory->subcategory_name }}
                                 </a>
-
-                                @if($category->subcategories->count() > 0)
-                                    <ul class="dropdown-menu">
-                                        @foreach($category->subcategories as $subcategory)
-                                            <li>
-                                                <a class="dropdown-item" href="#{{ $subcategory->subcategory_slug ?? '' }}">
-                                                    {{ $subcategory->subcategory_name ?? $subcategory->name }}
-                                                </a>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                @endif
                             </li>
                         @endforeach
                     </ul>
-                </li>
+                @endif
+            </li>
+        @endforeach
+    </ul>
+</li>
 
 
 
@@ -136,37 +139,6 @@
             </li>
 
 </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                 <li class="nav-item">

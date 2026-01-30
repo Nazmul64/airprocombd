@@ -27,6 +27,7 @@ use App\Models\SolutionCategory;
 use App\Models\Solutionprovider;
 use App\Models\SolutionsubCategory;
 use App\Models\Subcategory;
+use App\Models\Termscondition;
 use App\Models\User_widthdraw;
 use App\Models\Videosection;
 use App\Models\Whychooseinvestmentplan;
@@ -252,6 +253,96 @@ public function subcategoryWiseSolution($slug)
 
     return view('Frontend.pages.subcategorywisesoluction', compact('subcategory', 'solutions','categories'));
 }
+
+
+// Add these methods to your FrontendController
+
+/**
+ * Show products by category
+ */
+ public function categoryWiseProducts($slug)
+    {
+        // Get category by slug or fail
+        $category = Category::where('category_slug', $slug)->firstOrFail();
+
+        // Get all products in this category with relationships
+        $products = Product::where('category_id', $category->id)
+                           ->with(['category', 'subcategory'])
+                           ->orderBy('created_at', 'desc')
+                           ->get();
+
+        // Get common data
+        $settings = Setting::first();
+        $categories = Category::all();
+        $subcategories = Subcategory::all();
+
+        // Option 1: If your folder is "Frontend" (capital F)
+        return view('Frontend.pages.categorywiseproducts', compact(
+            'settings',
+            'categories',
+            'subcategories',
+            'category',
+            'products'
+        ));
+
+        // Option 2: If your folder is "frontend" (lowercase f)
+        // Uncomment the line below and comment the one above
+        // return view('frontend.pages.category-wise-products', compact(
+        //     'settings',
+        //     'categories',
+        //     'subcategories',
+        //     'category',
+        //     'products'
+        // ));
+    }
+
+    /**
+     * Show products by subcategory
+     *
+     * @param string $slug
+     * @return \Illuminate\View\View
+     */
+    public function subcategoryWiseProducts($slug)
+    {
+        // Get subcategory by slug with its category or fail
+        $subcategory = Subcategory::where('subcategory_slug', $slug)
+                                  ->with('category')
+                                  ->firstOrFail();
+
+        // Get all products in this subcategory with relationships
+        $products = Product::where('subcategory_id', $subcategory->id)
+                           ->with(['category', 'subcategory'])
+                           ->orderBy('created_at', 'desc')
+                           ->get();
+
+        // Get common data
+        $settings = Setting::first();
+        $categories = Category::all();
+        $subcategories = Subcategory::all();
+
+        // Option 1: If your folder is "Frontend" (capital F)
+        return view('Frontend.pages.subcategorywiseproducts', compact(
+            'settings',
+            'categories',
+            'subcategories',
+            'subcategory',
+            'products'
+        ));
+}
+public function termsandconditions(){
+    $settings = Setting::first();
+    $categories = Category::all();
+    $termscondition=Termscondition::all();
+    return view('Frontend.pages.termsandconditions',compact('settings','categories','termscondition'));
+}
+public function privacyand(){
+    $settings = Setting::first();
+    $categories = Category::all();
+    $privacyand=Privacypolicy::all();
+    return view('Frontend.pages.privacys',compact('settings','categories','privacyand'));
+}
+
+
 
 
 }

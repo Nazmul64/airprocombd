@@ -82,12 +82,22 @@ Route::post('logout', [AdminController::class, 'logout'])->name('logout');
 Route::get('categorywisesoluction', [FrontendController::class, 'categorywisesoluction'])->name('categorywisesoluction');
 Route::get('solutions/category/{slug}', [FrontendController::class, 'categoryWiseSolution'])->name('category.wise.solution');
 Route::get('solutions/subcategory/{slug}', [FrontendController::class, 'subcategoryWiseSolution'])->name('subcategory.wise.solution');
+Route::get('termsandconditions', [FrontendController::class, 'termsandconditions'])->name('termsand.conditions');
+Route::get('privacyand', [FrontendController::class, 'privacyand'])->name('privacy.and');
  // Change this
 
 Route::get('work-reference', [FrontendController::class, 'workReference'])->name('work.reference');
 Route::get('work-reference/{slug}', [FrontendController::class, 'workReferenceShow'])->name('work.reference.show');
 
-Route::get('product/{slug}', [FrontendController::class, 'productdetails'])->name('productdetails');
+Route::get('products/{slug}', [FrontendController::class, 'productdetails'])->name('productdetails');
+
+
+Route::get('/products/category/{slug}', [FrontendController::class, 'categoryWiseProducts'])->name('category.wise.products');
+
+// Subcategory-wise products
+Route::get('/products/subcategory/{slug}', [FrontendController::class, 'subcategoryWiseProducts'])->name('subcategory.wise.products');
+
+
 Route::get('user/chat',        [ChatController::class, 'index'])->name('user.chat');
 Route::get('user/chat/fetch',  [ChatController::class, 'fetch'])->name('user.chat.fetch');
 Route::post('user/chat/send',  [ChatController::class, 'send'])->name('user.chat.send');

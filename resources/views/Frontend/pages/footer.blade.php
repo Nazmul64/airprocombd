@@ -98,9 +98,9 @@
                         <p class="mb-0">{{ $settings->footer_text ?? '' }}</p>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <a href="#privacy" class="footer-bottom-link">Privacy Policy</a>
+                        <a href="{{route('privacy.and')}}" class="footer-bottom-link">Privacy Policy</a>
                         <span class="separator">|</span>
-                        <a href="#terms" class="footer-bottom-link">Terms & Conditions</a>
+                        <a href="{{route('termsand.conditions')}}" class="footer-bottom-link">Terms & Conditions</a>
                     </div>
                 </div>
             </div>
