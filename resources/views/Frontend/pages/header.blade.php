@@ -66,8 +66,12 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        About Tritech
+                        Product
                     </a>
+
+                    @php
+                       $categories = \App\Models\Category::with('subcategories')->get();
+                   @endphp
                     <ul class="dropdown-menu">
                         @foreach ($categories as $category)
                             <li class="dropdown-submenu">
@@ -94,39 +98,76 @@
                     </ul>
                 </li>
 
-                {{-- Dynamic Categories with Subcategories --}}
-                @foreach ($categories as $category)
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#{{ $category->category_slug }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ $category->category_name }}
-                        </a>
-                        <ul class="dropdown-menu">
-                            @foreach($category->subcategories as $subcategory)
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#{{ $subcategory->subcategory_slug ?? '' }}">
-                                        {{ $subcategory->subcategory_name ?? $subcategory->name }}
-                                        @if(isset($subcategory->children) && $subcategory->children->count() > 0)
-                                            <i class="fas fa-chevron-right float-end"></i>
-                                        @endif
-                                    </a>
 
-                                    {{-- Third level if exists --}}
-                                    @if(isset($subcategory->children) && $subcategory->children->count() > 0)
-                                        <ul class="dropdown-menu">
-                                            @foreach($subcategory->children as $child)
-                                                <li>
-                                                    <a class="dropdown-item" href="#{{ $child->subcategory_slug ?? '' }}">
-                                                        {{ $child->subcategory_name ?? $child->name }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    @endif
-                                </li>
-                            @endforeach
-                        </ul>
-                    </li>
-                @endforeach
+
+                    @php
+                       $solutionsCategories = \App\Models\SolutionCategory::with('subcategories')->get();
+                   @endphp
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Solutions
+                </a>
+                <ul class="dropdown-menu">
+                    @foreach ($solutionsCategories as $category)
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="{{ route('category.wise.solution', $category->category_slug) }}">
+                                {{ $category->category_name }}
+                                @if($category->subcategories->count() > 0)
+                                    <i class="fas fa-chevron-right float-end"></i>
+                                @endif
+                            </a>
+
+                            @if($category->subcategories->count() > 0)
+                                <ul class="dropdown-menu">
+                                    @foreach($category->subcategories as $subcategory)
+                                        <li>
+                                            <a class="dropdown-item" href="{{ route('subcategory.wise.solution', $subcategory->subcategory_slug) }}">
+                                                {{ $subcategory->subcategory_name }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            @endif
+                        </li>
+                    @endforeach
+                </ul>
+            </li>
+
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('work.reference')}}">Work References</a>

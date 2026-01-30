@@ -22,7 +22,10 @@ use App\Models\Product;
 use App\Models\Serviceprovider;
 use App\Models\Setting;
 use App\Models\Slider;
+use App\Models\Solution;
+use App\Models\SolutionCategory;
 use App\Models\Solutionprovider;
+use App\Models\SolutionsubCategory;
 use App\Models\Subcategory;
 use App\Models\User_widthdraw;
 use App\Models\Videosection;
@@ -31,6 +34,7 @@ use Illuminate\Http\Request;
 use App\Models\Workreferencec;
 use App\Models\Workreferencecategory;
 class FrontendController extends Controller
+
 {
 public function frontend()
 {
@@ -44,6 +48,8 @@ public function frontend()
     $partners = Partner::latest()->get();
     $settings = Setting::first();
     $categories = Category::with('subcategories')->get();
+    $soluctionscategory = SolutionCategory::with('subcategories')->get();
+
     $about = About::latest()->get();
     $mission = Mission::latest()->get();
     $passion = Passionsection::latest()->get();
@@ -71,7 +77,8 @@ public function frontend()
         'services',
         'leftProviders',
         'rightProviders',
-        'presentationVideos'
+        'presentationVideos',
+        'soluctionscategory',
     ));
 }
 
@@ -221,6 +228,29 @@ public function workReferenceShow($slug)
         ->firstOrFail();
 
     return view('Frontend.pages.workshow', compact('settings', 'categories', 'work'));
+}
+
+public function categoryWiseSolution($slug)
+{
+    $category = SolutionCategory::where('category_slug', $slug)->firstOrFail();
+    $solutions = Solution::where('soluction_category_id', $category->id)
+                        ->with(['category', 'subcategory'])
+                        ->get();
+
+    return view('Frontend.pages.categorywisesoluction', compact('category', 'solutions'));
+}
+
+public function subcategoryWiseSolution($slug)
+{
+    $categories = Category::all();
+    $subcategory = SolutionsubCategory::where('subcategory_slug', $slug)
+                                      ->with('category')
+                                      ->firstOrFail();
+    $solutions = Solution::where('soluctionsub_category_id', $subcategory->id)
+                        ->with(['category', 'subcategory'])
+                        ->get();
+
+    return view('Frontend.pages.subcategorywisesoluction', compact('subcategory', 'solutions','categories'));
 }
 
 

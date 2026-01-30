@@ -49,6 +49,7 @@ use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Backend\PresentationvideoController;
 use App\Http\Controllers\Backend\SolutionCategoryController;
 use App\Http\Controllers\Backend\SolutionCategorysubController;
+use App\Http\Controllers\Backend\SolutionController;
 use App\Http\Controllers\Backend\VideosectionController;
 use App\Http\Controllers\Backend\WorkreferencescategoryController;
 use App\Http\Controllers\Backend\WorkreferencesController;
@@ -78,6 +79,9 @@ Route::post('logout', [AdminController::class, 'logout'])->name('logout');
  Route::resource('contactform',ContacformController::class);
  Route::get('videosections', [FrontendController::class, 'videosections'])->name('videoe.section');
  Route::get('galleries', [FrontendController::class, 'galleries'])->name('galleries.video');
+Route::get('categorywisesoluction', [FrontendController::class, 'categorywisesoluction'])->name('categorywisesoluction');
+Route::get('solutions/category/{slug}', [FrontendController::class, 'categoryWiseSolution'])->name('category.wise.solution');
+Route::get('solutions/subcategory/{slug}', [FrontendController::class, 'subcategoryWiseSolution'])->name('subcategory.wise.solution');
  // Change this
 
 Route::get('work-reference', [FrontendController::class, 'workReference'])->name('work.reference');
@@ -143,6 +147,8 @@ Route::middleware(['admin'])->group(function () {
     Route::resource('workreferencec',WorkreferencesController::class);
     Route::resource('solutioncategory',SolutionCategoryController::class);
     Route::resource('solutionsubcategory', SolutionCategorysubController::class);
+    Route::resource('solutions', SolutionController::class);
+
     //   admin user account view start end
 
 

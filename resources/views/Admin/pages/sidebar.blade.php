@@ -72,7 +72,8 @@
             </a>
             <ul>
                 <li><a href="{{ route('solutioncategory.index') }}" class="{{ request()->routeIs('solutioncategory.*') ? 'active' : '' }}"><i class="bi bi-circle"></i>solutioncategory</a></li>
-               <li><a href="{{ route('solutionsubcategory.index') }}" class="{{ request()->routeIs('solutionsubcategory.*') ? 'active' : '' }}"><i class="bi bi-circle"></i> solutionsubcategory</a></li>
+                <li><a href="{{ route('solutionsubcategory.index') }}" class="{{ request()->routeIs('solutionsubcategory.*') ? 'active' : '' }}"><i class="bi bi-circle"></i> solutionsubcategory</a></li>
+                <li><a href="{{ route('solutions.index') }}" class="{{ request()->routeIs('solutions.*') ? 'active' : '' }}"><i class="bi bi-circle"></i> solutions</a></li>
             </ul>
         </li>
 
