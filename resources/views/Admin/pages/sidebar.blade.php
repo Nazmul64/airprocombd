@@ -65,6 +65,22 @@
             </ul>
         </li>
 
+        <li>
+            <a class="has-arrow" href="javascript:;" class="{{ request()->routeIs('blogcategory.*', 'blog.*') ? 'active' : '' }}">
+                <div class="parent-icon"><i class="bi bi-newspaper"></i></div>
+                <div class="menu-title">solutioncategory</div>
+            </a>
+            <ul>
+                <li><a href="{{ route('solutioncategory.index') }}" class="{{ request()->routeIs('blogcategory.*') ? 'active' : '' }}"><i class="bi bi-circle"></i>solutioncategory</a></li>
+                {{-- <li><a href="{{ route('solutioncategory.index') }}" class="{{ request()->routeIs('blog.*') ? 'active' : '' }}"><i class="bi bi-circle"></i> solutioncategory</a></li> --}}
+            </ul>
+        </li>
+
+
+
+
+
+
 
 
 
